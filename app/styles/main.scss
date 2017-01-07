@@ -2,13 +2,37 @@ $icon-font-path: '../fonts/';
 
 @font-face {
   font-family: 'Futura PT';
-  font-weight: bold;
-  src: local('Futura PT Heavy'), local('FuturaPTHeavy'), url($icon-font-path + 'FuturaPTHeavy.otf')
+  font-weight: 400;
+  src: local('Futura PT Book'), local('FuturaPTBook'), url($icon-font-path + 'FuturaPTBook.otf');
 }
 
-.test {
+@font-face {
+  font-family 'Futura PT';
+  font-weight: 600;
+  src: local('Futura PT Medium'), local('FuturaPTMedium'), url($icon-font-path + 'FuturaPTMedium.otf');
+}
+
+@font-face {
   font-family: 'Futura PT';
-  font-weight: bold;
+  font-weight: 800;
+  src: local('Futura PT Heavy'), local('FuturaPTHeavy'), url($icon-font-path + 'FuturaPTHeavy.otf');
+}
+
+.test-heavy {
+  font-family: 'Futura PT';
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.test-medium {
+  font-family: 'Futura PT';
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.test-light {
+  font-family: 'Futura PT';
+  font-weight: 400;
   font-size: 32px;
 }
 
