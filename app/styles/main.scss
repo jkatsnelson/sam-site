@@ -1,6 +1,19 @@
 $icon-font-path: '../fonts/';
 
+@font-face {
+  font-family: 'Futura PT';
+  font-weight: bold;
+  src: local('Futura PT Heavy'), local('FuturaPTHeavy'), url($icon-font-path + 'FuturaPTHeavy.otf')
+}
+
+.test {
+  font-family: 'Futura PT';
+  font-weight: bold;
+  font-size: 32px;
+}
+
 // bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 .browserupgrade {
