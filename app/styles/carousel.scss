@@ -1,5 +1,8 @@
 .sam-image-carousel, .sam-text-carousel {
   margin-top: 60px;
+  a.carousel-control {
+    opacity: 0;
+  }
   .carousel-inner .slide-title {
     font-family: 'Playfair Display';
     font-weight: 700;
@@ -32,6 +35,7 @@
   .slide-content {
     @extend p;
     margin-top: 20px;
+    margin-bottom: 0;
   }
 }
 

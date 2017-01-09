@@ -44,5 +44,8 @@
 
 
 } )( jQuery );
-
-$('.carousel').bsTouchSlider();
+$(document).ready(function() {
+  $('button.btn').click(function () {
+    $('.carousel').bsTouchSlider();
+  });
+})
