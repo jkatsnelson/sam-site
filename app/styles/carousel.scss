@@ -1,0 +1,46 @@
+.sam-image-carousel {
+  margin-top: 70px;
+  .carousel {
+    height: 320px;
+  }
+  .carousel-inner {
+    .slide-title {
+      font-family: PlayfairDisplay;
+      font-size: 14px;
+      font-weight: 700;
+      color: #191919;
+      text-align: center;
+    }
+    img {
+      margin-top: 10px;
+    }
+    .slide-content {
+      margin-top: 15px;
+      font-family:'Futura PT';
+      font-size: 11px;
+      color: #565656;
+    }
+  }
+  .carousel-indicators {
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: static;
+    bottom: 0;
+    width: auto;
+    left: auto;
+    margin-left: auto;
+    li {
+      height: 8px;
+      width: 8px;
+      background-color: rgba(51, 51, 51, 0.3);
+      &.active {
+        margin: 1px;
+        background-color: #323232;
+      }
+    }
+  }
+}
+
+.sam-image-carousel + p {
+  margin-top: 34px;
+}
