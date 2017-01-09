@@ -3,7 +3,8 @@
 
 $(document).ready(function() {
   fixAnimations();
-})
+  addSwipe();
+});
 
 function fixAnimations() {
   var carousel = $('.carousel');
@@ -32,7 +33,7 @@ function fixAnimations() {
       } );
 
   });
-}
+};
 
 // this isn't being used, but im leaving it for later
 
@@ -46,4 +47,4 @@ function addSwipe() {
       },
       threshold: 0
   } );
-}
+};
