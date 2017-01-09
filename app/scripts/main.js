@@ -3,7 +3,6 @@
 
 $(document).ready(function() {
   fixAnimations();
-  addSwipe();
 })
 
 function fixAnimations() {
