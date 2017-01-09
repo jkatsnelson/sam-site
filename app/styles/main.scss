@@ -2,6 +2,7 @@
 
 $icon-font-path: '../fonts/';
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+
 @font-face {
   font-family: 'Futura PT';
   font-weight: 400;
@@ -37,32 +38,36 @@ $icon-font-path: '../fonts/';
 
 // all the rest of the css goes here
 
-.test-playfair {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 45px;
+body {
+  -webkit-font-smoothing: antialiased;
 }
 
-.test-heavy {
-  font-family: 'Futura PT';
-  font-weight: 700;
-  font-size: 32px;
-}
 
-.test-medium {
-  font-family: 'Futura PT';
-  font-weight: 600;
-  font-size: 32px;
+.sam-hero {
+  .mobile-title {
+    margin-top: 10px;
+    div {
+      line-height: 1;
+      text-align: center;
+      font-family: 'Playfair Display';
+      font-weight: 700;
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  .hero-bg {
+    padding-top: 64px;
+    padding-bottom: 20px;
+    background-image: radial-gradient(circle at 50% 31%, #f2b9cd, #4f1429);
+  }
+  .sub-title {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Futura PT';
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #ffffff;
+  }
 }
-
-.test-light {
-  font-family: 'Futura PT';
-  font-weight: 400;
-  font-size: 32px;
-}
-
-.hero-bg {
-  height: 538px;
-  background-image: radial-gradient(circle at 50% 31%, #f2b9cd, #4f1429);
-}
-
