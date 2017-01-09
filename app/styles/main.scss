@@ -36,6 +36,10 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
+@import 'global';
+
+@import 'carousel';
+
 // all the rest of the css goes here
 
 body {
