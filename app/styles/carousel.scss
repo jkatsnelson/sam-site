@@ -1,25 +1,9 @@
-.sam-image-carousel {
-  margin-top: 70px;
-  .carousel {
-    height: 320px;
-  }
-  .carousel-inner {
-    .slide-title {
-      font-family: PlayfairDisplay;
-      font-size: 16px;
-      font-weight: 700;
-      color: #191919;
-      text-align: center;
-    }
-    img {
-      margin-top: 10px;
-    }
-    .slide-content {
-      margin-top: 15px;
-      font-family:'Futura PT';
-      font-size: 11px;
-      color: #565656;
-    }
+.sam-image-carousel, .sam-text-carousel {
+  margin-top: 60px;
+  .carousel-inner .slide-title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    color: #191919;
   }
   .carousel-indicators {
     margin-top: 10px;
@@ -38,6 +22,32 @@
         background-color: #323232;
       }
     }
+  }
+}
+// do we need seperate classnames?
+.sam-text-carousel {
+  .carousel-inner .slide-title {
+    font-size: 20px;
+  }
+  .slide-content {
+    @extend p;
+    margin-top: 20px;
+  }
+}
+
+.sam-image-carousel {
+  .carousel-inner .slide-title {
+    text-align: center;
+    font-size: 16px;
+  }
+  img {
+    margin-top: 10px;
+  }
+  .slide-content {
+    margin-top: 15px;
+    font-family:'Futura PT';
+    font-size: 11px;
+    color: #565656;
   }
 }
 
