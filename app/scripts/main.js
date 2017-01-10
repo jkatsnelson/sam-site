@@ -2,8 +2,11 @@
 
 
 $(document).ready(function() {
-  fixAnimations();
-  addSwipe();
+  // if there are carousels on the page, add animation and swipe
+  if ($('.carousel').length) {
+    fixAnimations();
+    addSwipe();
+  }
 });
 
 function fixAnimations() {
