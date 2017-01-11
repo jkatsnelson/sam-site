@@ -23,10 +23,13 @@ nav#menu header {
 
 nav#menu header, .nav-bar {
   height: 55px;
-  font-family: Playfair Display;
   text-align: center;
-  line-height: 57px;
-  font-size: 18px;
+  a {
+    font-family: Playfair Display;
+    line-height: 57px;
+    font-size: 18px;
+    color: #191919;
+  }
 }
 
 .nav-bar {
@@ -34,7 +37,6 @@ nav#menu header, .nav-bar {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
-  color: #191919;
   z-index: 1000;
   transition: transform 300ms ease;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(97,97,97,0.5);

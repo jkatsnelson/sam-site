@@ -23,7 +23,7 @@ function navSlideout() {
     slideout.disableTouch();
   });
 
-  document.querySelector('.nav-bar').addEventListener('click', function() {
+  document.querySelector('.burger').addEventListener('click', function() {
     slideout.toggle();
   });
 
