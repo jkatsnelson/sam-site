@@ -37,51 +37,9 @@ $icon-font-path: '../fonts/';
 }
 
 @import 'global';
-
+@import 'nav';
 @import 'carousel';
+@import 'sam-hero';
 
 // all the rest of the css goes here
 
-body {
-  -webkit-font-smoothing: antialiased;
-}
-
-
-.sam-hero {
-  .hero-bg {
-    padding-top: 130px;
-    padding-bottom: 20px;
-    background-image: radial-gradient(325px circle at 50% 31%, #f2b9cd, #4f1429);
-    .img-container {
-      margin-right: 8px;
-      margin-left: 8px;
-    }
-  }
-  .mobile-title {
-    margin-top: 30px;
-    div {
-      line-height: 47px;
-      text-align: center;
-      font-family: 'Playfair Display';
-      font-weight: 700;
-      font-size: 35px;
-      color: #ffffff;
-    }
-  }
-  .sub-title {
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Futura PT';
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    color: #ffffff;
-  }
-  .caret-container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 24px;
-    margin-top: 50px;
-  }
-}
