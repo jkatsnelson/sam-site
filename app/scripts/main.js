@@ -10,9 +10,7 @@ $(document).ready(function() {
 function navSlideout() {
   var slideout = new Slideout({
     'panel': document.getElementById('panel'),
-    'menu': document.getElementById('menu'),
-    'padding': 256,
-    'tolerance': 70
+    'menu': document.getElementById('menu')
   });
   document.querySelector('.nav-bar').addEventListener('click', function() {
     slideout.toggle();
@@ -24,10 +22,12 @@ function navSlideout() {
 
   slideout.on('beforeopen', function() {
     document.querySelector('.nav-bar').className += ' open';
+    document.querySelector('#panel .overlay').className += ' active';
   });
 
   slideout.on('beforeclose', function() {
     document.querySelector('.nav-bar').className = 'nav-bar';
+    document.querySelector('#panel .overlay').className = 'overlay';
   });
 }
 
