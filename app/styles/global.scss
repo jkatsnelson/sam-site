@@ -22,11 +22,11 @@ nav#menu header {
 }
 
 nav#menu header, .nav-bar {
-  height: 44px;
+  height: 55px;
   font-family: Playfair Display;
   text-align: center;
-  line-height: 49px;
-  font-size: 16px;
+  line-height: 57px;
+  font-size: 18px;
 }
 
 .nav-bar {
@@ -43,13 +43,11 @@ nav#menu header, .nav-bar {
   &.open {
     transform: translate3d(256px, 0px, 0px);
   }
-  .burger, img {
-    top: 16px;
-  }
 
   .burger {
     position: absolute;
-    left: 15px;
+    top: 20px;
+    left: 19px;
     div {
       margin-top: 3px;
       width: 20px;
@@ -59,8 +57,9 @@ nav#menu header, .nav-bar {
     }
   }
   img {
-    height: 20px;
-    width: 20px;
+    top: 18px;
+    height: 23px;
+    width: 23px;
     position: absolute;
     right: 15px;
   }
