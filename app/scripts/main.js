@@ -12,6 +12,17 @@ function navSlideout() {
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu')
   });
+  // when the page loads, disable touch because it conflicts with carousels
+  // when the menu is open, enable touch so its easy to get out
+  // when the menu closes again, re-disable touch
+  slideout.disableTouch();
+  slideout.on('open', function() {
+    slideout.enableTouch();
+  });
+  slideout.on('close', function() {
+    slideout.disableTouch();
+  });
+
   document.querySelector('.nav-bar').addEventListener('click', function() {
     slideout.toggle();
   });
@@ -24,6 +35,7 @@ function navSlideout() {
     document.querySelector('.nav-bar').className += ' open';
     document.querySelector('#panel .overlay').className += ' active';
   });
+
 
   slideout.on('beforeclose', function() {
     document.querySelector('.nav-bar').className = 'nav-bar';
