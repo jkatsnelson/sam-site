@@ -2,12 +2,34 @@
 
 
 $(document).ready(function() {
-  // if there are carousels on the page, add animation and swipe
-  if ($('.carousel').length) {
-    fixAnimations();
-    addSwipe();
-  }
+  navSlideout();
+  fixAnimations();
+  addSwipe();
 });
+
+function navSlideout() {
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
+  });
+  document.querySelector('.nav-bar').addEventListener('click', function() {
+    slideout.toggle();
+  });
+
+  // document.querySelector('.menu').addEventListener('click', function(eve) {
+  //   if (eve.target.nodeName === 'A') { slideout.close(); }
+  // });
+
+  slideout.on('beforeopen', function() {
+    document.querySelector('.nav-bar').className += ' open';
+  });
+
+  slideout.on('beforeclose', function() {
+    document.querySelector('.nav-bar').className = 'nav-bar';
+  });
+}
 
 function fixAnimations() {
   var carousel = $('.carousel');
