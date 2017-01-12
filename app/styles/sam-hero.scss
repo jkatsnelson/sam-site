@@ -8,6 +8,9 @@
       margin-left: 8px;
     }
   }
+  .hero-img {
+    float: right;
+  }
   .mobile-title {
     margin-top: 30px;
     div {
@@ -34,5 +37,31 @@
     margin-left: auto;
     width: 24px;
     margin-top: 50px;
+  }
+
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 1200px) {
+    .hero-bg {
+      padding-bottom: 200px;
+      background-image: radial-gradient(650px circle at 50% 31%, #f2b9cd, #4f1429);
+    }
+    // TODO refactor away the name mobile title, its not just for mobile
+    .mobile-title, .sub-title {
+      margin-left: 20%;
+    }
+    .title-block {
+      margin-top: 20px;
+    }
+    .mobile-title {
+      div {
+        font-size: 70px;
+        line-height: 90px;
+        text-align: left;
+      }
+    }
+    .sub-title {
+      font-size: 40px;
+      text-align: left;
+    }
   }
 }
