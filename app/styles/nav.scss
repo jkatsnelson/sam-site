@@ -51,12 +51,20 @@ nav#menu header, .nav-bar {
       background-color: #191919;
     }
   }
-  img {
+  img.linked-in {
     top: 18px;
     height: 23px;
     width: 23px;
     position: absolute;
     right: 15px;
+  }
+  ul.list-unstyled.links {
+    text-align: left;
+    li {
+      display: inline-block;
+      line-height: 55px;
+      margin-right: 105px;
+    }
   }
 }
 
