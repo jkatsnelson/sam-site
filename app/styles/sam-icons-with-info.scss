@@ -1,0 +1,56 @@
+.sam-icons-with-info {
+  text-align: center;
+  margin-top: 66px;
+  .img-container {
+    height: 37px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
+  }
+  .client {
+    .img-container {
+      width: 41px;
+    }
+  }
+  .role {
+    .img-container {
+      width: 50px;
+      position: relative;
+      img {
+        position: absolute;
+        top: -5px;
+      }
+    }
+  }
+  .tools, .timeline {
+    margin-top: 45px;
+    .img-container {
+      height: 62px;
+    }
+  }
+  .tools {
+    margin-top: 45px;
+    .img-container {
+      width: 50px;
+    }
+  }
+  .timeline {
+    .img-container {
+      width: 41px;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+  .title {
+    font-family: PlayfairDisplay;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .sub-title {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+}
