@@ -33,9 +33,11 @@
     font-size: 20px;
   }
   .slide-content {
-    @extend p;
-    margin-top: 20px;
+    font-size: 16px;
+    font-family: Futura PT;
+    font-weight: 400;
     margin-bottom: 0;
+    margin-top: 20px;
   }
 }
 
