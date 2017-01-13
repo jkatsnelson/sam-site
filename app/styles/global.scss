@@ -10,8 +10,80 @@ p {
   font-size: 16px;
   font-family: Futura PT;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .nav-bar-padding {
   margin-top: 55px;
+}
+
+header {
+  margin-top: 90px;
+  text-align: center;
+  $hr-space: 15px;
+  h2 {
+    font-family: Playfair Display;
+    font-size: 27px;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  hr {
+    border-color: #4f1429;
+    margin-top: 0;
+    margin-bottom: $hr-space;
+  }
+
+  h2 + hr {
+    margin-top: $hr-space;
+    margin-bottom: 0;
+  }
+}
+
+.introduction {
+  header + p {
+    margin-top: 40px;
+  }
+  p {
+    margin-top: 60px;
+  }
+  button {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #4f1429;
+    color: #fff;
+    font-weight: 600;
+    font-style: uppercase;
+  }
+  header + img, .comments {
+    margin-top: 60px;
+  }
+  .image-subtitle {
+    margin-top: 15px;
+    font-family:'Futura PT';
+    font-size: 12px;
+    color: #565656;
+    text-align: center;
+  }
+  .sub-header {
+    text-align: center;
+    margin-top: 60px;
+    h3 {
+      font-size: 22px;
+      font-family: Playfair Display;
+      margin: 0;
+    }
+    hr {
+      border-color: #4f1429;
+      width: 150px;
+      margin-bottom: 0;
+      margin-top: 7px;
+      opacity: .5;
+    }
+  }
 }
