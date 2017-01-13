@@ -2,41 +2,41 @@
   text-align: center;
   margin-top: 66px;
   .img-container {
-    height: 37px;
+    height: 47px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 12px;
   }
   .client {
     .img-container {
-      width: 41px;
+      width: 51px;
     }
   }
   .role {
     .img-container {
-      width: 50px;
+      width: 70px;
       position: relative;
       img {
         position: absolute;
-        top: -5px;
+        top: -13px;
       }
     }
   }
   .tools, .timeline {
     margin-top: 45px;
     .img-container {
-      height: 62px;
+      height: 72px;
     }
   }
   .tools {
     margin-top: 45px;
     .img-container {
-      width: 50px;
+      width: 60px;
     }
   }
   .timeline {
     .img-container {
-      width: 41px;
+      width: 51px;
       position: relative;
       img {
         position: absolute;
@@ -46,11 +46,11 @@
   }
   .title {
     font-family: PlayfairDisplay;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
   }
   .sub-title {
     margin-top: 5px;
-    font-size: 11px;
+    font-size: 14px;
   }
 }
