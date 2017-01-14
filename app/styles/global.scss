@@ -41,6 +41,7 @@ header {
 }
 
 .introduction {
+  margin-bottom: 60px;
   header + p {
     margin-top: 40px;
   }
@@ -90,5 +91,24 @@ header {
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
+  }
+  .portfolio-page-links {
+    text-align: center;
+    span {
+      margin-top: 30px;
+      font-family: Playfair Display;
+      font-size: 15px;
+      font-weight: bold;
+      display: inline-block;
+      position: relative;
+    }
+    hr {
+      margin-top: 5px;
+      margin-bottom: 0;
+      margin-right: auto;
+      margin-left: auto;
+      border-color:#0e4073;
+      opacity: .5;
+    }
   }
 }
