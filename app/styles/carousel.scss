@@ -78,3 +78,19 @@
 .sam-image-carousel + p {
   margin-top: 34px;
 }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .sam-image-carousel, .sam-text-carousel {
+    margin-top: 105px;
+    .carousel-inner .slide-title {
+      font-size: 24px;
+    }
+    .item img {
+      margin-top: 20px;
+    }
+    .slide-content {
+      margin-top: 30px;
+    }
+  }
+}
