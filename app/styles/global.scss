@@ -19,30 +19,30 @@ p {
   margin-top: 55px;
 }
 
-header {
-  margin-top: 90px;
-  text-align: center;
-  $hr-space: 15px;
-  h2 {
-    font-family: Playfair Display;
-    font-size: 27px;
-    line-height: 36px;
-    margin: 0;
-  }
 
-  hr {
-    border-color: $fabio-color;
-    margin-top: 0;
-    margin-bottom: $hr-space;
-  }
+.main-container {
+  header {
+    margin-top: 90px;
+    text-align: center;
+    $hr-space: 15px;
+    h2 {
+      font-family: Playfair Display;
+      font-size: 27px;
+      line-height: 36px;
+      margin: 0;
+    }
 
-  h2 + hr {
-    margin-top: $hr-space;
-    margin-bottom: 0;
-  }
-}
+    hr {
+      border-color: $fabio-color;
+      margin-top: 0;
+      margin-bottom: $hr-space;
+    }
 
-.introduction {
+    h2 + hr {
+      margin-top: $hr-space;
+      margin-bottom: 0;
+    }
+  }
   margin-bottom: 60px;
   header + p {
     margin-top: 40px;
