@@ -33,6 +33,7 @@ p {
     }
 
     hr {
+      width: 200px;
       border-color: $fabio-color;
       margin-top: 0;
       margin-bottom: $hr-space;
@@ -123,6 +124,39 @@ p {
       }
       &.fabio {
         border-color: $fabio-color;
+      }
+    }
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    header {
+      margin-top: 175px;
+      h2 {
+        font-size: 40px;
+        line-height: normal;
+      }
+    }
+    header + img {
+      margin-top: 105px;
+    }
+    .view-prototypes-desktop {
+      display: flex;
+      justify-content: center;
+      a:first-child {
+        margin-right: 90px;
+      }
+    }
+    button {
+      width: 210px;
+      height: 54px;
+      font-size: 15px;
+      line-height: 48px;
+      color: $fabio-color;
+      background-color: #FFF;
+      border: 2px solid $fabio-color;
+      &:hover {
+        color: #FFF;
+        background-color: $fabio-color;
       }
     }
   }
