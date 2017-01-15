@@ -5,7 +5,9 @@ $(document).ready(function() {
   navSlideout();
   fixAnimations();
   addSwipe();
-  fixCarouselArrows();
+  if (window.matchMedia("(min-width: 992px)").matches) {
+    fixCarouselArrows();
+  }
 });
 
 function fixCarouselArrows() {
@@ -16,7 +18,7 @@ function fixCarouselArrows() {
     var height = $(this).find('.item.active img').outerHeight();
     if (height) {
       var titleHeight = $(this).find('.item.active .slide-title').outerHeight();
-      $(this).find('.carousel-control img').css('top', height / 2 + titleHeight)
+      $(this).find('.carousel-control img').css('top', height / 2 + titleHeight);
     }
   }
 };
@@ -29,7 +31,8 @@ function navSlideout() {
 
   $('#menu a').click(function () {
     slideout.toggle();
-  })
+  });
+
   // when the page loads, disable touch because it conflicts with carousels
   // when the menu is open, enable touch so its easy to get out
   // when the menu closes again, re-disable touch

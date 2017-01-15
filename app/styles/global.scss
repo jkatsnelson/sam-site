@@ -15,6 +15,7 @@ p {
   margin-bottom: 0;
 }
 
+
 .nav-bar-padding {
   margin-top: 55px;
 }
@@ -47,6 +48,11 @@ p {
   margin-bottom: 60px;
   header + p {
     margin-top: 40px;
+  }
+  header + .p-row {
+    p {
+      margin-top: 40px;
+    }
   }
   p {
     margin-top: 60px;
@@ -129,6 +135,11 @@ p {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+    .item-title {
+      font-size: 24px;
+      font-family: Playfair Display;
+      font-weight: bold;
+    }
     header {
       margin-top: 175px;
       h2 {
