@@ -10,8 +10,53 @@
   left: 0;
 }
 
-nav#menu header {
-  border-bottom: solid 0.5px #ffc422;
+nav#menu {
+  header {
+    border-bottom: solid 0.5px #ffc422;
+  }
+  .title-link-container {
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .title {
+      display: inline;
+      font-size: 14px;
+      color: #151515;
+      font-family: Futura PT;
+      font-weight: 600;
+    }
+    img {
+      display: inline;
+      height: 10px;
+      margin-top: 5px;
+      margin-right: 25px;
+      float: right;
+      &.collapsed {
+        display: none;
+      }
+      &.expanded {
+        display: inline;
+      }
+    }
+    &.collapsed {
+      img.collapsed {
+        display: inline;
+      }
+      img.expanded {
+        display: none;
+      }
+    }
+  }
+  .sub-links {
+    margin-left: 50px;
+    a {
+      font-size: 12px;
+      display: block;
+      font-family: Futura PT;
+      color: #979797;
+      margin-bottom: 25px;
+    }
+  }
 }
 
 nav#menu header, .nav-bar {

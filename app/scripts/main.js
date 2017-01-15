@@ -12,6 +12,10 @@ function navSlideout() {
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu')
   });
+
+  $('#menu a').click(function () {
+    slideout.toggle();
+  })
   // when the page loads, disable touch because it conflicts with carousels
   // when the menu is open, enable touch so its easy to get out
   // when the menu closes again, re-disable touch
