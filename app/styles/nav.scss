@@ -102,12 +102,39 @@ nav#menu header, .nav-bar {
     height: 23px;
     width: 23px;
   }
+  .hidden-sm .container {
+    position: relative;
+    display: flex;
+  }
+  ul.list-unstyled.contact-links {
+    display: flex;
+    width: 30%;
+    flex-direction: row-reverse;
+    li {
+      line-height: 55px;
+    }
+  }
   ul.list-unstyled.links {
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
     li {
-      display: inline-block;
       line-height: 55px;
-      margin-right: 105px;
+      &.title {
+        position: relative;
+        img {
+          height: 30px;
+          top: 50%;
+          margin-top: -15px;
+          position: absolute;
+        }
+        span {
+          display: inline-block;
+          margin-left: 40px;
+          color: #ff9b31;
+        }
+      }
     }
   }
 }
