@@ -104,25 +104,83 @@ nav#menu header, .nav-bar {
   }
   .hidden-sm .container {
     position: relative;
-    display: flex;
   }
   ul.list-unstyled.contact-links {
+    position:absolute;
+    right: 15px;
+    top: 0;
     display: flex;
-    width: 30%;
-    flex-direction: row-reverse;
     li {
       line-height: 55px;
+      margin-left: 30px;
+    }
+    img {
+      height: 23px;
+      &:hover {
+        opacity: .7;
+      }
     }
   }
   ul.list-unstyled.links {
     text-align: left;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
     li {
-      line-height: 55px;
+      font-weight: 600;
+      line-height: 59px;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .caret-img {
+        height: 5px;
+        margin-bottom: 4px;
+        margin-left: 11px;
+      }
+      &.dropdown {
+        .expanded {
+          display: none;
+        }
+        &.open {
+          .expanded {
+            display: inline;
+          }
+          .collapsed {
+            display: none;
+          }
+        }
+        .dropdown-menu {
+          background-color: rgba(255, 255, 255, 0.9);
+          border-radius: 0;
+          top: 53px;
+          border: 0;
+          box-shadow: 1px 2px 2px 0 rgba(97, 97, 97, 0.5);
+          padding-left: 30px;
+          padding-right: 30px;
+          min-width: 250px;
+          a {
+            font-family: Futura PT;
+            font-weight: normal;
+            font-size: 14px;
+            display: block;
+            line-height: 3;
+          }
+        }
+      }
       &.title {
+        font-family: Playfair Display;
         position: relative;
+        line-height: 55px;
+        &:hover {
+          cursor: pointer;
+          img {
+            opacity: .9;
+          }
+          span {
+            text-decoration: underline;
+          }
+        }
         img {
           height: 30px;
           top: 50%;
