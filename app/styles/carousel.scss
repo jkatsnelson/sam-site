@@ -1,8 +1,27 @@
 .sam-image-carousel, .sam-text-carousel {
   margin-top: 60px;
   a.carousel-control {
-    opacity: 0;
+    // opacity: 0;
     width: 30%;
+    background: none;
+    opacity: 1;
+    img {
+      height: 12px;
+      position: absolute;
+      top: 50%;
+      margin-top: -6px;
+    }
+    &.left {
+      img {
+        left: 0;
+      }
+    }
+    &.right {
+      img {
+        margin-right: 2px;
+        right: 0;
+      }
+    }
   }
   .carousel-inner .slide-title {
     font-family: 'Playfair Display';
@@ -46,7 +65,7 @@
     text-align: center;
     font-size: 16px;
   }
-  img {
+  .item img {
     margin-top: 10px;
   }
   .slide-content {

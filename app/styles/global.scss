@@ -1,3 +1,5 @@
+$fabio-color: #4f1429;
+
 body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
@@ -29,7 +31,7 @@ header {
   }
 
   hr {
-    border-color: #4f1429;
+    border-color: $fabio-color;
     margin-top: 0;
     margin-bottom: $hr-space;
   }
@@ -48,6 +50,11 @@ header {
   p {
     margin-top: 60px;
   }
+  a, a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+  }
   button {
     display: block;
     margin-top: 60px;
@@ -56,10 +63,10 @@ header {
     width: 175px;
     height: 45px;
     border-radius: 100px;
-    background-color: #4f1429;
+    background-color: $fabio-color;
     color: #fff;
     font-weight: 600;
-    font-style: uppercase;
+    border: none;
   }
   header + img, .comments {
     margin-top: 60px;
@@ -80,7 +87,7 @@ header {
       margin: 0;
     }
     hr {
-      border-color: #4f1429;
+      border-color: $fabio-color;
       width: 150px;
       margin-bottom: 0;
       margin-top: 7px;
@@ -107,8 +114,16 @@ header {
       margin-bottom: 0;
       margin-right: auto;
       margin-left: auto;
-      border-color:#0e4073;
       opacity: .5;
+      &.spore {
+        border-color:#0e4073;
+      }
+      &.uber-go {
+        border-color: #36a7ff;
+      }
+      &.fabio {
+        border-color: $fabio-color;
+      }
     }
   }
 }
