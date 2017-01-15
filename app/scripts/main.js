@@ -5,7 +5,21 @@ $(document).ready(function() {
   navSlideout();
   fixAnimations();
   addSwipe();
+  fixCarouselArrows();
 });
+
+function fixCarouselArrows() {
+  $('.carousel').each(changeArrowPlacement);
+  $('.carousel').on('slid.bs.carousel', changeArrowPlacement)
+
+  function changeArrowPlacement(){
+    var height = $(this).find('.item.active img').outerHeight();
+    if (height) {
+      var titleHeight = $(this).find('.item.active .slide-title').outerHeight();
+      $(this).find('.carousel-control img').css('top', height / 2 + titleHeight)
+    }
+  }
+};
 
 function navSlideout() {
   var slideout = new Slideout({
