@@ -1,5 +1,5 @@
 $fabio-color: #4f1429;
-
+$medium-up-alt-subtitles: 22px;
 body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
@@ -28,7 +28,7 @@ p {
   header {
     margin-top: 90px;
     text-align: center;
-    $hr-space: 15px;
+    $hr-space: 12px;
     h2 {
       font-family: Playfair Display;
       font-size: 27px;
@@ -92,7 +92,7 @@ p {
     text-align: center;
     margin-top: 60px;
     h3 {
-      font-size: 22px;
+      font-size: $medium-up-alt-subtitles;
       font-family: Playfair Display;
       margin: 0;
     }
@@ -141,6 +141,9 @@ p {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+    .sub-header + .row p {
+      margin-top: 30px;
+    }
     .portfolio-page-links {
       position: relative;
       a:nth-child(2) .col-md-6 {
@@ -160,14 +163,14 @@ p {
         margin-top: 105px;
         margin-bottom: 20px;
       }
-      .col-xs-12 {
+      .col-xs-10 {
         display: flex;
       }
       .non-slide-container:nth-child(odd) {
-        padding-right: 50px;
+        padding-right: 25px;
       }
       .non-slide-container:nth-child(even) {
-        padding-left: 50px;
+        padding-left: 25px;
       }
     }
 
@@ -189,6 +192,10 @@ p {
     }
     .text-non-slides {
       margin-top: 105px;
+      .col-xs-4 {
+        padding-right: 25px;
+        padding-left: 25px;
+      }
       .slide-title {
         font-size: 22px;
         font-family: Playfair Display;
@@ -196,12 +203,13 @@ p {
       }
       .slide-content {
         margin-top: 30px;
+        font-size: 16px;
       }
     }
     header {
-      margin-top: 175px;
+      margin-top: 165px;
       h2 {
-        font-size: 40px;
+        font-size: 38px;
         line-height: normal;
       }
       hr {
@@ -236,6 +244,10 @@ p {
         color: #FFF;
         background-color: $fabio-color;
       }
+    }
+    p {
+      padding-right: 25px;
+      padding-left: 25px;
     }
   }
   /* Large devices (large desktops, 1200px and up) */

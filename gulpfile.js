@@ -10,9 +10,9 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 var dev = true;
-
+// I changed from *.scss to just main.scss
 gulp.task('styles', () => {
-  return gulp.src('app/styles/*.scss')
+  return gulp.src('app/styles/main.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass.sync({

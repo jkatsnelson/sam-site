@@ -81,11 +81,11 @@
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: $screen-md-min) {
   .sam-image-carousel, .sam-text-carousel {
     margin-top: 105px;
     .carousel-inner .slide-title {
-      font-size: 24px;
+      font-size: 16px;
     }
 
     .item img {

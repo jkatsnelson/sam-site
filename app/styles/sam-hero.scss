@@ -1,8 +1,32 @@
+.fabio {
+  .sam-hero .hero-bg {
+    background-image: radial-gradient(375px circle at 50% 31%, #f2b9cd, #4f1429);
+  }
+}
+.spore {
+  .sam-hero .hero-bg {
+    background-image: radial-gradient(325px circle at 62% 49%, #a7d2ff, #0e4073);
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .fabio .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(450px circle at 60% 41%, #f2b9cd, #4f1429);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .fabio .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(650px circle at 60% 41%, #f2b9cd, #4f1429);
+    }
+  }
+}
 .sam-hero {
   .hero-bg {
     padding-top: 130px;
     padding-bottom: 20px;
-    background-image: radial-gradient(325px circle at 50% 31%, #f2b9cd, #4f1429);
     .img-container {
       margin-right: 8px;
       margin-left: 8px;
@@ -41,25 +65,23 @@
 
   @media (min-width: 1200px) {
     .hero-bg {
-      padding-bottom: 200px;
-      background-image: radial-gradient(650px circle at 50% 31%, #f2b9cd, #4f1429);
+      padding-top: 155px;
+      padding-bottom: 195px;
     }
     // TODO refactor away the name mobile title, its not just for mobile
     .mobile-title, .sub-title {
       margin-left: 20%;
     }
-    .title-block {
-      margin-top: 20px;
-    }
     .mobile-title {
+      margin-top: 0;
       div {
-        font-size: 70px;
+        font-size: 60px;
         line-height: 90px;
         text-align: left;
       }
     }
     .sub-title {
-      font-size: 40px;
+      font-size: 30px;
       text-align: left;
     }
   }
