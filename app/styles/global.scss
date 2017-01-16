@@ -20,6 +20,9 @@ p {
   margin-top: 55px;
 }
 
+.big-m {
+  margin-top: 105px;
+}
 
 .main-container {
   header {
@@ -108,6 +111,9 @@ p {
   }
   .portfolio-page-links {
     text-align: center;
+    a {
+      color: #191919;
+    }
     span {
       margin-top: 30px;
       font-family: Playfair Display;
@@ -123,7 +129,7 @@ p {
       margin-left: auto;
       opacity: .5;
       &.spore {
-        border-color:#0e4073;
+        border-color: #0e4073;
       }
       &.uber-go {
         border-color: #36a7ff;
@@ -135,6 +141,14 @@ p {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+    .portfolio-page-links {
+      position: relative;
+      a:nth-child(2) .col-md-6 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
     .desktop-and-mobile-comps {
       margin-top: 150px;
     }
