@@ -6,6 +6,16 @@
 .spore {
   .sam-hero .hero-bg {
     background-image: radial-gradient(325px circle at 62% 49%, #a7d2ff, #0e4073);
+    .title-container {
+      height: 400px;
+      position: relative;
+      .title-block {
+        position: absolute;
+        top: 50%;
+        height: 152px;
+        margin-top: -76px;
+      }
+    }
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -15,11 +25,21 @@
       background-image: radial-gradient(450px circle at 60% 41%, #f2b9cd, #4f1429);
     }
   }
+  .spore .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(450px circle at 60% 41%, #a7d2ff, #0e4073);
+    }
+  }
 }
 @media (min-width: 1200px) {
   .fabio .sam-hero {
     .hero-bg {
       background-image: radial-gradient(650px circle at 60% 41%, #f2b9cd, #4f1429);
+    }
+  }
+  .spore .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(650px circle at 60% 41%, #a7d2ff, #0e4073);
     }
   }
 }
