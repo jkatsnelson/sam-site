@@ -1,5 +1,7 @@
 DESKTOP
 
+* Nav menu links should go to the main page -- also popovers should come on hover not click
+
 * add desktop link for 'view desktop prototype' button
 
 * add info dots

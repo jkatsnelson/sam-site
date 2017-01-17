@@ -6,16 +6,12 @@
 .spore {
   .sam-hero .hero-bg {
     background-image: radial-gradient(325px circle at 62% 49%, #a7d2ff, #0e4073);
-    .title-container {
-      height: 400px;
-      position: relative;
-      .title-block {
-        position: absolute;
-        top: 50%;
-        height: 152px;
-        margin-top: -76px;
-      }
-    }
+  }
+}
+
+.ubergo {
+  .sam-hero .hero-bg {
+    background-image: radial-gradient(325px circle at 62% 49%, #ffffff, #36a7ff);
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -28,6 +24,34 @@
   .spore .sam-hero {
     .hero-bg {
       background-image: radial-gradient(450px circle at 60% 41%, #a7d2ff, #0e4073);
+    }
+    .title-container {
+      height: 400px;
+      position: relative;
+      .title-block {
+        position: absolute;
+        top: 50%;
+        height: 152px;
+        margin-top: -76px;
+      }
+    }
+  }
+  .ubergo {
+    .sam-hero .hero-bg {
+      background-image: radial-gradient(325px circle at 62% 49%, #ffffff, #36a7ff);    
+    }
+    .title-container {
+      height: 400px;
+      position: relative;
+      .title-block {
+        .mobile-title div, .sub-title {
+          color: #191919;
+        }
+        position: absolute;
+        top: 50%;
+        height: 152px;
+        margin-top: -76px;
+      }
     }
   }
 }

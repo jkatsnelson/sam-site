@@ -30,6 +30,10 @@ p {
   border-color: $fabio-color;
 }
 
+.ubergo hr {
+  border-color: $ubergo-color;
+}
+
 .spore {
   .main-container {
     button {
@@ -71,14 +75,8 @@ p {
       margin-top: $margin-between-rows;
     }
     .col-xs-4 {
-      padding-right: 30px;
-      padding-left: 30px;
-    }
-    .col-xs-4:first-child {
-      padding-left: 15px;
-    }
-    .col-xs-4:nth-child(3) {
-      padding-right: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
   hr {
@@ -189,7 +187,7 @@ p {
       opacity: .5;
     }
   }
-  .sub-header + .img-row {
+  .m30 {
     margin-top: 30px;
   }
   .desktop-and-mobile-comps {
