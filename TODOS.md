@@ -2,6 +2,8 @@ DESKTOP
 
 * Nav menu links should go to the main page -- also popovers should come on hover not click
 
+* make carousels stop auto-riding after next/previous
+
 * add desktop link for 'view desktop prototype' button
 
 * add info dots

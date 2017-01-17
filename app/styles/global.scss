@@ -51,6 +51,12 @@ p {
   }
 }
 .ubergo {
+  .sub-header + .row p {
+    margin-top: 30px;
+  }
+  header + .row p {
+    margin-top: 30px;
+  }
   hr {
     border-color: $ubergo-color;
   }
@@ -91,6 +97,9 @@ p {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+    header + .row p {
+      margin-top: 40px;
+    }
     .main-container {
       button {
         color: $ubergo-color;
@@ -120,6 +129,17 @@ p {
       }
     }
   }
+  .final-designs {
+    $margin-between-rows: 75px;
+    margin-top: 105px - $margin-between-rows;
+    .row {
+      margin-top: $margin-between-rows;
+    }
+    .col-xs-4 {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
 }
 
 .spore {
@@ -145,17 +165,6 @@ p {
     }
     .col-xs-4:nth-child(3) {
       padding-right: 15px;
-    }
-  }
-  .final-designs {
-    $margin-between-rows: 75px;
-    margin-top: 105px - $margin-between-rows;
-    .row {
-      margin-top: $margin-between-rows;
-    }
-    .col-xs-4 {
-      padding-right: 20px;
-      padding-left: 20px;
     }
   }
   hr {
@@ -371,7 +380,7 @@ p {
       }
     }
     .desktop-and-mobile-comps {
-      margin-top: 150px;
+      margin-top: 105px;
     }
     .non-carousel-row {
       .desktop-non-slide-title {

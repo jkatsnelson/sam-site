@@ -1,4 +1,4 @@
-.spore {
+.spore, .ubergo {
   .iterations {
     .item {
       height: 420px;
@@ -18,6 +18,43 @@
         max-height: 500px;
         margin-right: auto;
         margin-left: auto;
+      }
+    }
+  }
+  .logos {
+    .item {
+      height: 220px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-height: 200px;
+      }
+    }
+  }
+  #ubergo-style-tiles {
+    .item {
+      height: 550px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-height: 510px;
+      }
+    }
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .logos {
+      margin-top: 60px;
+      .item {
+        height: 250px;
       }
     }
   }
