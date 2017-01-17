@@ -127,6 +127,9 @@ p {
       a:first-child {
         margin-right: 0;
       }
+      a:first-child + a {
+        margin-left: 90px;
+      }
     }
   }
   .final-designs {
