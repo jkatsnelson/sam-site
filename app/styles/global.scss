@@ -60,6 +60,35 @@ p {
       background-color: $ubergo-color;
     }
   }
+  .similar-products {
+    .image-subtitle {
+      margin-top: 30px;
+    }
+    .col-md-6:nth-child(2) {
+      margin-top: 75px;
+    }
+  }
+  .ux-images {
+    margin-top: 75px;
+    .col-xs-4 {
+      padding-right: 40px;
+      padding-left: 40px;
+      position: relative;
+      div {
+        position: absolute;
+        font-size: 44px;
+        top: 50%;
+        margin-top: -22px;
+        right: -10px;
+      }
+    }
+    // .col-xs-4:first-child {
+    //   padding-left: 15px;
+    // }
+    // .col-xs-4:nth-child(3) {
+    //   padding-right: 15px;
+    // }
+  }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
     .main-container {
@@ -71,6 +100,11 @@ p {
           background-color: $ubergo-color;
           color: #FFF;
         }
+      }
+    }
+    .similar-products {
+      .col-md-6:nth-child(2) {
+        margin-top: 15px;
       }
     }
   }
@@ -239,6 +273,11 @@ p {
   .m30 {
     margin-top: 30px;
   }
+
+  .m50 {
+    margin-top: 50px;
+  }
+
   .desktop-and-mobile-comps {
     margin-top: 60px;
     display: flex;
