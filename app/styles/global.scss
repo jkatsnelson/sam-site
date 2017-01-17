@@ -29,9 +29,63 @@ p {
 .fabio hr {
   border-color: $fabio-color;
 }
+.persona-container {
+  margin-top: 30px;
+  img {
+    height: 150px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .persona-caption {
+    font-family: Playfair Display;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  ul {
+    margin-top: 4px;
+    li {
+      margin-top: 16px;
+    }
+  }
+}
+.ubergo {
+  hr {
+    border-color: $ubergo-color;
+  }
+  .main-container {
+    button {
+      color: #FFF;
+      background-color: $ubergo-color;
+    }
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .main-container {
+      button {
+        color: $ubergo-color;
+        border-color: $ubergo-color;
+        background-color: #FFF;
+        &:hover {
+          background-color: $ubergo-color;
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
 
-.ubergo hr {
-  border-color: $ubergo-color;
+.spore, .ubergo {
+  .main-container {
+    .view-prototypes-desktop {
+      display: flex;
+      justify-content: center;
+      a:first-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 .spore {
@@ -41,18 +95,9 @@ p {
       background-color: $spore-color;
     }
     .view-prototypes-desktop {
-      display: flex;
-      justify-content: center;
-      a:first-child {
-        margin-right: 0;
-      }
       button {
         color: $spore-color;
         border-color: $spore-color;
-        &:hover {
-          background-color: $spore-color;
-          color: #FFF;
-        }
       }
     }
   }
@@ -89,6 +134,10 @@ p {
         color: $spore-color;
         border-color: $spore-color;
         background-color: #FFF;
+        &:hover {
+          background-color: $spore-color;
+          color: #FFF;
+        }
       }
     }
   }
@@ -228,6 +277,28 @@ p {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+    .persona-container {
+      display: flex;
+      img {
+        height: 200px;
+      }
+      .text-container {
+        height: 200px;
+        margin-left: 50px;
+        .persona-caption {
+          margin-top: 16px;
+          text-align: left;
+          margin-left: 23px;
+        }
+        ul {
+          margin-bottom: 0;
+          padding-top: 10px;
+        }
+        li {
+          margin-top: 7px;
+        }
+      }
+    }
     .similar-products {
       margin-top: 105px;
       .col-md-6:first-child {
