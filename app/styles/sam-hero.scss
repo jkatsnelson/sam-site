@@ -1,3 +1,74 @@
+.home {
+  .homepage-hero {
+    .hero-bg-img {
+      background: url(/images/home/homepage-background.png) no-repeat center center; 
+      background-size: cover;
+      height: 1024px;
+      padding-top: 80px;
+      img.logo {
+        height: 115px;
+        width: 115px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
+      h1 {
+        margin-top: 50px;
+        margin-bottom: 0;
+        font-size: 70px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        font-family: Playfair Display;
+      }
+      h2 {
+        font-family: Futura PT;
+        font-size: 45px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0;
+      }
+      h3 {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-family: Futura PT;
+        font-size: 30px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        a {
+          position: relative;
+          color: #191919;
+          &:after {
+            content:'';
+            position:absolute;
+            left:0;
+            right:0;
+            bottom: 3px;
+            border-bottom: 2px solid #191919;
+          }
+        }
+      }
+      .caret-container {
+        margin-right: auto;
+        margin-left: auto;
+        width: 56px;
+        margin-top: 325px;
+      }
+    }
+  }
+}
 .fabio {
   .sam-hero .hero-bg {
     background-image: radial-gradient(375px circle at 50% 31%, #f2b9cd, #4f1429);
@@ -64,6 +135,7 @@
     }
   }
 }
+
 .sam-hero {
   .hero-bg {
     padding-top: 130px;
