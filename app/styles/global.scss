@@ -1,6 +1,7 @@
 $fabio-color: #4f1429;
 $spore-color: #0e4073;
 $ubergo-color: #36a7ff;
+$home-color: #ff9b31;
 $medium-up-alt-subtitles: 22px;
 body {
   -webkit-font-smoothing: antialiased;
@@ -17,6 +18,15 @@ p {
   margin-bottom: 0;
 }
 
+footer {
+  font-size: 12px;
+  a {
+    color: #191919;
+    text-decoration: underline;
+  }
+  margin-bottom: 20px;
+  margin-top: 105px;
+}
 
 .nav-bar-padding {
   margin-top: 55px;
@@ -29,6 +39,66 @@ p {
 .fabio hr {
   border-color: $fabio-color;
 }
+
+.home {
+  #about-me {
+    margin-top: 50px;
+  }
+  .persona-container {
+    margin-top: 60px;
+    img {
+      height: 210px;
+    }
+  }
+  h2.bio {
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #191919;
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+  .main-container .row p {
+    margin-top: 45px;
+  }
+  p, h2.bio {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  hr {
+    border-color: $home-color;
+  }
+  .sub-header + .portfolio-page-links {
+    margin-top: 50px;
+  }
+  .portfolio-page-links + .sub-header {
+    margin-top: 90px;
+  }
+  .portfolio-page-links {
+    #spore {
+      margin-top: 70px;
+    }
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    h2.bio {
+      font-size: 40px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-top: 135px;
+    }
+    .persona-container {
+      margin-top: 30px;
+      img {
+        height: 350px;
+      }
+    }
+  }
+} 
 .persona-container {
   margin-top: 30px;
   img {
@@ -310,7 +380,7 @@ p {
       color: #191919;
     }
     span {
-      margin-top: 30px;
+      margin-top: 20px;
       font-family: Playfair Display;
       font-size: 15px;
       font-weight: bold;
@@ -337,7 +407,7 @@ p {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-    .persona-container {
+    .ubergo .persona-container {
       display: flex;
       img {
         height: 200px;

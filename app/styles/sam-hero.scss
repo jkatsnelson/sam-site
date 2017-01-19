@@ -1,10 +1,11 @@
+
 .home {
   .homepage-hero {
     .hero-bg-img {
-      background: url(/images/home/homepage-background.png) no-repeat center center; 
+      background: url(/images/home/homepage-background.png) no-repeat center 97%; 
       background-size: cover;
-      height: 1024px;
-      padding-top: 80px;
+      height: 615px;
+      padding-top: 30px;
       img.logo {
         height: 115px;
         width: 115px;
@@ -13,9 +14,9 @@
         display: block;
       }
       h1 {
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 0;
-        font-size: 70px;
+        font-size: 40px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -26,21 +27,21 @@
       }
       h2 {
         font-family: Futura PT;
-        font-size: 45px;
+        font-size: 25px;
         font-weight: 600;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 0;
       }
       h3 {
         margin-top: 40px;
         margin-bottom: 0;
         font-family: Futura PT;
-        font-size: 30px;
+        font-size: 15px;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -59,16 +60,43 @@
             border-bottom: 2px solid #191919;
           }
         }
+        &#contact {
+          margin-top: 25px;
+        }
       }
       .caret-container {
         margin-right: auto;
         margin-left: auto;
-        width: 56px;
-        margin-top: 325px;
+        width: 24px;
+        margin-top: 165px;
       }
     }
   }
 }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home {
+    .homepage-hero .hero-bg-img {
+      height: 648px;
+    }
+    .portfolio-page-links {
+      #wines {
+        .caption {
+          margin-top: 25px;
+        }
+      }
+      #spore {
+        margin-top: 0;
+        position: static;
+      }
+    }
+    .main-container header {
+      margin-top: 150px;
+    }
+  }
+}
+
 .fabio {
   .sam-hero .hero-bg {
     background-image: radial-gradient(375px circle at 50% 31%, #f2b9cd, #4f1429);
