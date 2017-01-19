@@ -69,6 +69,14 @@ footer {
     padding-left: 25px;
     padding-right: 25px;
   }
+  p a {
+    color: #191919;
+    text-decoration: underline;
+    &:hover, &:visited, &:focus {
+      color: #191919;
+      text-decoration: underline;
+    }
+  }
   hr {
     border-color: $home-color;
   }
@@ -85,16 +93,19 @@ footer {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+    .about-me-content {
+      margin-top: 105px;
+    }
     h2.bio {
-      font-size: 40px;
+      font-size: 30px;
       padding-left: 25px;
       padding-right: 25px;
-      margin-top: 135px;
+      margin-top: 0;
     }
     .persona-container {
-      margin-top: 30px;
+      margin-top: 0;
       img {
-        height: 350px;
+        height: 300px;
       }
     }
   }
