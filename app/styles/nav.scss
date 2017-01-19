@@ -63,7 +63,7 @@ nav#menu {
 }
 
 nav#menu header, .nav-bar {
-  height: 55px;
+  height: $nav-bar-height;
   text-align: center;
   a {
     font-family: Playfair Display;

@@ -2,7 +2,11 @@ $fabio-color: #4f1429;
 $spore-color: #0e4073;
 $ubergo-color: #36a7ff;
 $home-color: #ff9b31;
-$medium-up-alt-subtitles: 22px;
+$medium-up-alt-subtitles: 20px;
+$nav-bar-height: 55px;
+$p-size: 15px;
+// the second largest margin between sections is 'big m'
+$big-m: 90px;
 body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
@@ -12,7 +16,7 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: $p-size;
   font-family: Futura PT;
   font-weight: 400;
   margin-bottom: 0;
@@ -30,11 +34,11 @@ footer {
 }
 
 .nav-bar-padding {
-  margin-top: 55px;
+  margin-top: $nav-bar-height;
 }
 
 .big-m {
-  margin-top: 105px;
+  margin-top: $big-m;
 }
 
 .fabio hr {
@@ -179,12 +183,6 @@ footer {
         right: -10px;
       }
     }
-    // .col-xs-4:first-child {
-    //   padding-left: 15px;
-    // }
-    // .col-xs-4:nth-child(3) {
-    //   padding-right: 15px;
-    // }
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
@@ -225,7 +223,7 @@ footer {
   }
   .final-designs {
     $margin-between-rows: 75px;
-    margin-top: 105px - $margin-between-rows;
+    margin-top: $big-m - $margin-between-rows;
     .row {
       margin-top: $margin-between-rows;
     }
@@ -516,19 +514,20 @@ footer {
         padding-left: 25px;
       }
       .slide-title {
-        font-size: 22px;
+        font-size: $medium-up-alt-subtitles;
         font-family: Playfair Display;
         font-weight: bold;
       }
       .slide-content {
-        margin-top: 30px;
-        font-size: 16px;
+        margin-top: 20px;
+        font-size: $p-size;
       }
     }
     header {
-      margin-top: 165px;
+      padding-top: 100px;
+      margin-top: 165px - 100px;
       h2 {
-        font-size: 38px;
+        font-size: 33px;
         line-height: normal;
       }
       hr {
@@ -565,8 +564,8 @@ footer {
       }
     }
     p {
-      padding-right: 25px;
-      padding-left: 25px;
+      padding-right: 40px;
+      padding-left: 40px;
     }
   }
   /* Large devices (large desktops, 1200px and up) */

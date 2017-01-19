@@ -1,7 +1,7 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .sam-icons-with-info + .main-container header:first-child {
-    margin-top: 105px;
+    margin-top: $big-m;
   }
 }
 .sam-icons-with-info {

@@ -83,7 +83,7 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
   .sam-image-carousel, .sam-text-carousel {
-    margin-top: 105px;
+    margin-top: $big-m;
     .carousel-inner .slide-title {
       font-size: 16px;
     }
