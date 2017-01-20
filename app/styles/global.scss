@@ -250,6 +250,9 @@ footer {
   .portfolio-page-links {
     text-align: center;
     a {
+      &:hover {
+        opacity: .5;
+      }
       color: #191919;
     }
     span {
