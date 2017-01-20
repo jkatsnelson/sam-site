@@ -6,7 +6,9 @@ $medium-up-alt-subtitles: 20px;
 $nav-bar-height: 55px;
 $p-size: 15px;
 // the second largest margin between sections is 'big m'
-$big-m: 90px;
+$big-m: 80px;
+$text-padding: 23px;
+$text-padding-large: 40px;
 body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
@@ -20,6 +22,8 @@ p {
   font-family: Futura PT;
   font-weight: 400;
   margin-bottom: 0;
+  padding-left: $text-padding;
+  padding-right: $text-padding;
 }
 
 footer {
@@ -29,7 +33,7 @@ footer {
     text-decoration: underline;
   }
   margin-bottom: 20px;
-  margin-top: 105px;
+  margin-top: $big-m;
   text-align: center;
 }
 
@@ -45,76 +49,6 @@ footer {
   border-color: $fabio-color;
 }
 
-.home {
-  #about-me {
-    margin-top: 50px;
-  }
-  .persona-container {
-    margin-top: 60px;
-    img {
-      height: 210px;
-    }
-  }
-  h2.bio {
-    font-family: Playfair Display;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #191919;
-    margin-bottom: 0;
-    margin-top: 60px;
-  }
-  .main-container .row p {
-    margin-top: 45px;
-  }
-  p, h2.bio {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  p a {
-    color: #191919;
-    text-decoration: underline;
-    &:hover, &:visited, &:focus {
-      color: #191919;
-      text-decoration: underline;
-    }
-  }
-  hr {
-    border-color: $home-color;
-  }
-  .sub-header + .portfolio-page-links {
-    margin-top: 50px;
-  }
-  .portfolio-page-links + .sub-header {
-    margin-top: 90px;
-  }
-  .portfolio-page-links {
-    #spore {
-      margin-top: 70px;
-    }
-  }
-  /* Medium devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .about-me-content {
-      margin-top: 105px;
-    }
-    h2.bio {
-      font-size: 30px;
-      padding-left: 25px;
-      padding-right: 25px;
-      margin-top: 0;
-    }
-    .persona-container {
-      margin-top: 0;
-      img {
-        height: 300px;
-      }
-    }
-  }
-} 
 .persona-container {
   margin-top: 30px;
   img {
@@ -133,77 +67,6 @@ footer {
     margin-top: 4px;
     li {
       margin-top: 16px;
-    }
-  }
-}
-.ubergo {
-  .sub-header + .row p {
-    margin-top: 30px;
-  }
-  header + .row p {
-    margin-top: 30px;
-  }
-  hr {
-    border-color: $ubergo-color;
-  }
-  .main-container {
-    button {
-      color: #FFF;
-      background-color: $ubergo-color;
-    }
-  }
-  .similar-products {
-    .image-subtitle {
-      margin-top: 30px;
-    }
-    .col-md-6:nth-child(2) {
-      margin-top: 75px;
-    }
-  }
-  .future-considerations {
-    .col-xs-4 {
-      img {
-        max-height: 400px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-    }
-  }
-  .ux-images {
-    margin-top: 75px;
-    .col-xs-4 {
-      padding-right: 40px;
-      padding-left: 40px;
-      position: relative;
-      div {
-        position: absolute;
-        font-size: 44px;
-        top: 50%;
-        margin-top: -22px;
-        right: -10px;
-      }
-    }
-  }
-  /* Medium devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    header + .row p {
-      margin-top: 40px;
-    }
-    .main-container {
-      button {
-        color: $ubergo-color;
-        border-color: $ubergo-color;
-        background-color: #FFF;
-        &:hover {
-          background-color: $ubergo-color;
-          color: #FFF;
-        }
-      }
-    }
-    .similar-products {
-      .col-md-6:nth-child(2) {
-        margin-top: 15px;
-      }
     }
   }
 }
@@ -249,8 +112,8 @@ footer {
   }
   .ux-images {
     .col-xs-4 {
-      padding-right: 7px;
-      padding-left: 7px;
+      padding-right: 25px;
+      padding-left: 25px;
     }
     .col-xs-4:first-child {
       padding-left: 15px;
@@ -323,7 +186,7 @@ footer {
     }
   }
   p {
-    margin-top: 60px;
+    margin-top: 40px;
     &.m40 {
       margin-top: 40px;
     }
@@ -335,7 +198,7 @@ footer {
   }
   button {
     display: block;
-    margin-top: 60px;
+    margin-top: $big-m;
     margin-left: auto;
     margin-right: auto;
     width: 175px;
@@ -417,30 +280,8 @@ footer {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-    .ubergo .persona-container {
-      display: flex;
-      img {
-        height: 200px;
-      }
-      .text-container {
-        height: 200px;
-        margin-left: 50px;
-        .persona-caption {
-          margin-top: 16px;
-          text-align: left;
-          margin-left: 23px;
-        }
-        ul {
-          margin-bottom: 0;
-          padding-top: 10px;
-        }
-        li {
-          margin-top: 7px;
-        }
-      }
-    }
     .similar-products {
-      margin-top: 105px;
+      margin-top: $big-m;
       .col-md-6:first-child {
         padding-right: 45px;
 
@@ -458,7 +299,7 @@ footer {
       }
     }
     .sub-header + .img-row {
-      margin-top: 105px;
+      margin-top: $big-m;
     }
     .sub-header + .row p {
       margin-top: 30px;
@@ -472,14 +313,14 @@ footer {
       }
     }
     .desktop-and-mobile-comps {
-      margin-top: 105px;
+      margin-top: $big-m;
     }
     .non-carousel-row {
       .desktop-non-slide-title {
         font-size: 16px;
         font-family: Playfair Display;
         font-weight: bold;
-        margin-top: 105px;
+        margin-top: $big-m;
         margin-bottom: 20px;
       }
       .col-xs-10 {
@@ -494,8 +335,14 @@ footer {
     }
 
     .initial-designs {
-      margin-top: 105px;
+      margin-top: $big-m;
       display: flex;
+      justify-content: space-around;
+      padding-right: 80px;
+      padding-left: 80px;
+      img {
+        box-shadow: 2px 4px 4px 0 rgba(97, 97, 97, 0.5);
+      }
       .non-slide-container {
         padding-right: 15px;
         padding-left: 15px;
@@ -508,7 +355,7 @@ footer {
       }
     }
     .text-non-slides {
-      margin-top: 105px;
+      margin-top: $big-m;
       .col-xs-4 {
         padding-right: 25px;
         padding-left: 25px;
@@ -525,7 +372,7 @@ footer {
     }
     header {
       padding-top: 100px;
-      margin-top: 165px - 100px;
+      margin-top: 130px - 100px;
       h2 {
         font-size: 33px;
         line-height: normal;
@@ -535,13 +382,13 @@ footer {
       }
     }
     .sub-header {
-      margin-top: 105px;
+      margin-top: $big-m;
       hr {
         margin-top: 10px;
       }
     }
     header + img, header + .img-container {
-      margin-top: 105px;
+      margin-top: 60px;
     }
     .view-prototypes-desktop {
       display: flex;
@@ -564,8 +411,8 @@ footer {
       }
     }
     p {
-      padding-right: 40px;
-      padding-left: 40px;
+      padding-right: $text-padding-large;
+      padding-left: $text-padding-large;
     }
   }
   /* Large devices (large desktops, 1200px and up) */

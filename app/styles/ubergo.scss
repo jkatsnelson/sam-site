@@ -1,0 +1,96 @@
+.ubergo {
+  .sub-header + .row p {
+    margin-top: 30px;
+  }
+  header + .row p {
+    margin-top: 30px;
+  }
+  hr {
+    border-color: $ubergo-color;
+  }
+  .main-container {
+    button {
+      color: #FFF;
+      background-color: $ubergo-color;
+    }
+  }
+  .similar-products {
+    .image-subtitle {
+      margin-top: 30px;
+    }
+    .col-md-6:nth-child(2) {
+      margin-top: 75px;
+    }
+  }
+  .future-considerations {
+    .col-xs-4 {
+      img {
+        max-height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+  .ux-images {
+    margin-top: 75px;
+    .col-xs-4 {
+      padding-right: 40px;
+      padding-left: 40px;
+      position: relative;
+      div {
+        position: absolute;
+        font-size: 44px;
+        top: 50%;
+        margin-top: -22px;
+        right: -10px;
+        color: $ubergo-color;
+        font-family: Playfair Display;
+      }
+    }
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-md-min) {
+    .persona-container {
+      display: flex;
+      $persona-container-height: 200px;
+      img {
+        height: $persona-container-height;
+      }
+      .text-container {
+        height: $persona-container-height;
+        margin-left: 50px;
+        .persona-caption {
+          margin-top: 16px;
+          text-align: left;
+          margin-left: 23px;
+        }
+        ul {
+          margin-bottom: 0;
+          padding-top: 10px;
+        }
+        li {
+          margin-top: 7px;
+        }
+      }
+    }
+    header + .row p {
+      margin-top: 40px;
+    }
+    .main-container {
+      button {
+        color: $ubergo-color;
+        border-color: $ubergo-color;
+        background-color: #FFF;
+        &:hover {
+          background-color: $ubergo-color;
+          color: #FFF;
+        }
+      }
+    }
+    .similar-products {
+      .col-md-6:nth-child(2) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.home {
+  .persona-container {
+    margin-top: 60px;
+    img {
+      height: 210px;
+      margin-right: 40px;
+    }
+  }
+  h2.bio {
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #191919;
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+  .main-container .row p {
+    margin-top: 45px;
+  }
+  h2.bio {
+    padding-left: $text-padding;
+    padding-right: $text-padding;
+  }
+  p a {
+    color: #191919;
+    text-decoration: underline;
+    &:hover, &:visited, &:focus {
+      color: #191919;
+      text-decoration: underline;
+    }
+  }
+  hr {
+    border-color: $home-color;
+  }
+  header {
+    margin-bottom: $big-m;
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .about-me-content {
+      margin-top: $big-m;
+    }
+    h2.bio {
+      font-size: 30px;
+      padding-left: $text-padding-large;
+      padding-right: $text-padding-large;
+      margin-top: 0;
+    }
+    .persona-container {
+      margin-top: 0;
+      img {
+        height: 300px;
+      }
+    }
+  }
+} 
