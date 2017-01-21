@@ -1,4 +1,33 @@
 .ubergo {
+  #ubergo-style-tiles {
+    .item {
+      height: 550px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-height: 510px;
+      }
+    }
+  }
+  .logos {
+    .item {
+      height: 220px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-height: 200px;
+        margin: 0;
+      }
+    }
+  }
   .sub-header + .row p {
     margin-top: 30px;
   }
@@ -50,6 +79,19 @@
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
+    .logos {
+      margin-top: 60px;
+    }
+    .similar-products {
+      margin-top: $big-m;
+      .col-md-6:first-child {
+        padding-right: 45px;
+
+      }
+      .col-md-6:nth-child(2) {
+        padding-left: 45px;
+      }
+    }
     .persona-container {
       display: flex;
       $persona-container-height: 200px;

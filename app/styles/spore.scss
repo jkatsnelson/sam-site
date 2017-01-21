@@ -1,4 +1,4 @@
-.spore, .ubergo {
+.spore {
   .iterations {
     .item {
       height: 420px;
@@ -10,51 +10,44 @@
       }
     }
   }
-  .final-designs {
-    .item {
-      height: 500px;
-      img {
-        width: auto;
-        max-height: 500px;
-        margin-right: auto;
-        margin-left: auto;
+  .main-container {
+    button {
+      color: #FFF;
+      background-color: $spore-color;
+    }
+    .view-prototypes-desktop {
+      button {
+        color: $spore-color;
+        border-color: $spore-color;
       }
     }
   }
-  .logos {
-    .item {
-      height: 220px;
-      position: relative;
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: auto;
-        max-height: 200px;
-      }
+  .ux-images {
+    .col-xs-4 {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+    .col-xs-4:first-child {
+      padding-left: 15px;
+    }
+    .col-xs-4:nth-child(3) {
+      padding-right: 15px;
     }
   }
-  #ubergo-style-tiles {
-    .item {
-      height: 550px;
-      position: relative;
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: auto;
-        max-height: 510px;
-      }
-    }
+  hr {
+    border-color: $spore-color;
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-    .logos {
-      margin-top: 60px;
-      .item {
-        height: 250px;
+    .main-container {
+      button {
+        color: $spore-color;
+        border-color: $spore-color;
+        background-color: #FFF;
+        &:hover {
+          background-color: $spore-color;
+          color: #FFF;
+        }
       }
     }
   }

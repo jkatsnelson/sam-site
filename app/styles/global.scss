@@ -9,6 +9,10 @@ $p-size: 15px;
 $big-m: 80px;
 $text-padding: 23px;
 $text-padding-large: 40px;
+// this class will be removed from any element it is on, on document load
+.hide-until-load {
+  display: none;
+}
 body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
@@ -45,9 +49,6 @@ footer {
   margin-top: $big-m;
 }
 
-.fabio hr {
-  border-color: $fabio-color;
-}
 
 .persona-container {
   margin-top: 30px;
@@ -85,6 +86,15 @@ footer {
     }
   }
   .final-designs {
+    .item {
+      height: 500px;
+      img {
+        width: auto;
+        max-height: 500px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
     $margin-between-rows: 75px;
     margin-top: $big-m - $margin-between-rows;
     .row {
@@ -93,50 +103,6 @@ footer {
     .col-xs-4 {
       padding-right: 20px;
       padding-left: 20px;
-    }
-  }
-}
-
-.spore {
-  .main-container {
-    button {
-      color: #FFF;
-      background-color: $spore-color;
-    }
-    .view-prototypes-desktop {
-      button {
-        color: $spore-color;
-        border-color: $spore-color;
-      }
-    }
-  }
-  .ux-images {
-    .col-xs-4 {
-      padding-right: 25px;
-      padding-left: 25px;
-    }
-    .col-xs-4:first-child {
-      padding-left: 15px;
-    }
-    .col-xs-4:nth-child(3) {
-      padding-right: 15px;
-    }
-  }
-  hr {
-    border-color: $spore-color;
-  }
-  /* Medium devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .main-container {
-      button {
-        color: $spore-color;
-        border-color: $spore-color;
-        background-color: #FFF;
-        &:hover {
-          background-color: $spore-color;
-          color: #FFF;
-        }
-      }
     }
   }
 }
@@ -283,24 +249,6 @@ footer {
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-    .similar-products {
-      margin-top: $big-m;
-      .col-md-6:first-child {
-        padding-right: 45px;
-
-      }
-      .col-md-6:nth-child(2) {
-        padding-left: 45px;
-      }
-    }
-    .design-principles {
-      .text-non-slides .col-md-6:first-child {
-        padding-right: 45px;
-      }
-      .text-non-slides .col-md-6:nth-child(2) {
-        padding-left: 45px;
-      }
-    }
     .sub-header + .img-row {
       margin-top: $big-m;
     }
@@ -318,24 +266,6 @@ footer {
     .desktop-and-mobile-comps {
       margin-top: $big-m;
     }
-    .non-carousel-row {
-      .desktop-non-slide-title {
-        font-size: 16px;
-        font-family: Playfair Display;
-        font-weight: bold;
-        margin-top: $big-m;
-        margin-bottom: 20px;
-      }
-      .col-xs-10 {
-        display: flex;
-      }
-      .non-slide-container:nth-child(odd) {
-        padding-right: 25px;
-      }
-      .non-slide-container:nth-child(even) {
-        padding-left: 25px;
-      }
-    }
 
     .initial-designs {
       margin-top: $big-m;
@@ -343,9 +273,6 @@ footer {
       justify-content: space-around;
       padding-right: 80px;
       padding-left: 80px;
-      img {
-        box-shadow: 2px 4px 4px 0 rgba(97, 97, 97, 0.5);
-      }
       .non-slide-container {
         padding-right: 15px;
         padding-left: 15px;

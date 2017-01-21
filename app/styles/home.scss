@@ -36,8 +36,10 @@
   hr {
     border-color: $home-color;
   }
-  header {
-    margin-bottom: $big-m;
+  main {
+    header {
+      margin-bottom: $big-m;
+    }
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {

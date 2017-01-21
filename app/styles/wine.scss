@@ -1,0 +1,29 @@
+.fabio {
+  hr {
+    border-color: $fabio-color;
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-md-min) {
+    .non-carousel-row {
+      img {
+        max-width: 448px;
+      }
+      .desktop-non-slide-title {
+        font-size: 16px;
+        font-family: Playfair Display;
+        font-weight: bold;
+        margin-top: $big-m;
+        margin-bottom: 20px;
+      }
+      .col-xs-10 {
+        display: flex;
+      }
+      .non-slide-container:nth-child(odd) {
+        padding-right: 25px;
+      }
+      .non-slide-container:nth-child(even) {
+        padding-left: 25px;
+      }
+    }
+  }
+}

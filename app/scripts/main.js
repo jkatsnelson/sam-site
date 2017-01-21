@@ -8,7 +8,12 @@ $(document).ready(function() {
   if (window.matchMedia('(min-width: 992px)').matches) {
     fixCarouselArrows();
   }
+  unhideItems();
 });
+
+function unhideItems() {
+  $('.hide-until-load').css('display', 'initial');
+}
 
 function fixCarouselArrows() {
   $('.carousel').each(changeArrowPlacement);
@@ -18,7 +23,11 @@ function fixCarouselArrows() {
     var height = $(this).find('.item.active img').outerHeight();
     if (height) {
       var titleHeight = $(this).find('.item.active .slide-title').outerHeight();
-      $(this).find('.carousel-control img').css('top', height / 2 + titleHeight);
+      var arrowAdjustment = height / 2;
+      if (titleHeight) {
+        arrowAdjustment += titleHeight;
+      }
+      $(this).find('.carousel-control img').css('top', arrowAdjustment);
     }
   }
 };
