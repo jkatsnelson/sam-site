@@ -3,7 +3,6 @@
     margin-top: 60px;
     img {
       height: 210px;
-      margin-right: 40px;
     }
   }
   h2.bio {
@@ -41,6 +40,9 @@
       margin-bottom: $big-m;
     }
   }
+  #spore {
+    margin-top: 60px;
+  }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
     .about-me-content {
@@ -56,7 +58,11 @@
       margin-top: 0;
       img {
         height: 300px;
+        margin-right: 40px;
       }
+    }
+    #spore {
+      margin-top: 0;
     }
   }
 } 
