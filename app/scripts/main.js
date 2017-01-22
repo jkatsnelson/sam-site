@@ -9,7 +9,16 @@ $(document).ready(function() {
     fixCarouselArrows();
   }
   unhideItems();
+  designImageOverlayHovers();
 });
+
+function designImageOverlayHovers() {
+  $('.final-designs .hoverable').hover(function() {
+    $(this).find('.overlay-container').removeClass('hide');
+  }, function() {
+    $(this).find('.overlay-container').addClass('hide');
+  })
+}
 
 function unhideItems() {
   $('.hide-until-load').css('display', 'initial');

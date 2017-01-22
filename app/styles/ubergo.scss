@@ -63,14 +63,14 @@
   .ux-images {
     margin-top: 75px;
     .col-xs-4 {
-      padding-right: 40px;
-      padding-left: 40px;
+      padding-right: 20px;
+      padding-left: 20px;
       position: relative;
       div {
         position: absolute;
-        font-size: 44px;
+        font-size: 30px;
         top: 50%;
-        margin-top: -22px;
+        margin-top: -15px;
         right: -10px;
         color: $ubergo-color;
         font-family: Playfair Display;
@@ -79,6 +79,16 @@
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
+    .ux-images {
+      .col-xs-4 {
+        padding-right: 40px;
+        padding-left: 40px;
+        div {
+          font-size: 44px;
+          margin-top: -22px;
+        }
+      }
+    }
     .logos {
       margin-top: 60px;
     }

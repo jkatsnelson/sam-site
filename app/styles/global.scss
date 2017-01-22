@@ -86,6 +86,41 @@ footer {
     }
   }
   .final-designs {
+    // todo -- same as carousel captions?
+    .caption {
+      opacity: 0.4;
+      font-family: Futura PT;
+      font-size: 12px;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    // there are so many of these that I didn't want to give each a classname
+    .hoverable {
+      cursor: pointer;
+      position: relative;
+      .text-overlay, .text {
+        top: 0;
+        bottom: 10px;
+        left: 24px;
+        right: 26px;
+      }
+      .text-overlay {
+        position: absolute;
+        background-color: #000;
+        opacity: .7;
+      }
+      .text {
+        position: absolute;
+        color: #FFF;
+        display:-webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+        font-size: 14px;
+        padding-left: 29px;
+        padding-right: 29px;
+      }
+    }
     .item {
       height: 500px;
       img {
