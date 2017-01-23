@@ -78,8 +78,7 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*',
-    '!app/**/*.html',
-    'CNAME'
+    '!app/**/*.html'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -171,6 +170,27 @@ gulp.task('default', () => {
 });
 
 gulp.task('deploy', ['default'], () => {
+  // create a new publisher
+  const publisher = $.awspublish.create({
+    params: {
+      Bucket: 'hellosamking.design'
+    }
+  });
+
+  // define custom headers
+  const headers = {
+    'Cache-Control': 'max-age=315360000, no-transform, public'
+  };
+
+  const cfSettings = {
+    distribution: 'E21MOZ38VBE6UF',
+    indexRootPath: true
+  };
+
   return gulp.src('dist/**/*')
-    .pipe($.ghPages());
+    .pipe(publisher.publish(headers))
+    .pipe(publisher.sync())
+    .pipe($.cloudfrontInvalidateAwsPublish(cfSettings))
+    .pipe(publisher.cache())
+    .pipe($.awspublish.reporter());
 });
