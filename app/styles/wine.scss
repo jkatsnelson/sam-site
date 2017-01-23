@@ -2,8 +2,47 @@
   hr {
     border-color: $fabio-color;
   }
+  .info-dot {
+    background: $fabio-color;
+  }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
+    #homepage-wines {
+      .info-dot {
+        top: 160px;
+        right: 160px;
+      }
+    }
+    #homepage-information {
+      .info-dot {
+        top: 160px;
+        right: 143px;
+      }
+    }
+    #existing-site-navigation {
+      .info-dot {
+        top: 160px;
+        right: 200px;
+      }
+    }
+    #recipes-and-pairings {
+      .info-dot {
+        top: 220px;
+        left: 160px;
+      }
+    }
+    #shop-wines {
+      .info-dot {
+        top: 170px;
+        right: 160px;
+      }
+    }
+    #add-to-cart {
+      .info-dot {
+        top: 170px;
+        right: 50px;
+      }
+    }
     .non-carousel-row {
       img {
         max-width: 448px;
@@ -17,6 +56,9 @@
       }
       .col-xs-10 {
         display: flex;
+      }
+      .non-slide-container {
+        position: relative;
       }
       .non-slide-container:nth-child(odd) {
         padding-right: 25px;

@@ -9,6 +9,11 @@ $p-size: 15px;
 $big-m: 80px;
 $text-padding: 23px;
 $text-padding-large: 40px;
+
+.popover {
+  font-family: 'Futura PT';
+}
+
 // this class will be removed from any element it is on, on document load
 .hide-until-load {
   display: none;
