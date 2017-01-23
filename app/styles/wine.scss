@@ -7,6 +7,42 @@
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
+    .initial-designs .non-slide-container {
+      position: relative;
+      &#initial-design-1 {
+        // four in here
+        #init-design-info-dot-1 {
+          top: 100px;
+          right: 100px;
+        }
+        #init-design-info-dot-2 {
+          top: 200px;
+          right: 200px;
+        }
+        #init-design-info-dot-3 {
+          top: 300px;
+          right: 300px;
+        }
+        #init-design-info-dot-4 {
+          top: 400px;
+          right: 400px;
+        }
+      }
+      &#initial-design-2 {
+        #init-design-info-dot-5 {
+          top: 100px;
+          right: 100px;
+        }
+        #init-design-info-dot-6 {
+          top: 200px;
+          right: 200px;
+        }
+        #init-design-info-dot-7 {
+          top: 300px;
+          right: 300px;
+        }
+      }
+    }
     #homepage-wines {
       .info-dot {
         top: 160px;
@@ -41,6 +77,56 @@
       .info-dot {
         top: 170px;
         right: 50px;
+      }
+    }
+    #mobile-wine-carousel-4 {
+      #style-tile-rustic #rustic-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #style-tile-rustic #rustic-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #style-tile-rustic #rustic-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #style-tile-rustic #rustic-info-dot-4 {
+        top: 400px;
+        right: 400px;
+      }
+      #style-tile-mediterranean #med-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #style-tile-mediterranean #med-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #style-tile-mediterranean #med-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #style-tile-mediterranean #med-info-dot-4 {
+        top: 400px;
+        right: 400px;
+      }
+      #style-tile-friendly #friendly-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #style-tile-friendly #friendly-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #style-tile-friendly #friendly-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #style-tile-friendly #friendly-info-dot-4 {
+        top: 400px;
+        right: 400px;
       }
     }
     .non-carousel-row {

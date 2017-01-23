@@ -95,15 +95,22 @@
     .slide-content {
       margin-top: 30px;
     }
-
-    a.carousel-control img {
-      height: 24px;
-    }
-    a.carousel-control.right img {
-      right: -50px;
-    }
-    a.carousel-control.left img {
-      left: -50px;
+    a.carousel-control {
+      img {
+        height: 24px;
+      }
+      &.right {
+        right: -230px;
+        img {
+          right: 180px;
+        }
+      }
+      &.left {
+        left: -230px;
+        img {
+          left: 180px;
+        }
+      }
     }
   }
 }
