@@ -1,4 +1,7 @@
 .spore {
+  .info-dot {
+    background: $spore-color;
+  }
   .iterations {
     .item {
       height: 420px;
@@ -39,6 +42,56 @@
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+    #spore-style-tile-carousel {
+      #style-tile-organic #organic-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #style-tile-organic #organic-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #style-tile-organic #organic-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #style-tile-organic #organic-info-dot-4 {
+        top: 400px;
+        right: 400px;
+      }
+      #style-tile-modern #modern-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #style-tile-modern #modern-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #style-tile-modern #modern-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #style-tile-modern #modern-info-dot-4 {
+        top: 400px;
+        right: 400px;
+      }
+      #style-tile-playful #playful-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #style-tile-playful #playful-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #style-tile-playful #playful-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #style-tile-playful #playful-info-dot-4 {
+        top: 400px;
+        right: 400px;
+      }
+    }
     .main-container {
       button {
         color: $spore-color;

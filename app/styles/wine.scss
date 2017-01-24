@@ -7,6 +7,9 @@
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
+    .shave-the-p {
+      margin-top: 23px;
+    }
     .initial-designs .non-slide-container {
       position: relative;
       &#initial-design-1 {

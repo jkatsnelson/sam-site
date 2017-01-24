@@ -4,7 +4,8 @@
 $(document).ready(function() {
   $('[data-toggle="popover"]').popover({
     trigger: 'hover'
-  })
+  });
+  $('.carousel').carousel('pause');
   navSlideout();
   fixAnimations();
   addSwipe();
