@@ -1,4 +1,7 @@
 .ubergo {
+  .info-dot {
+    background: $ubergo-color;
+  }
   #ubergo-style-tiles {
     .item {
       height: 550px;
@@ -79,6 +82,48 @@
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
+    #ubergo-style-tiles {
+      #contemporary-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #contemporary-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #contemporary-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #contemporary-info-dot-4 {
+        top: 400px;
+        right: 400px;
+      }
+      #spirited-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #spirited-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #spirited-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #hip-info-dot-1 {
+        top: 100px;
+        right: 100px;
+      }
+      #hip-info-dot-2 {
+        top: 200px;
+        right: 200px;
+      }
+      #hip-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+    }
     .ux-images {
       .col-xs-4 {
         padding-right: 40px;
