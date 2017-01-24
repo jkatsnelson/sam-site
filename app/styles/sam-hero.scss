@@ -94,7 +94,7 @@
 
 .fabio {
   .sam-hero .hero-bg {
-    background-image: radial-gradient(375px circle at 50% 31%, #f2b9cd, #4f1429);
+    background-image: radial-gradient(375px circle at 50% 31%, #f2b9cd, $fabio-color);
   }
 }
 .spore {
@@ -112,7 +112,7 @@
 @media (min-width: 992px) {
   .fabio .sam-hero {
     .hero-bg {
-      background-image: radial-gradient(450px circle at 60% 41%, #f2b9cd, #4f1429);
+      background-image: radial-gradient(450px circle at 60% 41%, #f2b9cd, $fabio-color);
     }
   }
   .spore .sam-hero {
@@ -149,7 +149,7 @@
 @media (min-width: 1200px) {
   .fabio .sam-hero {
     .hero-bg {
-      background-image: radial-gradient(650px circle at 60% 41%, #f2b9cd, #4f1429);
+      background-image: radial-gradient(650px circle at 60% 41%, #f2b9cd, $fabio-color);
     }
   }
   .spore .sam-hero {
