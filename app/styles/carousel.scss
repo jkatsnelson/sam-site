@@ -2,7 +2,7 @@
   margin-top: 60px;
   a.carousel-control {
     // opacity: 0;
-    width: 30%;
+    width: 22%;
     background: none;
     opacity: 1;
     img {
@@ -100,15 +100,15 @@
         height: 24px;
       }
       &.right {
-        right: -230px;
+        right: -7%;
         img {
-          right: 180px;
+          // right: 0%;
         }
       }
       &.left {
-        left: -230px;
+        left: -7%;
         img {
-          left: 180px;
+          // left: 0%;
         }
       }
     }
