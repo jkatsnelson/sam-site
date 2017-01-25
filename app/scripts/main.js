@@ -35,11 +35,15 @@ function fixCarouselArrows() {
   function changeArrowPlacement(){
     var height = $(this).find('.item.active img').outerHeight();
     if (height) {
-      var titleHeight = $(this).find('.item.active .slide-title').outerHeight();
       var arrowAdjustment = height / 2;
-      if (titleHeight) {
+
+      var title = $(this).find('.item.active .slide-title');
+
+      if (title.length) {
+        var titleHeight = $(this).find('.item.active img').offset().top - $(this).find('.item.active .slide-title').offset().top;
         arrowAdjustment += titleHeight;
       }
+
       $(this).find('.carousel-control img').css('top', arrowAdjustment);
     }
   }

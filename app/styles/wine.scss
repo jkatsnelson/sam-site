@@ -165,4 +165,135 @@
       }
     }
   }
+  @media (min-width: $screen-lg-min) {
+    .initial-designs .non-slide-container {
+      position: relative;
+      &#initial-design-1 {
+        // four in here
+        #init-design-info-dot-1 {
+          top: 100px;
+          right: 350px;
+        }
+        #init-design-info-dot-2 {
+          top: 200px;
+          right: 25px;
+        }
+        #init-design-info-dot-3 {
+          top: 420px;
+          right: 100px;
+        }
+        #init-design-info-dot-4 {
+          top: 530px;
+          right: 310px;
+        }
+      }
+      &#initial-design-2 {
+        #init-design-info-dot-5 {
+          top: 30px;
+          right: 360px;
+        }
+        #init-design-info-dot-6 {
+          top: 35px;
+          right: 150px;
+        }
+        #init-design-info-dot-7 {
+          top: 500px;
+          right: 70px;
+        }
+      }
+    }
+
+    #homepage-wines {
+      .info-dot {
+        top: 160px;
+        right: 160px;
+      }
+    }
+
+    #homepage-information {
+      .info-dot {
+        top: 160px;
+        right: 143px;
+      }
+    }
+
+    #existing-site-navigation {
+      .info-dot {
+        top: 160px;
+        right: 200px;
+      }
+    }
+
+    #recipes-and-pairings {
+      .info-dot {
+        top: 220px;
+        left: 160px;
+      }
+    }
+    
+    #shop-wines {
+      .info-dot {
+        top: 170px;
+        right: 160px;
+      }
+    }
+    
+    #add-to-cart {
+      .info-dot {
+        top: 170px;
+        right: 50px;
+      }
+    }
+    
+    #mobile-wine-carousel-4 {
+      #style-tile-rustic #rustic-info-dot-1 {
+        top: 110px;
+        right: 620px;
+      }
+      #style-tile-rustic #rustic-info-dot-2 {
+        top: 420px;
+        right: 235px;
+      }
+      #style-tile-rustic #rustic-info-dot-3 {
+        top: 300px;
+        right: 300px;
+      }
+      #style-tile-rustic #rustic-info-dot-4 {
+        top: 400px;
+        right: 50px;
+      }
+      #style-tile-mediterranean #med-info-dot-1 {
+        top: 150px;
+        right: 780px;
+      }
+      #style-tile-mediterranean #med-info-dot-2 {
+        top: 300px;
+        right: 300px;
+      }
+      #style-tile-mediterranean #med-info-dot-3 {
+        top: 150px;
+        right: 40px;
+      }
+      #style-tile-mediterranean #med-info-dot-4 {
+        top: 450px;
+        right: 200px;
+      }
+      #style-tile-friendly #friendly-info-dot-1 {
+        top: 150px;
+        right: 650px;
+      }
+      #style-tile-friendly #friendly-info-dot-2 {
+        top: 290px;
+        right: 200px;
+      }
+      #style-tile-friendly #friendly-info-dot-3 {
+        top: 500px;
+        right: 845px;
+      }
+      #style-tile-friendly #friendly-info-dot-4 {
+        top: 100px;
+        right: 100px;
+      }
+    }    
+  }
 }

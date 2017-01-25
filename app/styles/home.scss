@@ -44,7 +44,7 @@
     margin-top: 60px;
   }
   /* Medium devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
+  @media (min-width: $screen-md-min) {
     .about-me-content {
       margin-top: $big-m;
     }
