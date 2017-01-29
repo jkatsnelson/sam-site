@@ -4,45 +4,48 @@
   }
   .info-dot {
     background: $fabio-color;
+    display: none;
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
     .shave-the-p {
       margin-top: 23px;
     }
-
+    .info-dot {
+      display: block;
+    }
     .initial-designs .non-slide-container {
       position: relative;
       &#initial-design-1 {
         // four in here
         #init-design-info-dot-1 {
           top: 100px;
-          right: 350px;
+          right: 330px;
         }
         #init-design-info-dot-2 {
-          top: 200px;
+          top: 190px;
           right: 25px;
         }
         #init-design-info-dot-3 {
-          top: 420px;
+          top: 360px;
           right: 100px;
         }
         #init-design-info-dot-4 {
-          top: 530px;
-          right: 310px;
+          top: 470px;
+          right: 280px;
         }
       }
       &#initial-design-2 {
         #init-design-info-dot-5 {
-          top: 30px;
-          right: 360px;
+          top: 25px;
+          right: 330px;
         }
         #init-design-info-dot-6 {
-          top: 35px;
-          right: 150px;
+          top: 30px;
+          right: 130px;
         }
         #init-design-info-dot-7 {
-          top: 500px;
+          top: 440px;
           right: 70px;
         }
       }
@@ -141,9 +144,6 @@
       }
     }
     .non-carousel-row {
-      img {
-        max-width: 448px;
-      }
       .desktop-non-slide-title {
         font-size: 16px;
         font-family: Playfair Display;
@@ -166,6 +166,11 @@
     }
   }
   @media (min-width: $screen-lg-min) {
+    .non-carousel-row {
+      img {
+        max-width: 448px;
+      }
+    }
     .initial-designs .non-slide-container {
       position: relative;
       &#initial-design-1 {
