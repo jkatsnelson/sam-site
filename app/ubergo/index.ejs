@@ -26,143 +26,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav id="menu">
-      <header>
-        <a href="/">
-          Samantha King
-        </a>
-      </header>
-      <ol class="list-unstyled hide-until-load">
-        <li>
-          <div class="title-link-container collapsed" data-toggle="collapse" href="#collapse-wine">
-            <div class="title">
-              FABIO VIVIANI WINES
-            </div>
-            <img class="img-responsive collapsed" src="/images/nav/mobile-hamburger-collapsed-caret.png">
-            <img class="img-responsive expanded" src="/images/nav/mobile-hamburger-expanded-caret.png">
-          </div>
-          <div class="sub-links collapse" id="collapse-wine">
-            <a href="/fvwines/#introduction">
-              Introduction
-            </a>
-            <a href="/fvwines/#defining-the-challenge">
-              Defining the Challenge
-            </a>
-            <a href="/fvwines/#exploring-the-wine-and-food-space">
-              Exploring the Wine & Food Space
-            </a>
-            <a href="/fvwines/#exploring-the-existing-site">
-              Exploring the Existing Site
-            </a>
-            <a href="/fvwines/#crafting-visual-direction">
-              Crafting Visual Direction
-            </a>
-            <a href="/fvwines/#initial-designs-and-testing">
-              Initial Designs and Testing
-            </a>
-            <a href="/fvwines/#final-designs">
-              Final Designs
-            </a>
-            <a href="/fvwines/#style-guide">
-              Style Guide
-            </a>
-            <a href="/fvwines/#conclusion">
-              Conclusion
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="title-link-container collapsed" data-toggle="collapse" href="#collapse-spore">
-            <div class="title">
-              SPORE
-            </div>
-            <img class="img-responsive collapsed" src="/images/nav/mobile-hamburger-collapsed-caret.png">
-            <img class="img-responsive expanded" src="/images/nav/mobile-hamburger-expanded-caret.png">
-          </div>
-          <div class="sub-links collapse" id="collapse-spore">
-            <a href="/spore/#introduction">
-              Introduction
-            </a>
-            <a href="/spore/#defining-the-challenge">
-              Defining the Challenge
-            </a>
-            <a href="/spore/#digging-into-the-ux">
-              Digging into the UX
-            </a>
-            <a href="/spore/#exploring-similar-products">
-              Exploring Similar Products
-            </a>
-            <a href="/spore/#creative-exploration">
-              Creative Exploration
-            </a>
-            <a href="/spore/#iterations-and-testing">
-              Iterations and Testing
-            </a>
-            <a href="/spore/#final-designs">
-              Final Designs
-            </a>
-            <a href="/spore/#style-guide">
-              Style Guide
-            </a>
-            <a href="/spore/#conclusion">
-              Conclusion
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="title-link-container collapsed" data-toggle="collapse" href="#collapse-ubergo">
-            <div class="title">
-              UBERGO
-            </div>
-            <img class="img-responsive collapsed" src="/images/nav/mobile-hamburger-collapsed-caret.png">
-            <img class="img-responsive expanded" src="/images/nav/mobile-hamburger-expanded-caret.png">
-          </div>
-          <div class="sub-links collapse" id="collapse-ubergo">
-            <a href="/ubergo/#introduction">
-              Introduction
-            </a>
-            <a href="/ubergo/#digging-into-the-ux">
-              Digging into the UX
-            </a>
-            <a href="/ubergo/#exploring-the-car-sharing-space">
-              Exploring the Car Sharing Space
-            </a>
-            <a href="/ubergo/#design-principles">
-              Design Principles
-            </a>
-            <a href="/ubergo/#creative-exploration">
-              Creative Exploration
-            </a>
-            <a href="/ubergo/#final-designs">
-              Final Designs
-            </a>
-            <a href="/ubergo/#style-guide">
-              Style Guide
-            </a>
-            <a href="/ubergo/#conclusion">
-              Conclusion
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="title-link-container collapsed" data-toggle="collapse" href="#collapse-contact">
-            <div class="title">
-              CONTACT
-            </div>
-            <img class="img-responsive collapsed" src="/images/nav/mobile-hamburger-collapsed-caret.png">
-            <img class="img-responsive expanded" src="/images/nav/mobile-hamburger-expanded-caret.png">
-          </div>
-          <div class="sub-links collapse" id="collapse-contact">
-            <a href="http://www.linkedin.com/in/hellosamking">
-              LinkedIn
-            </a>
-            <a href="mailto:hellosamking@gmail.com">
-              Email
-            </a>
-          </div>
-        </li>
-      </ol>
-    </nav>
+    <%- include('partials/nav'); %>
     <nav class="nav-bar">
       <div class="container hidden-md hidden-lg">
         <div class="row">
@@ -418,7 +282,7 @@
               Our challenge was to create an app that allowed users to easily and successfully search, filter, rent, and checkout cars. These constraints gave the project scope, and allowed us to treat this project as a real project.
               <br>
               <br>
-              I worked within a team of three with UX designs that were created by a previous team. While all three teammates created their own distinct designs, we worked together to provide daily critique and support to each other, as well as prepared weekly presentations documenting our progress. 
+              I worked within a team of three with UX designs that were created by a previous team. While all three teammates created their own distinct designs, we worked together to provide daily critique and support to each other, as well as prepared weekly presentations documenting our progress.
             </p>
             <a href="https://invis.io/Y3A4LCHM2#/213867921_1A-_Initial_Screen" target="_blank" class="hidden-md hidden-lg">
               <button>VIEW PROTOTYPE</button>
@@ -522,7 +386,7 @@
               <div class="col-xs-12 col-md-6">
                 <img class="img-responsive" src="/images/ubergo/similar-products/1.png" />
                 <div class="image-subtitle">
-                  Enterprise is a well-known and B2C. Its designs feel corporate and dull with washed-out greys, unmemorable typography, and UX that’s clunky and lacking in innovation. 
+                  Enterprise is a well-known and B2C. Its designs feel corporate and dull with washed-out greys, unmemorable typography, and UX that’s clunky and lacking in innovation.
                 </div>
               </div>
               <div class="col-xs-12 col-md-6">
@@ -544,7 +408,7 @@
         <div class="row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
-              After diving into the UX and learning more about the existing car sharing space, we created design principles to guide our future designs and process. 
+              After diving into the UX and learning more about the existing car sharing space, we created design principles to guide our future designs and process.
             </p>
           </div>
         </div>
@@ -556,7 +420,7 @@
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
                   <div class="slide-title">
-                    Make it reliable,<br> use white space 
+                    Make it reliable,<br> use white space
                   </div>
                   <div class="slide-content">
                     Our designs are the perfect combination of new and reliable: you can trust the Uber brand to get you from point A to B. Through use of ample white space and guiding colors, the designs are pleasing to the eye and easy to navigate.
@@ -604,7 +468,7 @@
             <div class="row text-non-slides hidden-xs hidden-sm">
               <div class="col-xs-4">
                 <div class="slide-title">
-                  Make it reliable, 
+                  Make it reliable,
                   <br>
                   use white space
                 </div>
@@ -650,7 +514,7 @@
         <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
-              After much ideation, we came up with the name <strong>UberGo</strong>. We kept Uber in the title to “Go” encompassed the feelings the brand needed: the freedom of having a car without owning one, the spontaneity that comes with having on-demand access to a car, and the openness to going wherever, whenever with the app. 
+              After much ideation, we came up with the name <strong>UberGo</strong>. We kept Uber in the title to “Go” encompassed the feelings the brand needed: the freedom of having a car without owning one, the spontaneity that comes with having on-demand access to a car, and the openness to going wherever, whenever with the app.
             </p>
           </div>
         </div>
@@ -661,7 +525,7 @@
         <div class="row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
-              I explored many directions for UberGo’s logo, and worked through ideas of cars and more abstract designs to further the feeling UberGo’s design. As I worked, I kept the needs of Erin and our design principles in mind. 
+              I explored many directions for UberGo’s logo, and worked through ideas of cars and more abstract designs to further the feeling UberGo’s design. As I worked, I kept the needs of Erin and our design principles in mind.
             </p>
           </div>
         </div>
@@ -789,7 +653,7 @@
         <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
-              I arrived at my final designs through multiple rounds of iterations. My designs didn’t have any major pivot points, but I continually worked to hone the design. I strove to design the layout and flows to ensure they were best for Erin’s needs, the app’s primary use cases, and our design principles. 
+              I arrived at my final designs through multiple rounds of iterations. My designs didn’t have any major pivot points, but I continually worked to hone the design. I strove to design the layout and flows to ensure they were best for Erin’s needs, the app’s primary use cases, and our design principles.
               <br>
               <br>
               I also dug into how to use the UI to inform different use cases, which brought me to my final designs.            </p>
@@ -887,7 +751,7 @@
                   <div class="text-overlay">
                   </div>
                   <div class="text">
-                    The welcome screen is simple and prominently features the logo. The sign up button is prominent and designed for new users. 
+                    The welcome screen is simple and prominently features the logo. The sign up button is prominent and designed for new users.
                     <br>
                     <br>
                     The app keeps existing users signed in, much like Uber and Uber Eats' apps.
@@ -977,7 +841,7 @@
                   <div class="text-overlay">
                   </div>
                   <div class="text">
-                    On the confirmation page I used an image of a car from the inside looking out, placing the user in the driver's seat from the moment the car was booked and garnering excitement for driving. 
+                    On the confirmation page I used an image of a car from the inside looking out, placing the user in the driver's seat from the moment the car was booked and garnering excitement for driving.
                   </div>
                 </div>
               </div>
@@ -1002,9 +866,9 @@
                   <div class="text-overlay">
                   </div>
                   <div class="text">
-                    I kept the "Inbox" screen light and airy, using thin grey lines to separate content, blue to indicate accepted rentals, and salmon to indicate declined rentals. 
+                    I kept the "Inbox" screen light and airy, using thin grey lines to separate content, blue to indicate accepted rentals, and salmon to indicate declined rentals.
                     <br>
-                    <br>  
+                    <br>
                     All of my choices were to aid the user in easy scannability in order to help the user quicky chat with car's owners.
                   </div>
                 </div>
@@ -1132,7 +996,7 @@
         <div class="row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
-              I was interested in UberGo as a living product, and I considered what it would look like in the future. Future versions would also have a “rentee” side, where those who were renting out their cars would switch to the other side of the app. Over time the app would learn from the user, thus introducing new expanded designs that take this into consideration. 
+              I was interested in UberGo as a living product, and I considered what it would look like in the future. Future versions would also have a “rentee” side, where those who were renting out their cars would switch to the other side of the app. Over time the app would learn from the user, thus introducing new expanded designs that take this into consideration.
             </p>
           </div>
         </div>
@@ -1147,10 +1011,10 @@
               Overall, I was proud of my designs and what they (and I!) accomplished. The user flow is simple and intuitive, the colors guide the user through the tasks, and the simplified car views and checkout process ensure user enjoyment and success.
               <br>
               <br>
-              I learned how to work quickly and lean on others for feedback and advice to help evolve my designs. Within my team, I prepared weekly presentations, which helped me grow in confidence and skill. I learned how to explain and defend my design decisions, and honed my presentation skills, something I found invaluable to the design process. I learned to dive into user’s needs and goals, and how to ask pointed questions from others to help my designs meet these needs. 
+              I learned how to work quickly and lean on others for feedback and advice to help evolve my designs. Within my team, I prepared weekly presentations, which helped me grow in confidence and skill. I learned how to explain and defend my design decisions, and honed my presentation skills, something I found invaluable to the design process. I learned to dive into user’s needs and goals, and how to ask pointed questions from others to help my designs meet these needs.
               <br>
               <br>
-              Working on this project on a team set me up for success on my following projects, where I worked with real clients to design their products. I brought what I learned during UberGo to drive my future designs’ successes, and especially leaned on the importance of strong UX, continual feedback and iteration, and user-driven design. 
+              Working on this project on a team set me up for success on my following projects, where I worked with real clients to design their products. I brought what I learned during UberGo to drive my future designs’ successes, and especially leaned on the importance of strong UX, continual feedback and iteration, and user-driven design.
             </p>
           </div>
         </div>
