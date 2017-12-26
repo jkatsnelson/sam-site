@@ -33,6 +33,7 @@ gulp.task('ejs', () => {
           ext: '.html'
       }).on('error', $.util.log))
       .pipe(gulp.dest('./.tmp'))
+      .pipe(reload({stream: true}));
 
 });
 
@@ -110,11 +111,10 @@ gulp.task('serve', () => {
     });
 
     gulp.watch([
-      'app/**/*.ejs',
       'app/images/**/*',
       '.tmp/fonts/**/*'
     ]).on('change', reload);
-
+    gulp.watch('app/**/*.ejs', ['ejs']);
     gulp.watch('app/styles/**/*.scss', ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
