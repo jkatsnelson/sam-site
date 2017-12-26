@@ -27,8 +27,8 @@ gulp.task('styles', () => {
 });
 
 gulp.task('ejs', () => {
-
-  return gulp.src('./app/**/*.ejs')
+  // partials get rendered through includes, so they shouldnt be brought to .tmp and dist
+  return gulp.src(['./app/**/*.ejs', '!./app/partials/**'])
       .pipe($.ejs({}, {}, {
           ext: '.html'
       }).on('error', $.util.log))
