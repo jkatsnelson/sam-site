@@ -3,7 +3,8 @@ $spore-color: #0e4073;
 $ubergo-color: #36a7ff;
 $home-color: #ff9b31;
 $medium-up-alt-subtitles: 20px;
-$nav-bar-height: 55px;
+$nav-bar-height: 45px;
+$orange: #ee3a00;
 $p-size: 15px;
 // the second largest margin between sections is 'big m'
 $big-m: 80px;
@@ -44,10 +45,6 @@ footer {
   margin-bottom: 20px;
   margin-top: $big-m;
   text-align: center;
-}
-
-.nav-bar-padding {
-  margin-top: $nav-bar-height;
 }
 
 .big-m {

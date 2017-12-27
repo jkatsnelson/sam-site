@@ -1,5 +1,4 @@
 #panel .overlay.active {
-  opacity: .45;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -61,9 +60,10 @@ nav#menu {
     }
   }
 }
-
+nav#menu header {
+  height: 57px;
+}
 nav#menu header, .nav-bar {
-  height: $nav-bar-height;
   text-align: center;
   a {
     font-family: Playfair Display;
@@ -73,20 +73,29 @@ nav#menu header, .nav-bar {
   }
 }
 
+.nav-bar, .large-nav-container {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(189, 189, 189, 0.5);
+  -moz-box-shadow: 0 1px 2px 0 rgba(189, 189, 189, 0.5);
+  box-shadow: 0 1px 2px 0 rgba(189, 189, 189, 0.5);
+}
+
 .nav-bar {
+  .small-nav-container {
+    height: 57px;
+  }
   top: -1px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   z-index: 1000;
   transition: transform 300ms ease;
-  -webkit-box-shadow: 1px 1px 2px 0px rgba(97,97,97,0.5);
-  -moz-box-shadow: 1px 1px 2px 0px rgba(97,97,97,0.5);
-  box-shadow: 1px 1px 2px 0px rgba(97,97,97,0.5);
   &.open {
     transform: translate3d(256px, 0px, 0px);
   }
-
+  img.linked-in {
+    height: 23px;
+    width: 23px;
+  }
   .burger {
     margin-top: 20px;
     padding-left: 30px;
@@ -98,100 +107,77 @@ nav#menu header, .nav-bar {
       background-color: #191919;
     }
   }
-  img.linked-in {
-    height: 23px;
-    width: 23px;
-  }
-  .hidden-sm .container {
-    position: relative;
-  }
-  ul.list-unstyled.contact-links {
-    position:absolute;
-    right: 15px;
-    top: 0;
-    display: flex;
-    li {
-      line-height: 55px;
-      margin-left: 30px;
-    }
-    img {
-      height: 23px;
-      &:hover {
-        opacity: .7;
-      }
-    }
-  }
-  ul.list-unstyled.links {
-    text-align: left;
+}
+
+.nav-bar-padding {
+  height: 57px;
+}
+
+.large-nav-container {
+  height: $nav-bar-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+.large-nav-bar {
+  position: relative;
+  display: flex;
+  div {
     display: flex;
     justify-content: space-between;
-    width: 70%;
-    li {
-      font-weight: 600;
-      line-height: 59px;
-      &:hover {
-        text-decoration: underline;
-        cursor: pointer;
+    &.page-links {
+      .active {
+        color: $orange;
+        font-weight: 900;
       }
-      .caret-img {
-        height: 5px;
-        margin-bottom: 4px;
-        margin-left: 11px;
+      a:first-child {
+        padding-left: 8%;
       }
-      &.dropdown {
-        .expanded {
-          display: none;
-        }
-        &.open {
-          .expanded {
-            display: inline;
-          }
-          .collapsed {
-            display: none;
-          }
-        }
-        .dropdown-menu {
-          background-color: rgba(255, 255, 255, 0.95);
-          border-radius: 0;
-          top: 53px;
-          border: 0;
-          box-shadow: 1px 2px 2px 0 rgba(97, 97, 97, 0.5);
-          padding-left: 30px;
-          padding-right: 30px;
-          min-width: 250px;
-          a {
-            font-family: Futura PT;
-            font-weight: normal;
-            font-size: 14px;
-            display: block;
-            line-height: 3;
-          }
-        }
+      flex: 1;
+    }
+    &#nav-title {
+      flex: 2;
+      .name-container {
+        margin: auto;
       }
-      &.title {
-        font-family: Playfair Display;
-        position: relative;
-        line-height: 55px;
-        &:hover {
-          cursor: pointer;
-          img {
-            opacity: .9;
-          }
-          span {
-            text-decoration: underline;
-          }
-        }
-        img {
-          height: 30px;
-          top: 50%;
-          margin-top: -15px;
-          position: absolute;
-        }
-        span {
-          display: inline-block;
-          margin-left: 40px;
-          color: #ff9b31;
-        }
+      .title-circle {
+        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+        background-color: $orange;
+        display: inline-block;
+        margin: auto 7px;
+        /* width and height can be anything, as long as they're equal */
+      }
+    }
+    &#nav-contact-links {
+      flex: 1;
+      justify-content: flex-end;
+      a:last-child {
+        margin-right: 8%;
+        margin-left: 23%;
+      }
+    }
+  }
+  a {
+    font-family: Futura PT;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #191919;
+    &.img {
+      display: flex;
+      align-items: center;
+      height: 18px;
+      img {
+        height: 12px;
       }
     }
   }

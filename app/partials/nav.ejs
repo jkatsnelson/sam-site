@@ -1,4 +1,4 @@
-<nav id="menu">
+<nav id="menu" class="hidden-md hidden-lg">
   <header>
     <a href="/">
       Samantha King
@@ -136,7 +136,7 @@
   </ol>
 </nav>
 <nav class="nav-bar">
-  <div class="container hidden-md hidden-lg">
+  <div class="small-nav-container container hidden-md hidden-lg">
     <div class="row">
       <div class="burger col-xs-2">
         <div></div>
@@ -151,141 +151,49 @@
       </a>
     </div>
   </div>
-  <div class="hidden-xs hidden-sm">
-    <div class="container">
-      <ul class="list-unstyled links">
-        <li class="title">
-          <a href="/">
-            <img class="img-responsive" src="/images/nav/grapefruit-header.png" />
-            <span>
-              Samantha King
-            </span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <div data-toggle="dropdown" id="popup-wine-desktop">
-            <span class="title">
-              FABIO VIVIANI WINES
-            </span>
-            <img class="collapsed caret-img" src="/images/nav/mobile-hamburger-collapsed-caret.png">
-            <img class="expanded caret-img" src="/images/nav/mobile-hamburger-expanded-caret.png">
-          </div>
-          <div class="dropdown-menu">
-            <a href="/fvwines/#introduction">
-              Introduction
-            </a>
-            <a href="/fvwines/#defining-the-challenge">
-              Defining the Challenge
-            </a>
-            <a href="/fvwines/#exploring-the-wine-and-food-space">
-              Exploring the Wine & Food Space
-            </a>
-            <a href="/fvwines/#exploring-the-existing-site">
-              Exploring the Existing Site
-            </a>
-            <a href="/fvwines/#crafting-visual-direction">
-              Crafting Visual Direction
-            </a>
-            <a href="/fvwines/#initial-designs-and-testing">
-              Initial Designs and Testing
-            </a>
-            <a href="/fvwines/#final-designs">
-              Final Designs
-            </a>
-            <a href="/fvwines/#style-guide">
-              Style Guide
-            </a>
-            <a href="/fvwines/#conclusion">
-              Conclusion
-            </a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <div data-toggle="dropdown" id="popup-spore-desktop">
-            <span class="title">
-              SPORE
-            </span>
-            <img class="collapsed caret-img" src="/images/nav/mobile-hamburger-collapsed-caret.png">
-            <img class="expanded caret-img" src="/images/nav/mobile-hamburger-expanded-caret.png">
-          </div>
-          <div class="dropdown-menu">
-            <a href="/spore/#introduction">
-              Introduction
-            </a>
-            <a href="/spore/#defining-the-challenge">
-              Defining the Challenge
-            </a>
-            <a href="/spore/#digging-into-the-ux">
-              Digging into the UX
-            </a>
-            <a href="/spore/#exploring-similar-products">
-              Exploring Similar Products
-            </a>
-            <a href="/spore/#creative-exploration">
-              Creative Exploration
-            </a>
-            <a href="/spore/#iterations-and-testing">
-              Iterations and Testing
-            </a>
-            <a href="/spore/#final-designs">
-              Final Designs
-            </a>
-            <a href="/spore/#style-guide">
-              Style Guide
-            </a>
-            <a href="/spore/#conclusion">
-              Conclusion
-            </a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <div data-toggle="dropdown" id="popup-ubergo-desktop">
-            <span class="title">
-              UBERGO
-            </span>
-            <img class="collapsed caret-img" src="/images/nav/mobile-hamburger-collapsed-caret.png">
-            <img class="expanded caret-img" src="/images/nav/mobile-hamburger-expanded-caret.png">
-          </div>
-          <div class="dropdown-menu">
-            <a href="/ubergo/#introduction">
-              Introduction
-            </a>
-            <a href="/ubergo/#digging-into-the-ux">
-              Digging into the UX
-            </a>
-            <a href="/ubergo/#exploring-the-car-sharing-space">
-              Exploring the Car Sharing Space
-            </a>
-            <a href="/ubergo/#design-principles">
-              Design Principles
-            </a>
-            <a href="/ubergo/#creative-exploration">
-              Creative Exploration
-            </a>
-            <a href="/ubergo/#final-designs">
-              Final Designs
-            </a>
-            <a href="/ubergo/#style-guide">
-              Style Guide
-            </a>
-            <a href="/ubergo/#conclusion">
-              Conclusion
-            </a>
-          </div>
-        </li>
-      </ul>
-      <ul class="contact-links list-unstyled">
-        <li>
-          <a href="http://www.linkedin.com/in/hellosamking">
-            <img src="/images/nav/desktop-header-linkedin-black.png">
-          </a>
-        </li>
-        <li>
-          <a href="mailto:hellosamking@gmail.com">
-            <img src="/images/nav/desktop-header-mail-black.png">
-          </a>
-        </li>
-      </ul>
+</nav>
+<div class="hidden-md hidden-lg nav-bar-padding"></div>
+<div class="hidden-xs hidden-sm large-nav-container">
+  <div class="container large-nav-bar">
+    <div class="page-links">
+    <% if (locals.activePage === 'work') { %>
+      <a href="/" class="active">
+    <% } else { %>
+      <a href="/">
+    <% } %>
+        Work
+      </a>
+    <% if (locals.activePage === 'about') { %>
+      <a href="/about" class="active">
+    <% } else { %>
+      <a href="/about">
+    <% } %>
+        About
+      </a>
+    <% if (locals.activePage === 'resume') { %>
+      <a href="/resume" class="active">
+    <% } else { %>
+      <a href="/resume">
+    <% } %>
+        Resume
+      </a>
+    </div>
+    <div id="nav-title">
+      <div class="name-container">
+        <div class="title-circle"></div>
+        <a href="/">
+          Samantha King
+        </a>
+        <div class="title-circle"></div>
+      </div>
+    </div>
+    <div id="nav-contact-links">
+      <a href="mailto:hellosamking@gmail.com" class="img">
+        <img src="/images/nav/email-icon.png" alt="EMail link">
+      </a>
+      <a href="http://www.linkedin.com/in/hellosamking" class="img">
+        <img src="/images/nav/linkedin-icon.png" alt="LinkedIn link">
+      </a>
     </div>
   </div>
-</nav>
+</div>
