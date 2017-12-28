@@ -6,8 +6,8 @@
 }
 
 nav .active {
-  color: $orange;
-  font-weight: 900;
+  color: $orange !important;
+  font-weight: 900 !important;
 }
 
 .nav-bar {
@@ -50,10 +50,6 @@ nav .active {
       font-stretch: normal;
       line-height: normal;
       letter-spacing: -0.1px;
-      &.active {
-        color: $orange;
-        font-weight: 900;
-      }
     }
   }
   .contact-links {

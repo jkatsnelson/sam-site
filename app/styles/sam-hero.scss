@@ -3,13 +3,13 @@
   .hero-bg-img {
     background: url(/images/home/homepage-hero.jpg) no-repeat center 97%;
     background-size: cover;
-    height: 615px;
+    height: 384px;
     padding-top: 30px;
     h1 {
       margin-top: 30px;
       margin-bottom: 0;
       font-size: 40px;
-      font-weight: bold;
+      font-weight: 900;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -17,64 +17,34 @@
       text-align: center;
       font-family: Playfair Display;
     }
+
     h2 {
       font-family: Futura PT;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 600;
       font-style: normal;
       font-stretch: normal;
       line-height: normal;
-      letter-spacing: normal;
+      letter-spacing: 4.7px;
       text-align: center;
       margin-top: 30px;
       margin-bottom: 0;
+      text-transform: uppercase;
     }
-    h3 {
-      margin-top: 25px;
-      margin-bottom: 0;
-      font-family: Futura PT;
-      font-size: 15px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      a {
-        position: relative;
-        color: #191919;
-        &:after {
-          content:'';
-          position:absolute;
-          left:0;
-          right:0;
-          bottom: 3px;
-          border-bottom: 2px solid #191919;
-        }
-      }
-      &#contact {
-        margin-top: 25px;
-      }
-    }
-  }
-}
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .home {
-    .homepage-hero .hero-bg-img {
-      height: 620px;
-    }
-    .portfolio-page-links {
-      #wines {
-        .caption {
-          margin-top: 25px;
-        }
-      }
-      #spore {
-        margin-top: 0;
-        position: static;
-      }
+    .hero-button {
+      display: block;
+      color: #191919;
+      margin: 40px auto 0 auto;
+      font-size: 20px;
+      font-weight: 500;
+      width: 143px;
+      height: 48px;
+      border-radius: 8px;
+      border: solid 2px #191919;
+      text-align: center;
+      line-height: 44px;
+      text-decoration: none;
     }
   }
 }
@@ -95,8 +65,31 @@
     background-image: radial-gradient(325px circle at 62% 49%, #ffffff, #36a7ff);
   }
 }
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .home {
+    h1 {
+      font-size: 56px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    .homepage-hero .hero-bg-img {
+      height: 526px;
+    }
+    .portfolio-page-links {
+      #wines {
+        .caption {
+          margin-top: 25px;
+        }
+      }
+      #spore {
+        margin-top: 0;
+        position: static;
+      }
+    }
+  }
   .fabio .sam-hero {
     .hero-bg {
       background-image: radial-gradient(450px circle at 60% 41%, #f2b9cd, $fabio-color);
