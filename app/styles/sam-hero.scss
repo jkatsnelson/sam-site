@@ -5,13 +5,6 @@
     background-size: cover;
     height: 615px;
     padding-top: 30px;
-    img.logo {
-      height: 90px;
-      width: auto;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-    }
     h1 {
       margin-top: 30px;
       margin-bottom: 0;
@@ -62,12 +55,6 @@
       &#contact {
         margin-top: 25px;
       }
-    }
-    .caret-container {
-      margin-right: auto;
-      margin-left: auto;
-      width: 33px;
-      margin-top: 265px;
     }
   }
 }
@@ -191,12 +178,6 @@
     font-style: normal;
     font-stretch: normal;
     color: #ffffff;
-  }
-  .caret-container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 24px;
-    margin-top: 50px;
   }
 
   @media (min-width: 1200px) {
