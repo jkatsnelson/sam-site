@@ -33,30 +33,41 @@
     letter-spacing: 4.7px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .portfolio-link-grid {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
     .portfolio-link {
-      padding-top: 68px;
-      padding-bottom: 68px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
+      height: 200px;
       font-family: Playfair Display;
       font-style: normal;
       font-stretch: normal;
       line-height: normal;
       letter-spacing: 2px;
       color: #ffffff;
-      margin-bottom: 24px;
       h1 {
-        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 26px;
         font-weight: 900;
         text-transform: uppercase;
       }
       h3 {
-        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height: 18px;
+        font-size: 14px;
         font-family: Futura PT;
         font-weight: 600;
       }
@@ -80,29 +91,47 @@
       }
     }
   }
-  /* Medium devices (desktops, 992px and up) */
-  @media (min-width: $screen-md-min) {
-    .motto {
-      font-size: 28px;
-    }
+  @media (min-width: $screen-sm-min) {
     .portfolio-link-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 15px;
       .portfolio-link {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        height: 250px;
+        margin-bottom: 0;
         h1 {
-          font-size: 40px;
+          font-size: 30px;
+          margin-bottom: 12px;
         }
         h3 {
-          font-size: 28px;
+          font-size: 24px;
         }
-        margin-bottom: 0;
+      }
+    }
+  }
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-md-min) {
+    .portfolio-link-grid {
+      grid-template-columns: repeat(3, 1fr);
+      .portfolio-link {
+        height: 275px;
       }
     }
     #spore {
       margin-top: 0;
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    .portfolio-link-grid {
+      .portfolio-link {
+        height: 300px;
+        h1 {
+          font-size: 32px;
+        }
+        h3 {
+          font-size: 24px;
+        }
+      }
     }
   }
 }
