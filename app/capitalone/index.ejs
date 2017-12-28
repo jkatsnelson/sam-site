@@ -1,12 +1,35 @@
 <!doctype html>
 <html class="no-js" lang="">
   <%- include(process.cwd() + '/app/partials/head', {title: 'Sam King Designs - Capital One'}) %>
-  <body class="home">
+  <body class="capitalone">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <%- include(process.cwd() + '/app/partials/nav') %>
     <main id="panel">
+      <div class="container sam-hero" id="introduction">
+        <div class="hero-bg">
+          <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+              <div class="row">
+                <div class="col-xs-12 col-md-8 hero-img">
+                  <div class="img-container">
+                    <img class="img-responsive" src='/images/capital-one/Cap1-hero-1.png'>
+                  </div>
+                </div>
+                <div class="title-container">
+                  <div class="col-xs-12 col-md-4 title-block">
+                    <div class="mobile-title">
+                      <div>Capital One</div>
+                    </div>
+                    <div class="sub-title">Visual Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <%- include(process.cwd() + '/app/partials/footer') %>
     </main>
     <script>

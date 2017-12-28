@@ -1,4 +1,3 @@
-
 .home .homepage-hero {
   .hero-bg-img {
     background: url(/images/home/homepage-hero.jpg) no-repeat center 97%;
@@ -73,13 +72,49 @@
   }
 }
 
+.sam-hero {
+  .hero-bg {
+    padding-top: 76px;
+    padding-bottom: 20px;
+    .img-container {
+      margin-right: 8px;
+      margin-left: 8px;
+    }
+  }
+  .hero-img {
+    float: right;
+  }
+  .mobile-title {
+    margin-top: 30px;
+    div {
+      line-height: 47px;
+      text-align: center;
+      font-family: 'Playfair Display';
+      font-weight: 700;
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  .sub-title {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Futura PT';
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #ffffff;
+  }
+}
+
 
 .fabio {
   .sam-hero .hero-bg {
     background-image: radial-gradient(375px circle at 50% 31%, #f2b9cd, $fabio-color);
   }
 }
-.spore {
+
+.spore, .capitalone {
   .sam-hero .hero-bg {
     background-image: radial-gradient(325px circle at 62% 49%, #a7d2ff, #0e4073);
   }
@@ -120,18 +155,20 @@
       background-image: radial-gradient(450px circle at 60% 41%, #f2b9cd, $fabio-color);
     }
   }
-  .spore .sam-hero {
-    .hero-bg {
-      background-image: radial-gradient(450px circle at 60% 41%, #a7d2ff, #0e4073);
-    }
-    .title-container {
-      height: 400px;
-      position: relative;
-      .title-block {
-        position: absolute;
-        top: 50%;
-        height: 152px;
-        margin-top: -76px;
+  .spore, .capitalone {
+    .sam-hero {
+      .hero-bg {
+        background-image: radial-gradient(450px circle at 60% 41%, #a7d2ff, #0e4073);
+      }
+      .title-container {
+        height: 400px;
+        position: relative;
+        .title-block {
+          position: absolute;
+          top: 50%;
+          height: 152px;
+          margin-top: -76px;
+        }
       }
     }
   }
@@ -152,56 +189,10 @@
   }
 }
 @media (min-width: 1200px) {
-  .fabio .sam-hero {
+  .sam-hero {
     .hero-bg {
-      background-image: radial-gradient(650px circle at 60% 41%, #f2b9cd, $fabio-color);
-    }
-  }
-  .spore .sam-hero {
-    .hero-bg {
-      background-image: radial-gradient(650px circle at 60% 41%, #a7d2ff, #0e4073);
-    }
-  }
-}
-
-.sam-hero {
-  .hero-bg {
-    padding-top: 76px;
-    padding-bottom: 20px;
-    .img-container {
-      margin-right: 8px;
-      margin-left: 8px;
-    }
-  }
-  .hero-img {
-    float: right;
-  }
-  .mobile-title {
-    margin-top: 30px;
-    div {
-      line-height: 47px;
-      text-align: center;
-      font-family: 'Playfair Display';
-      font-weight: 700;
-      font-size: 35px;
-      color: #ffffff;
-    }
-  }
-  .sub-title {
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Futura PT';
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    color: #ffffff;
-  }
-
-  @media (min-width: 1200px) {
-    .hero-bg {
-      padding-top: 100px + $nav-bar-height;
-      padding-bottom: 100px;
+      padding-top: 95px;
+      padding-bottom: 95px;
     }
     // TODO refactor away the name mobile title, its not just for mobile
     .mobile-title, .sub-title {
@@ -218,6 +209,41 @@
     .sub-title {
       font-size: 30px;
       text-align: left;
+    }
+  }
+  .fabio .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(650px circle at 60% 41%, #f2b9cd, $fabio-color);
+    }
+  }
+  .spore, .capitalone {
+    .sam-hero {
+      .hero-bg {
+        background-image: radial-gradient(650px circle at 60% 41%, #a7d2ff, #0e4073);
+      }
+    }
+  }
+  .capitalone .sam-hero {
+    .hero-bg {
+      // background-image: radial-gradient(circle at 62% 49%, #9fe6ff, #0d74af);
+      background-image: radial-gradient(650px circle at 60% 41%, #9fe6ff, #0d74af);
+    }
+    .title-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .title-container {
+      .mobile-title {
+        margin-left: 0;
+        div {
+          font-size: 48px;
+        }
+      }
+      .sub-title {
+        margin-left: 0;
+        margin-top: 0;
+      }
     }
   }
 }
