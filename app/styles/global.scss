@@ -19,6 +19,7 @@ $text-padding-large: 40px;
 .hide-until-load {
   display: none;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
@@ -144,6 +145,8 @@ footer {
   }
 }
 .main-container {
+  margin-bottom: 60px;
+
   .similar-products {
     margin-top: 60px;
     .row + .image-subtitle {
@@ -179,26 +182,30 @@ footer {
       margin-bottom: 0;
     }
   }
-  margin-bottom: 60px;
+
   header + p {
     margin-top: 40px;
   }
+
   header + .p-row {
     p {
       margin-top: 40px;
     }
   }
+
   p {
     margin-top: 40px;
     &.m40 {
       margin-top: 40px;
     }
   }
+
   a, a:hover, a:focus {
     color: #fff;
     text-decoration: none;
     outline: 0;
   }
+
   button {
     display: block;
     margin-top: $big-m;
@@ -212,9 +219,11 @@ footer {
     font-weight: 600;
     border: none;
   }
+
   header + img, .comments, header + .img-container {
     margin-top: 60px;
   }
+
   .image-subtitle {
     margin-top: 15px;
     font-family:'Futura PT';
@@ -222,6 +231,7 @@ footer {
     color: #565656;
     text-align: center;
   }
+
   .sub-header {
     text-align: center;
     margin-top: 60px;
@@ -237,6 +247,7 @@ footer {
       opacity: .5;
     }
   }
+
   .m30 {
     margin-top: 30px;
   }
@@ -250,6 +261,7 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+
   .portfolio-page-links {
     text-align: center;
     a {
@@ -284,6 +296,7 @@ footer {
       }
     }
   }
+
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
     .sub-header + .img-row {
