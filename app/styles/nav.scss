@@ -5,6 +5,11 @@
   box-shadow: 0 1px 2px 0 rgba(189, 189, 189, 0.5);
 }
 
+nav .active {
+  color: $orange;
+  font-weight: 900;
+}
+
 .nav-bar {
   text-align: center;
   .title-circle {
@@ -31,6 +36,44 @@
     width: 16px;
     margin-top: -4px;
   }
+  .hideaway-nav {
+    padding-top: 97px;
+    padding-bottom: 240px;
+    a {
+      font-size: 24px;
+      font-family: Futura PT;
+      display: block;
+      margin-bottom: 40px;
+      font-weight: 600;
+      font-style: normal;
+      text-transform: uppercase;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      &.active {
+        color: $orange;
+        font-weight: 900;
+      }
+    }
+  }
+  .contact-links {
+    padding-bottom: 30px;
+    .title-circle {
+      background-color: #333333;
+    }
+    a {
+      font-family: Futura PT;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #191919;
+      text-decoration: underline;
+    }
+  }
 }
 
 .nav-bar-padding {
@@ -52,10 +95,6 @@
     display: flex;
     justify-content: space-between;
     &.page-links {
-      .active {
-        color: $orange;
-        font-weight: 900;
-      }
       a:first-child {
         padding-left: 8%;
       }

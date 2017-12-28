@@ -13,6 +13,7 @@ $(document).ready(function() {
   }
   unhideItems();
   designImageOverlayHovers();
+  openNav();
 });
 
 function designImageOverlayHovers() {
@@ -90,3 +91,9 @@ function addSwipe() {
       threshold: 0
   } );
 };
+
+function openNav() {
+  $('.js-open-nav').click(function() {
+    $('.js-hideaway-nav').toggleClass('hide')
+  })
+}

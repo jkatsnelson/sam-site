@@ -1,7 +1,7 @@
 <nav class="nav-bar">
   <div class="small-nav-container container hidden-md hidden-lg">
     <div class="row">
-      <div class="burger col-xs-2">
+      <div class="burger col-xs-2 js-open-nav">
         <div></div>
         <div></div>
         <div></div>
@@ -19,6 +19,35 @@
         <img class="linked-in" src="/images/nav/linkedin-icon.png" alt="LinkedIn link">
       </a>
     </div>
+    <div class="row hide js-hideaway-nav">
+      <div class="col-xs-12 hideaway-nav">
+        <% if (locals.activePage === 'work') { %>
+          <a href="/" class="active">
+        <% } else { %>
+          <a href="/">
+        <% } %>
+            Work
+          </a>
+        <% if (locals.activePage === 'about') { %>
+          <a href="/about" class="active">
+        <% } else { %>
+          <a href="/about">
+        <% } %>
+            About
+          </a>
+        <% if (locals.activePage === 'resume') { %>
+          <a href="/resume" class="active">
+        <% } else { %>
+          <a href="/resume">
+        <% } %>
+            Resume
+          </a>
+      </div>
+      <div class="col-xs-12 contact-links">
+        <a href="mailto:hellosamking@gmail.com">Email</a>
+        <div class="title-circle"></div>
+        <a href="http://www.linkedin.com/in/hellosamking">LinkedIn</a>
+      </div>
   </div>
 </nav>
 <div class="hidden-md hidden-lg nav-bar-padding"></div>
