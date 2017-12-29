@@ -1,0 +1,34 @@
+.capitalone {
+  .info-dot {
+    background: $capitalone-color;
+  }
+  .main-container {
+    button {
+      color: #FFF;
+      background-color: $capitalone-color;
+    }
+  }
+  hr {
+    border-color: $capitalone-color;
+  }
+
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: $screen-md-min) {
+    .main-container {
+      button {
+        color: $capitalone-color;
+        border-color: $capitalone-color;
+        background-color: #FFF;
+        &:hover {
+          background-color: $capitalone-color;
+          color: #FFF;
+        }
+      }
+    }
+  }
+
+  /* Large devices 1200px and up */
+  @media (min-width: $screen-lg-min) {
+
+  }
+}

@@ -1,0 +1,15 @@
+<div class="row non-carousel-row hidden-xs hidden-sm">
+<% items.forEach(function(item, i) { %>
+<%if (i % 2 === 0 || i === 0) { %>
+  <div class="col-xs-10 col-xs-offset-1">
+    <div class="non-slide-container">
+      <img class="img-responsive" src="<%= item %>" />
+    </div>
+<% } else { %>
+    <div class="non-slide-container">
+      <img class="img-responsive" src="<%= item %>" />
+    </div>
+  </div>
+<% } %>
+<% }) %>
+</div>

@@ -21,10 +21,6 @@
     border-color: $home-color;
   }
 
-  #spore {
-    margin-top: 60px;
-  }
-
   .motto {
     font-family: Futura PT;
     font-size: 20px;
@@ -116,9 +112,6 @@
       .portfolio-link {
         height: 275px;
       }
-    }
-    #spore {
-      margin-top: 0;
     }
   }
   @media (min-width: $screen-lg-min) {

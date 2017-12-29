@@ -2,6 +2,7 @@ $fabio-color: #4f1429;
 $spore-color: #0e4073;
 $ubergo-color: #36a7ff;
 $home-color: #ff9b31;
+$capitalone-color: #019dd5;
 $medium-up-alt-subtitles: 20px;
 $nav-bar-height: 45px;
 $orange: #ee3a00;
@@ -293,6 +294,9 @@ footer {
       }
       &.fabio {
         border-color: $fabio-color;
+      }
+      &.capitalone {
+        border-color: $capitalone-color;
       }
     }
   }

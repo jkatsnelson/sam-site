@@ -30,6 +30,206 @@
           </div>
         </div>
       </div>
+      <section class="container main-container">
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Introduction'}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              In February 2017 I joined Capital One as a visual designer on capitalone.com. My team focuses on the homepage, header, and navigation of capitalone.com with the long-term goal of creating a design system for the site as a whole.
+              <br>
+              <br>
+              We work closely with product, engineering, and other teams responsible for specific lines of business to create user-centered modular solutions based in research. I draw from insights gained from user research, design research, A/B testing, and workshops we conduct with other teams at Capital One.
+              <br>
+              <br>
+              My day-to-day includes creating pixel-perfect mockups to hand off to developers, presenting findings and recommendations to other teams, and creating style guides to aid in future design systems. I also help conduct user research and user experience testing, and create designs for A/B testing to gain insight about the site and move towards a modern, human, and friendly design that is the face of Capital One.
+              <br>
+              <br>
+              Below are a collection of projects I’ve worked on since joining Capital One.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Homepage Hero Banner Style Guides'}) %>
+        <div class="row hidden-md hidden-lg">
+          <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
+            <%- include(process.cwd() + '/app/partials/carousel', {
+              id: 'mobile-capitalone-carousel-1',
+              items: [
+                '/images/capital-one/Cap1-image-2.jpg',
+                '/images/capital-one/Cap1-image-3.jpg',
+                '/images/capital-one/Cap1-image-4.jpg',
+              ],
+              caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+              caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+            }) %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <div class="row hidden-xs hidden-sm big-m">
+              <div class="col-xs-4">
+                <img class="img-responsive" src="/images/capital-one/Cap1-image-2.jpg" />
+              </div>
+              <div class="col-xs-4">
+                <img class="img-responsive" src="/images/capital-one/Cap1-image-3.jpg" />
+              </div>
+              <div class="col-xs-4">
+                <img class="img-responsive" src="/images/capital-one/Cap1-image-4.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-subtitle">
+          Variety of Original Homepage Banners
+        </div>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              Until recently, Capital One’s homepage didn’t have full-time designers assigned to it. Instead, it was treated as a platform for marketers to promote new products, deals, or content. The banners on the homepage are created mainly by marketers whose goal is to increase revenue through advertising of specific products.
+              <br>
+              <br>
+              The homepage is now going through a shift, in both the teams working on it and its priorities. Our team of digital designers on the homepage is a little over a year old, and we’ve been working to shift the homepage away from a place of broad selling to a place of customized experiences. That said, there’s still a need by other teams to promote their products on the homepage and the sounding-board it provides. The homepage is high-traffic, and thus many promotions are very lucrative.
+              <br>
+              <br>
+              I was tasked with creating style guides for these promotions in order to help guide the design of them while also encouraging further monetary growth. These style guides have templatized the banners, thus aiding engineers who had, up until this point, been creating customer banners. I created two versions of this style guide for the top banner area of the homepage; more are on the way as the homepage evolves and as we incoporate more sophisticated designs into the overall patterns present on the homepage.
+              <br>
+              <br>
+              These style guides were informed by past research our team has conducted, with users in interviews and other exercises, and on the live site via A/B testing. These style guides indicated a shift in imagery, from more posed, “Photoshopped” imagery to lifestyle, human imagery and messaging. These guides have also been in conjunction with technical changes on the site and moving towards a more thoroughly responsive site.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Style Guide Version 1'}) %>
+        <div class="small-title">
+          Text Layouts & Specifications
+        </div>
+        <div class="hidden-md hidden-lg">
+          <%- include(process.cwd() + '/app/partials/carousel', {
+            id: 'mobile-capitalone-carousel-2',
+            items: [
+              '/images/capital-one/Cap1-image-5.jpg',
+              '/images/capital-one/Cap1-image-6.jpg',
+              '/images/capital-one/Cap1-image-7.jpg',
+              '/images/capital-one/Cap1-image-8.jpg',
+            ],
+            caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+            caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+          }) %>
+        </div>
+        <div class="row non-carousel-row hidden-xs hidden-sm">
+          <div class="col-xs-10 col-xs-offset-1">
+            <div class="non-slide-container" id="homepage-wines">
+              <img class="img-responsive" src="/images/capital-one/Cap1-image-5.jpg" />
+            </div>
+            <div class="non-slide-container" id="homepage-information">
+              <img class="img-responsive" src="/images/capital-one/Cap1-image-6.jpg" />
+            </div>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1">
+            <div class="non-slide-container" id="existing-site-navigation">
+              <img class="img-responsive" src="/images/capital-one/Cap1-image-7.jpg" />
+            </div>
+            <div class="non-slide-container" id="recipes-and-pairings">
+              <img class="img-responsive" src="/images/capital-one/Cap1-image-8.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <p>
+              I designed the style guide as a system of elements and layouts, in order to make it easy for marketing teams and other designers to design off of this guide, as well as add ease for engineers in developing their own template.
+              <br>
+              <br>
+              These layouts were designed so teams submitting designs can specifiy which layout they want to use, and engineers can quickly implement them and launch new banners and tests
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Photography & Treatments
+        </div>
+        <div class="hidden-md hidden-lg">
+          <%- include(process.cwd() + '/app/partials/carousel', {
+            id: 'mobile-capitalone-carousel-3',
+            items: [
+              '/images/capital-one/Cap1-image-9.jpg',
+              '/images/capital-one/Cap1-image-10.jpg',
+              '/images/capital-one/Cap1-image-11.jpg',
+              '/images/capital-one/Cap1-image-12.jpg',
+            ],
+            caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+            caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+          }) %>
+        </div>
+        <%- include(process.cwd() + '/app/partials/non-carousel-row', {
+          items: [
+            '/images/capital-one/Cap1-image-9.jpg',
+            '/images/capital-one/Cap1-image-10.jpg',
+            '/images/capital-one/Cap1-image-11.jpg',
+            '/images/capital-one/Cap1-image-12.jpg',
+          ]
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <p>
+              I was specific in the photography and treatment of the banners, and included breakdowns of what kind of imagery to use, treatments to use and not to use, as well as the responsive behavior on mobile and how to create mobile-friendly imagery.
+              <br>
+              <br>
+              By being specific about the imagery, the banners can now feel more coherent and closer to one encompassing brand story of Capital One as a whole, as opposed to separate teams creating separate assets that are vaguely related to each other.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Style Guide Version 2'}) %>
+        <div class="small-title">
+          New Layouts & Photography Specifications
+        </div>
+        <div class="hidden-md hidden-lg">
+          <%- include(process.cwd() + '/app/partials/carousel', {
+            id: 'mobile-capitalone-carousel-3',
+            items: [
+              '/images/capital-one/Cap1-image-13.jpg',
+              '/images/capital-one/Cap1-image-14.jpg',
+              '/images/capital-one/Cap1-image-15.jpg',
+              '/images/capital-one/Cap1-image-16.jpg',
+            ],
+            caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+            caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+          }) %>
+        </div>
+        <%- include(process.cwd() + '/app/partials/non-carousel-row', {
+          items: [
+            '/images/capital-one/Cap1-image-13.jpg',
+            '/images/capital-one/Cap1-image-14.jpg',
+            '/images/capital-one/Cap1-image-15.jpg',
+            '/images/capital-one/Cap1-image-16.jpg',
+          ]
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <p>
+              In September 2017, we tested new designs of the sign in badge. The current winner is the variation of the badge on the right side of the screen, over a fullbleed background image.
+              <br>
+              <br>
+              I updated style guide to include new templates and guidance for this new design, changing the number of text layouts, the text sizing at desktop and tablet, and the image requirements. Because of the grid and the homepage’s responsiveness, only imagery that acts as a background was initially accepted.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Style Guide: Next Steps'}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              Since designing the second style guide for the homepage, I worked closely with our engineering team to dig into the existing grid on the homepage and see how to incorporate more flexibility in designs with this new layout of the sign in badge and fullbleed banner.
+              <br>
+              <br>
+              The grid is made up of a sixteen column system where individual columns bind together to act as a few large columns. After talking with the engineers, I was able to work out new designs for this space that accomodate a focal point in imagery, as currently the fullbleed image acts only as a background.
+              <br>
+              <br>
+              I created a rudimentary style guide and shared it with a partner design team; they were able to work with it to create new banners that both fit within our guidelines of human and personal, while also promoting their new product in a fun and interesting way.
+              <br>
+              <br>
+              Additionally, I modified the sign in badge to better fit within the grid structure at both desktop and tablet, and I’ve proposed future tablet A/B tests to see how the sign in badge can be shifted at tablet sizing.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Homepage Sign In Badge'}) %>
+      </section>
       <%- include(process.cwd() + '/app/partials/footer') %>
     </main>
     <script>
