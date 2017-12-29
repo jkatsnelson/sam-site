@@ -117,11 +117,9 @@
           <h2>Defining the Challenge</h2>
           <hr>
         </header>
-        <div class="row img-container">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <img class="img-responsive" src="/images/wine/original-homepage.png" />
-          </div>
-        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/wine/original-homepage.png'
+        }) %>
         <div class="image-subtitle">
           Fabio Viviani Wines' original homepage
         </div>

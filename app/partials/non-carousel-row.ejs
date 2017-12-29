@@ -3,11 +3,17 @@
 <%if (i % 2 === 0 || i === 0) { %>
   <div class="col-xs-10 col-xs-offset-1">
     <div class="non-slide-container">
-      <img class="img-responsive" src="<%= item %>" />
+    <% if (item.title) { %>
+      <div class="desktop-non-slide-title"><%= item.title %></div>
+    <% } %>
+      <img class="img-responsive" src="<%= item.src %>" />
     </div>
 <% } else { %>
     <div class="non-slide-container">
-      <img class="img-responsive" src="<%= item %>" />
+    <% if (item.title) { %>
+      <div class="desktop-non-slide-title"><%= item.title %></div>
+    <% } %>
+      <img class="img-responsive" src="<%= item.src %>" />
     </div>
   </div>
 <% } %>

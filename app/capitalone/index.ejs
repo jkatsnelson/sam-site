@@ -160,10 +160,18 @@
         </div>
         <%- include(process.cwd() + '/app/partials/non-carousel-row', {
           items: [
-            '/images/capital-one/Cap1-image-9.jpg',
-            '/images/capital-one/Cap1-image-10.jpg',
-            '/images/capital-one/Cap1-image-11.jpg',
-            '/images/capital-one/Cap1-image-12.jpg',
+            {
+              src: '/images/capital-one/Cap1-image-9.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-10.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-11.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-12.jpg'
+            }
           ]
         }) %>
         <div class="row p-row">
@@ -182,7 +190,7 @@
         </div>
         <div class="hidden-md hidden-lg">
           <%- include(process.cwd() + '/app/partials/carousel', {
-            id: 'mobile-capitalone-carousel-3',
+            id: 'mobile-capitalone-carousel-4',
             items: [
               '/images/capital-one/Cap1-image-13.jpg',
               '/images/capital-one/Cap1-image-14.jpg',
@@ -195,10 +203,18 @@
         </div>
         <%- include(process.cwd() + '/app/partials/non-carousel-row', {
           items: [
-            '/images/capital-one/Cap1-image-13.jpg',
-            '/images/capital-one/Cap1-image-14.jpg',
-            '/images/capital-one/Cap1-image-15.jpg',
-            '/images/capital-one/Cap1-image-16.jpg',
+            {
+              src: '/images/capital-one/Cap1-image-13.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-14.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-15.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-16.jpg'
+            }
           ]
         }) %>
         <div class="row p-row">
@@ -228,7 +244,226 @@
             </p>
           </div>
         </div>
-        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Homepage Sign In Badge'}) %>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Homepage Sign In Badge'}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-17.jpg'
+        }) %>
+        <div class="image-subtitle">
+          Capital One’s Original Sign In Badge
+        </div>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              The sign in badge on the homepage of capitalone.com is crucial. Thousands of people sign in on the homepage everyday, and it is a high-traffic, high-importance widget integral to the customer experience. Over 80% of Capital One’s homepage traffic goes straight to the sign in badge.
+              <br>
+              <br>
+              I worked in conjuction with another team in Richmond, VA to redesign the sign in experience in order to update the look and feel of the badge, as well as create a better design solution that alowed for further flexibility with the rest of the page.
+              <br>
+              <br>
+              I worked on many iterations of badges for the sign in, and we ultimately A/B tested three variateions: two I created, and one another designer on the other team created. The test outcomes proved to be complicated, as each experience produced mixed results of increased or decreased time to sign in and increased and decreased revenue per visitor (brought in by users clicking on and acquiring a product showcased on the homepage).
+              <br>
+              <br>
+              Below are a few of my iterations of the sign in experience. I was constricted to keeping the dropdown menu (due to technical limitations) and keeping a fully exposed sign in experience. My team is continuing to test the placement and design on the sign in badge to evolve the design and ensure the placement is best for the user’s total experience on the homepage.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Sign In Badges'}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-18.png'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <p>
+              I audited other leading financial institutions’ sign in badges to get a sense of what the industry was using in terms of sizing (height of the badge, text and form field sizing, etc.) as well as language. Some badges were more personalized and friendly, while others were more simple.
+              <br>
+              <br>
+              I also designed badges with and without form field labels, and took into account the links that needed to be present with each drop down (corresponding to each line of business at Capital One).
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Tested Sign In Variations'}) %>
+        <div class="hidden-md hidden-lg">
+          <%- include(process.cwd() + '/app/partials/carousel', {
+            id: 'mobile-capitalone-carousel-5',
+            items: [
+              '/images/capital-one/Cap1-image-19.jpg',
+              '/images/capital-one/Cap1-image-20.jpg',
+              '/images/capital-one/Cap1-image-21.jpg'
+            ],
+            caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+            caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+          }) %>
+        </div>
+        <%- include(process.cwd() + '/app/partials/non-carousel-row', {
+          items: [
+            {
+              src: '/images/capital-one/Cap1-image-19.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-20.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-21.jpg'
+            }
+          ]
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <p>
+              We conducted a live test on the homepage using the top two designs and a variation designed by my teammate of the bottom sign in badge design. In the test itself, we tested variations with the grey icon and “Sign In” text; we’re looking to test future iterations of greeting language, especially as personalization technology further enhanced.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Product Finder Widgets: Sketches'}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              My team led a workshop across design and product teams at Capital One to ideate and co-create on product finder widget concepts. We sought to create a widget that would live on the homepage and would allow users to connect with the right product based on needs and goals, instead of impersonal promotions.
+              <br>
+              <br>
+              In leading a two-day co-creation workshop, we pooled our knowledge and resources to come up with new concepts to place on the homepage and help guide Capital One’s customers and prospective customers.
+              <br>
+              <br>
+              In preparation for the workshop, I created low-fidelity designs of potential widgets. These were to help guide the participants in the workshop and have them work off of my designs to create more in-depth designs which we then tested with in-home participants the following day.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-22.png'
+        }) %>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Homepage Redesign: First Variations'}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              Our team’s major initiative is to redesign Capital One’s homepage and navigation/ header, with the overarching goal of creating a design system for capitalone.com. Below are the initial designs of the homepage and navigation my team and I have been working on. The third set of designs are for the page the module with the mad-libs style drop-downs leads to; we call this the “Guidance Page” for what it aims to do for users.
+              <br>
+              <br>
+              These designs are a culmination of efforts and learnings; we’ve been working in closely off of the insights we’ve gained from A/B tests, user research, and co-creation workshops we’ve hosted across multiple lines of business with stakeholders from design, product, and engineering.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Homepage Explorations'}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-23.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              We’ve sought to create homepage designs that better reflect the goals Capital One has for its customers and users, that is, to make banking a better place by changing the way we interact with it. We’re striving to create a homepage that shows Capital One’s best qualities: how we care for people in times of need, how we can help provide financial guidance throughout stages of life, and that we’re humans, too.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-24.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              In this version, we explored highlighting the award-winning technical aspects of Capital One, as well as bringing Capital One’s stories of humanity up into that top hero space. We sought to welcome users to the space, bringing to mind a similar experience of being greeted when walking through the door of a traditional brick-and-mortar bank.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Sub-Navigation Explorations'}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-25.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              My team and I created a plethora of sub-navigation designs to explore new visual ways to lay out the navigation information. In this design, designed a lefthand column of hot links, with top actions to help propel users to their destination. On the right, I designed a featured ad that was pertinent to the navigation menu.
+              <br>
+              <br>
+              I also explored many visual styles for the header itself: all caps, focus colors versus underlining, lighter greys versus blacks, etc. For these examples I chose a more playful visual styling of the header, with a bright blue semi-circle to indicate a highlighted section.
+              <br>
+              <br>
+              All content is based upon monthly of research my team has conducted throughout a variety of methods; the “meganav” style of navigation is also based upon research findings.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-26.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              I explored pulling out top rated products and placing them along the bottom of the navigation, with prominent calls to action to help users quickly navigate, with the other tasks separated into three columns.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-27.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              I explored featuring specific products and allowing users to check off multiple and apply for more than one at once. For this variation, I forsaw testing this concept with a mix of products from across lines of business, such as credit cards, bank accounts, and investment accounts.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Guidance Page Explorations'}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-28.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              For the guidance page, I’m seeking to find a balance between content and products. From our research, we learned users expect to see products, but wish for them to be in context.
+              <br>
+              In this variation, I explored transforming the guidance page into something of a learning experience. I broke down the topic, “improving credit”, into smaller, digestible chunks. Visually, I created movement down the page to keep users invested even with a more complicated topic. I pulled in products at the end of their learning journey, tying the two together.
+              <br>
+              Towards the bottom of the page, I included customer testimonials that will lead to larger case studies of real people’s stories on how they achieved financial milestones.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-29.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              In this version, I explored condensing the learning content into carousel slides that have more information within them. This was designed to help users dig into the content and learn about what they needed to do. The icons at the top are bright and friendly, and introduce the user to the topic with sound-bites on the most important aspects.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/capital-one/Cap1-image-30.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              In this version, I focused more upon products and which ones help customers with specific needs. I pulled the learn content down to the bottom of the page and bubbled more products up to the top.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Guidance Page: Next Steps'}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              I’m continuing to iterate on this guidance page to balance the learning content with the products, finding that symbiosis between the two. Visually speaking, I’m creating variations that speak to different arcs of visual styling that we could potentially take Capital One.
+              <br>
+              <br>
+              As I iterate further, I’m seeking to fully align and streamline the link between this page and the homepage. I’m also considering questions regarding user intent and expectation, where this page lives outside of the homepage, and how users might interact with the page as they put new inputs into the drop-down fields and refresh their results.
+              <br>
+              <br>
+              I’m working closely with our content designer on our team, and the two of us are brainstorming the ways the content and visual design will complement one another.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Check Out Others'}) %>
+        <div class="portfolio-link-grid">
+          <a href="/kiva" class="portfolio-link kiva">
+            <h1>Kiva</h1>
+            <h3>UX Design & Research</h3>
+          </a>
+          <a href="/fvwines" class="portfolio-link fvwines">
+            <h1>FV Wines</h1>
+            <h3>UI & UX Design</h3>
+          </a>
+          <a href="/spore" class="portfolio-link spore">
+            <h1>Spore</h1>
+            <h3>UI & UX Design</h3>
+          </a>
+        </div>
       </section>
       <%- include(process.cwd() + '/app/partials/footer') %>
     </main>
