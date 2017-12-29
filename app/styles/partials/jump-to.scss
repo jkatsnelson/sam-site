@@ -1,0 +1,20 @@
+.jump-to {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  a {
+    text-transform: uppercase;
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #191919;
+    &:hover {
+      color: $orange;
+    }
+  }
+}

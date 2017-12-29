@@ -48,6 +48,26 @@
             </p>
           </div>
         </div>
+        <%- include(process.cwd() + '/app/partials/jump-to', {
+          sections: [
+            {
+              name: 'Style Guides',
+              link: '#style-guides'
+            },
+            {
+              name: 'Login Badges',
+              link: '#login-badges'
+            },
+            {
+              name: 'Product Finder Widgets',
+              link: '#product-finder-widgets'
+            },
+            {
+              name: 'Homepage and Navigation Redesign',
+              link: '#home-and-nav-redesign'
+            }
+          ]
+        }) %>
         <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Homepage Hero Banner Style Guides'}) %>
         <div class="row hidden-md hidden-lg">
           <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
@@ -294,19 +314,24 @@
             caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
           }) %>
         </div>
-        <%- include(process.cwd() + '/app/partials/non-carousel-row', {
-          items: [
-            {
-              src: '/images/capital-one/Cap1-image-19.jpg'
-            },
-            {
-              src: '/images/capital-one/Cap1-image-20.jpg'
-            },
-            {
-              src: '/images/capital-one/Cap1-image-21.jpg'
-            }
-          ]
-        }) %>
+        <div class="row">
+          <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <div class="row hidden-xs hidden-sm big-m">
+              <div class="col-xs-4">
+                <div class="img-title">Sign In Badge: Below Fullbleed Banner</div>
+                <img class="img-responsive" src="/images/capital-one/Cap1-image-19.jpg" />
+              </div>
+              <div class="col-xs-4">
+                <div class="img-title">Sign In Badge: Above Fullbleed Banner</div>
+                <img class="img-responsive" src="/images/capital-one/Cap1-image-20.jpg" />
+              </div>
+              <div class="col-xs-4">
+                <div class="img-title">Sign In Badge: Updated, Over Fullbleed, On Right</div>
+                <img class="img-responsive" src="/images/capital-one/Cap1-image-21.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row p-row">
           <div class="col-xs-12 col-md-6 col-md-offset-3">
             <p>
@@ -450,7 +475,7 @@
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Check Out Others'}) %>
-        <div class="portfolio-link-grid">
+        <div class="portfolio-link-grid big-m">
           <a href="/kiva" class="portfolio-link kiva">
             <h1>Kiva</h1>
             <h3>UX Design & Research</h3>
