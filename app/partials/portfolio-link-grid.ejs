@@ -1,4 +1,6 @@
 <div class="portfolio-link-grid">
+<% order.forEach(function(link) { %>
+  <% if (link === 'capitalone') { %>
   <a href="/capitalone" class="portfolio-link js-hoverable c1">
     <div class="portfolio-link-text">
       <h1>Capital One</h1>
@@ -9,6 +11,8 @@
       <h1>Capital One</h1>
     </div>
   </a>
+  <% } %>
+  <% if (link === 'kiva') { %>
   <a href="/kiva" class="portfolio-link js-hoverable kiva">
     <div class="portfolio-link-text">
       <h1>Kiva</h1>
@@ -19,6 +23,8 @@
       <h1>Kiva</h1>
     </div>
   </a>
+  <% } %>
+  <% if (link === 'fvwines') { %>
   <a href="/fvwines" class="portfolio-link js-hoverable fvwines">
     <div class="portfolio-link-text">
       <h1>FV Wines</h1>
@@ -29,6 +35,8 @@
       <h1>FV Wines</h1>
     </div>
   </a>
+  <% } %>
+  <% if (link === 'spore') { %>
   <a href="/spore" class="portfolio-link js-hoverable spore">
     <div class="portfolio-link-text">
       <h1>Spore</h1>
@@ -39,6 +47,8 @@
       <h1>Spore</h1>
     </div>
   </a>
+  <% } %>
+  <% if (link === 'ubergo') { %>
   <a href="/ubergo" class="portfolio-link js-hoverable ubergo">
     <div class="portfolio-link-text">
       <h1>UberGo</h1>
@@ -49,7 +59,12 @@
       <h1>UberGo</h1>
     </div>
   </a>
+  <% } %>
+  <% if (link === 'resume') { %>
   <a href="/resume" class="portfolio-link js-hoverable resume">
     <h1>Resume</h1>
   </a>
+  <% } %>
+<% }) %>
+
 </div>

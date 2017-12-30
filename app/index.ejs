@@ -20,7 +20,9 @@
         <div class="motto">
           Designing with Love in Oakland, California
         </div>
-        <%- include(process.cwd() + '/app/partials/portfolio-link-grid') %>
+        <%- include(process.cwd() + '/app/partials/portfolio-link-grid', {
+          order: ['capitalone', 'kiva', 'fvwines', 'spore', 'ubergo', 'resume']
+        }) %>
       </section>
       <%- include(process.cwd() + '/app/partials/footer') %>
     </main>

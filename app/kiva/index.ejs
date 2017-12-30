@@ -450,19 +450,10 @@
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Check Out Others'}) %>
-        <div class="portfolio-link-grid big-m">
-          <a href="/kiva" class="portfolio-link kiva">
-            <h1>Capital One</h1>
-            <h3>Visual Design</h3>
-          </a>
-          <a href="/spore" class="portfolio-link spore">
-            <h1>Spore</h1>
-            <h3>UI & UX Design</h3>
-          </a>
-          <a href="/fvwines" class="portfolio-link fvwines">
-            <h1>FV Wines</h1>
-            <h3>UI & UX Design</h3>
-          </a>
+        <div class='big-m'>
+          <%- include(process.cwd() + '/app/partials/portfolio-link-grid', {
+            order: ['capitalone', 'spore', 'fvwines']
+          }) %>
         </div>
       </section>
       <%- include(process.cwd() + '/app/partials/footer') %>
