@@ -20,31 +20,7 @@
         <div class="motto">
           Designing with Love in Oakland, California
         </div>
-        <div class="portfolio-link-grid">
-          <a href="/capitalone" class="portfolio-link c1">
-            <h1>Capital One</h1>
-            <h3>Visual Design</h3>
-          </a>
-          <a href="/kiva" class="portfolio-link kiva">
-            <h1>Kiva</h1>
-            <h3>UX Design & Research</h3>
-          </a>
-          <a href="/fvwines" class="portfolio-link fvwines">
-            <h1>FV Wines</h1>
-            <h3>UI & UX Design</h3>
-          </a>
-          <a href="/spore" class="portfolio-link spore">
-            <h1>Spore</h1>
-            <h3>UI & UX Design</h3>
-          </a>
-          <a href="/ubergo" class="portfolio-link ubergo">
-            <h1>UberGo</h1>
-            <h3>UI Design & Branding</h3>
-          </a>
-          <a href="/resume" class="portfolio-link resume">
-            <h1>Resume</h1>
-          </a>
-        </div>
+        <%- include(process.cwd() + '/app/partials/portfolio-link-grid') %>
       </section>
       <%- include(process.cwd() + '/app/partials/footer') %>
     </main>

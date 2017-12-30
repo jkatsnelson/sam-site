@@ -14,6 +14,7 @@ $(document).ready(function() {
   unhideItems();
   designImageOverlayHovers();
   openNav();
+  linkHovers();
 });
 
 function designImageOverlayHovers() {
@@ -96,5 +97,15 @@ function openNav() {
   $('.js-open-nav').click(function() {
     $('.js-hideaway-nav').toggleClass('hide')
     $('.js-open-nav').toggleClass('hide');
+  })
+}
+
+function linkHovers() {
+  $('.portfolio-link-grid .js-hoverable').hover(function() {
+    $(this).find('.portfolio-link-text').addClass('hide');
+    $(this).find('.portfolio-link-img').removeClass('hide');
+  }, function() {
+    $(this).find('.portfolio-link-text').removeClass('hide');
+    $(this).find('.portfolio-link-img').addClass('hide');
   })
 }
