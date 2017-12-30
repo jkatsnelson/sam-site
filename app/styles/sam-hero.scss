@@ -114,9 +114,21 @@
   }
 }
 
-.spore, .capitalone {
+.spore {
   .sam-hero .hero-bg {
     background-image: radial-gradient(325px circle at 62% 49%, #a7d2ff, #0e4073);
+  }
+}
+
+.capitalone {
+  .sam-hero .hero-bg {
+    background-image: radial-gradient(325px circle at 60% 41%, #9fe6ff, #0d74af);
+  }
+}
+
+.kiva {
+  .sam-hero .hero-bg {
+    background-image: radial-gradient(325px circle at 60% 41%, #b3ff87, #1a4e27);
   }
 }
 
@@ -155,11 +167,9 @@
       background-image: radial-gradient(450px circle at 60% 41%, #f2b9cd, $fabio-color);
     }
   }
-  .spore, .capitalone {
+
+  .spore, .capitalone, .kiva {
     .sam-hero {
-      .hero-bg {
-        background-image: radial-gradient(450px circle at 60% 41%, #a7d2ff, #0e4073);
-      }
       .title-container {
         height: 400px;
         position: relative;
@@ -172,9 +182,30 @@
       }
     }
   }
+
+  .spore {
+    .sam-hero {
+      .hero-bg {
+        background-image: radial-gradient(450px circle at 60% 41%, #a7d2ff, #0e4073);
+      }
+    }
+  }
+
+  .capitalone .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(450px circle at 60% 41%, #9fe6ff, #0d74af);
+    }
+  }
+
+  .kiva .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(450px circle at 60% 41%, #b3ff87, #1a4e27);
+    }
+  }
+
   .ubergo {
     .sam-hero .hero-bg {
-      background-image: radial-gradient(325px circle at 62% 49%, #ffffff, #36a7ff);
+      background-image: radial-gradient(450px circle at 60% 41%, #ffffff, #36a7ff);
     }
     .title-container {
       height: 400px;
@@ -216,34 +247,42 @@
       background-image: radial-gradient(650px circle at 60% 41%, #f2b9cd, $fabio-color);
     }
   }
-  .spore, .capitalone {
+  .spore {
     .sam-hero {
       .hero-bg {
         background-image: radial-gradient(650px circle at 60% 41%, #a7d2ff, #0e4073);
       }
     }
   }
-  .capitalone .sam-hero {
-    .hero-bg {
-      // background-image: radial-gradient(circle at 62% 49%, #9fe6ff, #0d74af);
-      background-image: radial-gradient(650px circle at 60% 41%, #9fe6ff, #0d74af);
-    }
-    .title-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .title-container {
-      .mobile-title {
-        margin-left: 0;
-        div {
-          font-size: 48px;
+  .capitalone, .kiva {
+    .sam-hero {
+      .title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .title-container {
+        .mobile-title {
+          margin-left: 0;
+          div {
+            font-size: 48px;
+          }
+        }
+        .sub-title {
+          margin-left: 0;
+          margin-top: 0;
         }
       }
-      .sub-title {
-        margin-left: 0;
-        margin-top: 0;
-      }
+    }
+  }
+  .kiva .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(650px circle at 60% 41%, #b3ff87, #1a4e27);
+    }
+  }
+  .capitalone .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(650px circle at 60% 41%, #9fe6ff, #0d74af);
     }
   }
 }

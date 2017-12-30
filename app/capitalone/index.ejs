@@ -7,29 +7,11 @@
     <![endif]-->
     <%- include(process.cwd() + '/app/partials/nav') %>
     <main id="panel">
-      <div class="container sam-hero" id="introduction">
-        <div class="hero-bg">
-          <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1">
-              <div class="row">
-                <div class="col-xs-12 col-md-8 hero-img">
-                  <div class="img-container">
-                    <img class="img-responsive" src='/images/capital-one/Cap1-hero-1.png'>
-                  </div>
-                </div>
-                <div class="title-container">
-                  <div class="col-xs-12 col-md-4 title-block">
-                    <div class="mobile-title">
-                      <div>Capital One</div>
-                    </div>
-                    <div class="sub-title">Visual Design</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%- include(process.cwd() + '/app/partials/sam-hero', {
+        heroSrc: '/images/capital-one/Cap1-hero-1.png',
+        title: 'Capital One',
+        subTitle: 'Visual Design'
+      }) %>
       <section class="container main-container">
         <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Introduction'}) %>
         <div class="row p-row">
@@ -134,24 +116,22 @@
             caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
           }) %>
         </div>
-        <div class="row non-carousel-row hidden-xs hidden-sm">
-          <div class="col-xs-10 col-xs-offset-1">
-            <div class="non-slide-container" id="homepage-wines">
-              <img class="img-responsive" src="/images/capital-one/Cap1-image-5.jpg" />
-            </div>
-            <div class="non-slide-container" id="homepage-information">
-              <img class="img-responsive" src="/images/capital-one/Cap1-image-6.jpg" />
-            </div>
-          </div>
-          <div class="col-xs-10 col-xs-offset-1">
-            <div class="non-slide-container" id="existing-site-navigation">
-              <img class="img-responsive" src="/images/capital-one/Cap1-image-7.jpg" />
-            </div>
-            <div class="non-slide-container" id="recipes-and-pairings">
-              <img class="img-responsive" src="/images/capital-one/Cap1-image-8.jpg" />
-            </div>
-          </div>
-        </div>
+        <%- include(process.cwd() + '/app/partials/non-carousel-row', {
+          items: [
+            {
+              src: '/images/capital-one/Cap1-image-5.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-6.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-7.jpg'
+            },
+            {
+              src: '/images/capital-one/Cap1-image-8.jpg'
+            }
+          ]
+        }) %>
         <div class="row p-row">
           <div class="col-xs-12 col-md-6 col-md-offset-3">
             <p>

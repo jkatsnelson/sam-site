@@ -3,6 +3,7 @@ $spore-color: #0e4073;
 $ubergo-color: #36a7ff;
 $home-color: #ff9b31;
 $capitalone-color: #019dd5;
+$kiva-color: #019dd5;
 $medium-up-alt-subtitles: 20px;
 $nav-bar-height: 45px;
 $orange: #ee3a00;
@@ -19,6 +20,19 @@ $text-padding-large: 40px;
 // this class will be removed from any element it is on, on document load
 .hide-until-load {
   display: none;
+}
+
+.small-title {
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 56px;
 }
 
 body {

@@ -24,18 +24,6 @@
   hr {
     border-color: $capitalone-color;
   }
-  .small-title {
-    font-family: Playfair Display;
-    font-size: 16px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    margin-bottom: 16px;
-    margin-top: 56px;
-  }
 
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
@@ -64,10 +52,5 @@
         padding-left: 10px;
       }
     }
-  }
-
-  /* Large devices 1200px and up */
-  @media (min-width: $screen-lg-min) {
-
   }
 }

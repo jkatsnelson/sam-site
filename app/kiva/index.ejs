@@ -1,12 +1,470 @@
 <!doctype html>
 <html class="no-js" lang="">
   <%- include(process.cwd() + '/app/partials/head', {title: 'Sam King Designs - Kiva'}) %>
-  <body class="home">
+  <body class="kiva">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <%- include(process.cwd() + '/app/partials/nav') %>
     <main id="panel">
+      <%- include(process.cwd() + '/app/partials/sam-hero', {
+        heroSrc: '/images/kiva/Kiva-image-1.png',
+        title: 'Kiva',
+        subTitle: 'UX Design & Research'
+      }) %>
+      <section class="container main-container">
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Introduction'}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              Kiva is an international nonprofit with a mission to connect people through lending to alleviate poverty. Crowdvet.org is an initiative started by Kiva’s strategic partnership division to engage non-borrowers with social entrepreneurs by leveraging crowdvetting via time donations instead of monetary donations.
+              <br>
+              <br>
+              Kiva created Crowdvet.org as a way to more quickly vet enterprises requesting to become borrowers on Kiva’s platform. Currently, Kiva manually vets each and every enterprise: their goal is to ramp up Crowdvet.org as a way to offset their employee workload. Crowdvet.org is for users experienced in the venture or financial space to volunteer their time to vet enterprises, ensuring enterprises’ materials match Kiva’s qualifications.
+              <br>
+              <br>
+              This project was accomplished in conjunction with my work at Capital One; it was a part of the design-in-residency program Adaptive Path runs for non-profit companies, which is funded by Capital One. I partnered with a UX designer: our commitment ran over the course of almost three months, where we devoted a total of close to 200 hours of work. We created and ran workshops with the Crowdvet.org team to research their needs and ultimately create wireframes and visual mockups for their internal design team to then redesign Crowdvet.org.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/jump-to', {
+          sections: [
+            {
+              name: 'Personas',
+              link: '#personas'
+            },
+            {
+              name: 'Journey Maps',
+              link: '#journey-maps'
+            },
+            {
+              name: 'Exercises',
+              link: '#exercises'
+            },
+            {
+              name: 'Low Fidelity Wireframes',
+              link: '#low-fidelity-wireframes'
+            }
+          ]
+        }) %>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Defining the Challenge'}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-2.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              Through working with Adaptive Path and Capital One, my partner and I sought to create designs for Kiva that enabled and empowered Kiva to create their own designs and experiences even after we left. We worked <strong>off of a condensed version of the Double Diamond model of design thinking</strong>, where we worked with Kiva to diverge in the beginning and converge at the end to work towards holistic design solutions.
+              <br>
+              <br>
+              <strong>When Kiva came to us, they simply asked us to “fix the Crowdvet.org site to make it easier to use”.</strong> They were able to recruit volunteers to use Crowdvet.org via connections they had made through different universities and social enterprise programs, but <strong>they were worried about retention</strong>, and about <strong>whether users were really able to understand the platform.</strong> Although we had a limited time frame, <strong>we sought to further identify what it would mean to make the site “better”</strong> while also realizing the real need of producing an end product of wireframes for their in-house designers to work with.
+              <br>
+              <br>
+              After vetting some enterprises ourselves with the platform, my partner and I realized that <strong>one of the biggest issues Crowdvet.org had was their onboarding</strong>, or rather, lack thereof. Crowdvet.org relied upon a few downloadable PDFs to teach users. The way the information was conveyed was cumbersome and lengthy; some of the PDFs were duplicates of themselves, and the overall mission wasn’t clear. There was no way for users to log in, save their progress, or even see how their vote measured up against others. The onboarding process was the area where we thus chose to focus the most on.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Digging into the Details'}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-3.jpg'
+        }) %>
+        <div class="image-subtitle">
+          My partner and I leading a workshop with the team
+        </div>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              In our beginning conversations and workshops, we began to dig into who this platform is for, and what it needs to be and do to be successful. Throughout our first two engagements, we worked with the team to think about and create personas, and then map their personas’ journeries to pain points and areas of success within Crowdvet.org. From there, we guided the team to create hypotheses about how an improved Crowdvet.org experience would impact the Kiva and its goals.
+              <br>
+              <br>
+              We then took their sketches and notes to compile them and create personas, a journey map, and hypotheses to be used going forward.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Personas'}) %>
+        <div class="hidden-md hidden-lg">
+          <%- include(process.cwd() + '/app/partials/carousel', {
+            id: 'mobile-kiva-carousel-1',
+            items: [
+              '/images/kiva/Kiva-image-4.jpg',
+              '/images/kiva/Kiva-image-5.jpg'
+            ],
+            caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+            caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+          }) %>
+        </div>
+        <%- include(process.cwd() + '/app/partials/non-carousel-row', {
+          items: [
+            {
+              src: '/images/kiva/Kiva-image-4.jpg'
+            },
+            {
+              src: '/images/kiva/Kiva-image-5.jpg'
+            }
+          ]
+        }) %>
+        <div class="image-subtitle">
+          We created a total of four personas, though two were for goals that were futher away from our scope. The two personas above are the personas we all agreed were the most important for us to focus upon.
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Journey Maps'}) %>
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+            <%- include(process.cwd() + '/app/partials/carousel', {
+                id: 'mobile-kiva-carousel-2',
+                items: [
+                  '/images/kiva/Kiva-image-6.jpg',
+                  '/images/kiva/Kiva-image-7.jpg'
+                ],
+                caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+                caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+              }) %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+            <div class="image-subtitle">
+              We worked with the team to identify the current journey of a first time user, plus the desired journey of that same user. We used this information to create journey maps, which we then referred back to throughout our work, and ultimately passed along to the design team when we finished our work.
+            </div>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Hypothesis'}) %>
+        <div class="hidden-md hidden-lg">
+          <%- include(process.cwd() + '/app/partials/carousel', {
+            id: 'mobile-kiva-carousel-3',
+            items: [
+              '/images/kiva/Kiva-image-8.jpg',
+              '/images/kiva/Kiva-image-9.jpg',
+              '/images/kiva/Kiva-image-10.jpg',
+              '/images/kiva/Kiva-image-11.jpg'
+            ],
+            caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+            caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+          }) %>
+        </div>
+        <%- include(process.cwd() + '/app/partials/non-carousel-row', {
+          items: [
+            {
+              src: '/images/kiva/Kiva-image-8.jpg'
+            },
+            {
+              src: '/images/kiva/Kiva-image-9.jpg'
+            },
+            {
+              src: '/images/kiva/Kiva-image-10.jpg'
+            },
+            {
+              src: '/images/kiva/Kiva-image-11.jpg'
+            }
+          ]
+        }) %>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Diverging through Storytelling'}) %>
+        <div class="row hidden-md hidden-lg">
+          <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
+            <%- include(process.cwd() + '/app/partials/carousel', {
+              id: 'mobile-capitalone-carousel-1',
+              items: [
+                '/images/kiva/Kiva-image-12.jpg',
+                '/images/kiva/Kiva-image-13.jpg',
+                '/images/kiva/Kiva-image-14.jpg',
+              ],
+              caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+              caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+            }) %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <div class="row hidden-xs hidden-sm big-m">
+              <div class="col-xs-4">
+                <img class="img-responsive" src="/images/kiva/Kiva-image-12.jpg" />
+              </div>
+              <div class="col-xs-4">
+                <img class="img-responsive" src="/images/kiva/Kiva-image-13.jpg" />
+              </div>
+              <div class="col-xs-4">
+                <img class="img-responsive" src="/images/kiva/Kiva-image-14.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              During our third major engagement with Kiva, we led the team through a series of exercises to help both us and Kiva dig deeper into their most important areas. We worked with the goal of getting enough insight and information to move towards a redesign of Crowdvet.org that spoke to the larger goals and issues of the platform and its users.
+              <br>
+              <br>
+              Through these exercises, my partner and I learned more about how exactly Crowdvet.org fit into Kiva’s structure as a whole, and about how user retention through excitement and genuine caring could help propel Kiva as a whole forward, thus helping all the borrowers on Kiva’s lending platform.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: "Exercise 1: Children's story"}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              In our first exercise, we had the team explain Kiva and Crowdvet.org as a children’s story. We used this exercise to help Kiva break down the information into digestible chunks that were the most refined areas of Crowdvet.org. Through this exercise, they were able to make their information more fun and personalized towards their audience.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-15.jpg'
+        }) %>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+            <div class="image-subtitle">
+              One of the children’s stories the team created and sketched.
+            </div>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: "Exercise 2: Hero's Journey"}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              We thus led a “Hero’s Journey” exercise to help Kiva explain and learn how their users benefit and are transformed by engaging with Crowdvet.org; we also had the team imagine if Crowdvet.org were a bank: how would it greet its customers? What would be its goals? How would it treat new customers versus returning customers?
+            </p>
+          </div>
+        </div>
+        <div class="hidden-md hidden-lg">
+          <%- include(process.cwd() + '/app/partials/carousel', {
+            id: 'mobile-kiva-carousel-4',
+            items: [
+              '/images/kiva/Kiva-image-16.jpg',
+              '/images/kiva/Kiva-image-17.jpg'
+            ],
+            caretLeft: '/images/wine/carousel/fvwines-leftcaret-desktop.png',
+            caretRight: '/images/wine/carousel/fvwines-rightcaret-desktop.png'
+          }) %>
+        </div>
+        <%- include(process.cwd() + '/app/partials/non-carousel-row', {
+          items: [
+            {
+              src: '/images/kiva/Kiva-image-16.jpg'
+            },
+            {
+              src: '/images/kiva/Kiva-image-17.jpg'
+            }
+          ]
+        }) %>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+            <div class="image-subtitle">
+              My partner and I then dove into “Crazy 8’s”, where we and the team generated as many sketches of the site as possible, digging into the most needed areas: onboarding and retention.
+            </div>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: "Exercise 3: Crazy 8's"}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-18.jpg'
+        }) %>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+            <div class="image-subtitle">
+              This foray into the space helped us then hone in on Crowdvet.org’s site goals and begin our visual designs.
+            </div>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: "Final Low-Fidelity Wireframes"}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              After this flurry of exercises, we then worked to consolidate and organize all of the information we had received. As my partner worked on creating assets for the workshops and compiling all of the data into a format that Kiva could then use again and reference, I set to creating new wireframes for Crowdvet.org.
+              <br>
+              <br>
+              The wireframes were the most important part to the process of converging: Kiva already has a visual style, and Crowdvet.org would follow that. I created a style tile of Kiva’s style for them to reference, in order to ensure the wireframes would be executed consistently.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: "Kiva Style Tile"}) %>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-19.jpg'
+        }) %>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+            <div class="image-subtitle">
+              Kiva already had a developed style that was recognizable to its users. I mapped these UI components and overall style in order for the Crowdvet.org team to bring the Crowdvet.org visual design closer to its parent, and thus make it more recognizable for users already familiar with Kiva.
+            </div>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: "Wireframes for Crowdvet.org Redesign"}) %>
+        <div class="small-title">
+          Crowdvet.org Homepage
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-20.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              The original Crowdvet.org site didn’t have much of a homepage: it was simply an embedded YouTube video on a white background. It wasn’t clear what the purpose of the site was, nor how it fit into Kiva’s overall mission. I sought to change this and bring in more of an introduction to the Crowdvet.org and welcome users.
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Onboarding Homepage
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-21.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              I broke onboarding into digestible tasks in order to educate new users about the purpose of Crowdvet.org as well as Kiva’s role and mission. The team spoke about how they needed there to be two tracks for users: a “fast track” for users experienced in social enterprise (mapping to the persona, “Carol”), and a fuller onboarding for less experienced users (mapping to the persona, “Sam”).
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Onboarding: Example Case Study
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-22.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              For less experienced users, I created an onboarding that was based off of a past case Kiva had processed. This way, users could learn by doing without getting bogged down in abstract lessons and facts. This page would then lead to the following page, of which they would vet the enterprise and see how their responses compared to Kiva’s.
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Onboarding: “Skip to Test Vet”
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-23.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              For onboarding, I created an onboarding test where users would compare their vetting against Kiva’s. This was to empower users to learn further about vetting social enterprises, while also teaching them about Kiva’s vetting process and about Kiva’s qualifications.
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Enterprise Vetting Dashboard
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-24.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              I created a dashboard for users to select an enterprise to vet. Users can filter through enterprises using the same filtering system that’s present on Kiva.org, designed to further bridge gaps between Crowdvet.org and Kiva.org. The icons on the top edges denote common areas, such as eco-friendly enterprises or water-saving enterprises, thus enabling users to quickly scan through their enterprises to find one they’re interested in vetting.
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Individual Enterprise Vet Page
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-25.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              I redesigned the individual pages to simplify the information. At the top, users can view the enterprise’s application materials and their financial information, top things users need to take into account when vetting an enterprise. The page then summarizes the enterprise and provides high-level information about the company by information area.
+              <br>
+              <br>
+              This was designed to offload the work on the user and make it easier for them to learn about the enterprise and thus decide whether Kiva should accept them as a borrower.
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Individual Enterprise Questions Page
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-26.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              Crowdvet.org needed a way for users to ask questions not provided in the application materials. This allowed them to post a question to the enterprise or Kiva, while also viewing questions other users asked about the same enterprise.
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Individual Enterprise Questions Page
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-27.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              I designed the actual vetting page to be simple and concise. During the user interviews, users mentioned that the existing vetting process felt ardurous. I sought to cut back on that in order to encourage users to come back and vet often.
+              <br>
+              <br>
+              The Crowdvet.org team made it clear that there are only a few crucial questions to consider when vetting an enterprise: I incorporated those questions into the vetting process, plus added a section for users to explain their choices. This was important to Kiva to consider all angles themselves.
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Submission Validation
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-28.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              I designed validation pages for users, in order to make it clear that their information had gone through. I also sought to create more personality for Crowdvet.org and make it clear that Kiva appreciates the time users volunteer for the mission.
+            </p>
+          </div>
+        </div>
+        <div class="small-title">
+          Profile
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-29.jpg'
+        }) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              Crowdvet.org didn’t have user profiles, and were missing out on ways to identify their users and reach back out to them. I designed a profile page for users to submit their emails, their LinkedIns (important in the social enterprise space), as well as sectors they’re particularly interested.
+              <br>
+              <br>
+              Kiva’s marketing team was looking into ways to reach out to users and retain them, and expressed interest in being able to reach out to users via tailored email campaigns.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: "Future Steps"}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              We delivered all of the assets and materials to Crowdvet.org, as well as an engagement roadmap for them to help them begin to think about their tracking and metrics. Their next steps were to take the wireframes further in order to present to investors, as well as start working on it to roll out as soon as possible.
+              <br>
+              <br>
+              We recommended testing the new designs with their users, using the initial scripts we had created for them, and tweaking the scripts as needed. They really wanted to build more into the concept of user accounts, forums, and tracking of past enterprises--these are all things that I believe they’ll now be able to do with what they have. Because the team had all of the exercises and documents, and had worked with us every step along the way, we felt confident that they had what they needed to be successful in moving forward with a redesign of Crowdvet.org.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-30.jpg'
+        }) %>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: "Conclusion"}) %>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
+              This experience was eye-opening, fun, and intense, all rolled into one. We were ambitious about what we wanted to change with both the platform, Crowdvet.org, and the mindset of the team. When we started, the team didn’t feel very empowered to make many decisions, and instead felt trapped by a site that they knew wasn’t successful, but didn’t know how to fix.
+              <br>
+              <br>
+              By the end, because we conducted our work alongside them and involved them with our research and activities, the team felt empowered as well as confident in the direction and the designs. There were no surprises, and the close collaboration helped me when it came to actually putting pencil to paper and creating new wireframes for the platform.
+            </p>
+          </div>
+        </div>
+        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Check Out Others'}) %>
+        <div class="portfolio-link-grid big-m">
+          <a href="/kiva" class="portfolio-link kiva">
+            <h1>Capital One</h1>
+            <h3>Visual Design</h3>
+          </a>
+          <a href="/spore" class="portfolio-link spore">
+            <h1>Spore</h1>
+            <h3>UI & UX Design</h3>
+          </a>
+          <a href="/fvwines" class="portfolio-link fvwines">
+            <h1>FV Wines</h1>
+            <h3>UI & UX Design</h3>
+          </a>
+        </div>
+      </section>
       <%- include(process.cwd() + '/app/partials/footer') %>
     </main>
     <script>

@@ -1,4 +1,4 @@
-.capitalone {
+.kiva {
   .info-dot {
     background: $capitalone-color;
   }
@@ -23,6 +23,20 @@
           background-color: $capitalone-color;
           color: #FFF;
         }
+      }
+    }
+    .non-carousel-row {
+      .col-xs-10 {
+        display: flex;
+      }
+      .non-slide-container {
+        position: relative;
+      }
+      .non-slide-container:nth-child(odd) {
+        padding-right: 10px;
+      }
+      .non-slide-container:nth-child(even) {
+        padding-left: 10px;
       }
     }
   }
