@@ -95,5 +95,6 @@ function addSwipe() {
 function openNav() {
   $('.js-open-nav').click(function() {
     $('.js-hideaway-nav').toggleClass('hide')
+    $('.js-open-nav').toggleClass('hide');
   })
 }
