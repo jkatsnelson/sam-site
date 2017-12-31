@@ -60,6 +60,26 @@
             </div>
           </div>
         </div>
+        <%- include(process.cwd() + '/app/partials/jump-to', {
+          sections: [
+            {
+              name: 'Style Guides',
+              link: '#style-guides'
+            },
+            {
+              name: 'Login Badges',
+              link: '#login-badges'
+            },
+            {
+              name: 'Product Finder Widgets',
+              link: '#product-finder-widgets'
+            },
+            {
+              name: 'Homepage and Navigation Redesign',
+              link: '#home-and-nav-redesign'
+            }
+          ]
+        }) %>
         <header id="defining-the-challenge">
           <hr>
           <h2>Defining the Challenge</h2>
