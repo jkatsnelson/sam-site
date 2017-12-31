@@ -296,44 +296,6 @@ footer {
     justify-content: space-between;
   }
 
-  .portfolio-page-links {
-    text-align: center;
-    a {
-      &:hover {
-        opacity: .5;
-      }
-      color: #191919;
-    }
-    span {
-      margin-top: 20px;
-      font-family: Playfair Display;
-      font-size: 15px;
-      font-weight: bold;
-      display: inline-block;
-      position: relative;
-    }
-    hr {
-      margin-top: 5px;
-      margin-bottom: 0;
-      margin-right: auto;
-      margin-left: auto;
-      opacity: .5;
-      width: 100px;
-      &.spore {
-        border-color: $spore-color;
-      }
-      &.uber-go {
-        border-color: $ubergo-color;
-      }
-      &.fabio {
-        border-color: $fabio-color;
-      }
-      &.capitalone {
-        border-color: $capitalone-color;
-      }
-    }
-  }
-
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
     .sub-header + .img-row {
