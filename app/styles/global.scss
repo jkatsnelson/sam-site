@@ -7,9 +7,10 @@ $kiva-color: #019dd5;
 $medium-up-alt-subtitles: 20px;
 $nav-bar-height: 45px;
 $orange: #ee3a00;
-$p-size: 15px;
+$p-size: 18px;
 // the second largest margin between sections is 'big m'
 $big-m: 80px;
+$lil-m: 48px;
 $text-padding: 23px;
 $text-padding-large: 40px;
 
@@ -22,13 +23,21 @@ $text-padding-large: 40px;
   display: none;
 }
 
+p a {
+  text-decoration: underline;
+}
+
 .about {
   .about-hero {
     position: relative;
-    .about-hero-content {
+    .about-hero-content, .about-hero-mobile, img {
+      padding-right: $text-padding;
+      padding-left: $text-padding;
       font-family: Playfair Display;
-      font-size: 30px;
       font-weight: 700;
+      font-size: 30px;
+    }
+    .about-hero-content {
       color: #ffffff;
       text-shadow: 1px 2px 4px rgba(63, 63, 63, 0.5);
       position: absolute;
@@ -36,7 +45,29 @@ $text-padding-large: 40px;
       left: 0;
       width: 50%;
       margin-left: 10%;
-      margin-top: 10%;
+      margin-top: 15%;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .yellow-box {
+    background-color: #ffe99b;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+  }
+  .lil-m {
+    margin-top: 24px;
+  }
+  @media (min-width: $screen-md-min) {
+    .lil-m {
+      margin-top: $lil-m;
+    }
+    .about-hero-content, .about-hero-mobile, img {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
@@ -84,6 +115,10 @@ footer {
 
 .big-m {
   margin-top: $big-m;
+}
+
+.lil-m {
+  margin-top: $lil-m;
 }
 
 
@@ -389,9 +424,12 @@ a:hover {
       font-weight: 900;
       text-transform: uppercase;
     }
-    .portfolio-link-img h1 {
-      font-size: 24px;
-      padding-top: 10px;
+    .portfolio-link-img {
+      padding: 48px;
+      h1 {
+        font-size: 24px;
+        padding-top: 20px;
+      }
     }
     h3 {
       margin-top: 0;
