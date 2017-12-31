@@ -13,18 +13,6 @@
       }
     }
   }
-  .main-container {
-    button {
-      color: #FFF;
-      background-color: $spore-color;
-    }
-    .view-prototypes-desktop {
-      button {
-        color: $spore-color;
-        border-color: $spore-color;
-      }
-    }
-  }
   .ux-images {
     .col-xs-4 {
       padding-right: 25px;
@@ -140,17 +128,6 @@
       #initial-design-2-info-dot-5 {
         top: 20px;
         right: 10px;
-      }
-    }
-    .main-container {
-      button {
-        color: $spore-color;
-        border-color: $spore-color;
-        background-color: #FFF;
-        &:hover {
-          background-color: $spore-color;
-          color: #FFF;
-        }
       }
     }
   }

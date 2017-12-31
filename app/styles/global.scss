@@ -110,18 +110,6 @@ footer {
 }
 
 .spore, .ubergo {
-  .main-container {
-    .view-prototypes-desktop {
-      display: flex;
-      justify-content: center;
-      a:first-child {
-        margin-right: 0;
-      }
-      a:first-child + a {
-        margin-left: 90px;
-      }
-    }
-  }
   .final-designs {
     // todo -- same as carousel captions?
     .caption {
@@ -240,20 +228,6 @@ footer {
     outline: 0;
   }
 
-  button {
-    display: block;
-    margin-top: $big-m;
-    margin-left: auto;
-    margin-right: auto;
-    width: 175px;
-    height: 45px;
-    border-radius: 100px;
-    background-color: $fabio-color;
-    color: #fff;
-    font-weight: 600;
-    border: none;
-  }
-
   header + img, .comments, header + .img-container {
     margin-top: 60px;
   }
@@ -368,26 +342,6 @@ footer {
     }
     header + img, header + .img-container {
       margin-top: 60px;
-    }
-    .view-prototypes-desktop {
-      display: flex;
-      justify-content: center;
-      a:first-child {
-        margin-right: 90px;
-      }
-    }
-    button {
-      width: 210px;
-      height: 54px;
-      font-size: 15px;
-      line-height: 48px;
-      color: $fabio-color;
-      background-color: #FFF;
-      border: 2px solid $fabio-color;
-      &:hover {
-        color: #FFF;
-        background-color: $fabio-color;
-      }
     }
     p {
       padding-right: $text-padding-large;

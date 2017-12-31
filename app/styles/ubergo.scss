@@ -41,12 +41,6 @@
   hr {
     border-color: $ubergo-color;
   }
-  .main-container {
-    button {
-      color: #FFF;
-      background-color: $ubergo-color;
-    }
-  }
   .similar-products {
     .image-subtitle {
       margin-top: 30px;
@@ -182,17 +176,6 @@
     }
     header + .row p {
       margin-top: 40px;
-    }
-    .main-container {
-      button {
-        color: $ubergo-color;
-        border-color: $ubergo-color;
-        background-color: #FFF;
-        &:hover {
-          background-color: $ubergo-color;
-          color: #FFF;
-        }
-      }
     }
     .similar-products {
       .col-md-6:nth-child(2) {
