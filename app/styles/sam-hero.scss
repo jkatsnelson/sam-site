@@ -138,7 +138,7 @@
 
 .ubergo {
   .sam-hero .hero-bg {
-    background-image: radial-gradient(325px circle at 62% 49%, #ffffff, #36a7ff);
+    background-image: radial-gradient(200px circle at 50% 41%, #ffffff, #36a7ff);
   }
 }
 
@@ -163,7 +163,14 @@
       height: 267px;
     }
   }
-
+  .ubergo .sam-hero {
+    .hero-bg {
+      background-image: radial-gradient(375px circle at 60% 41%, #ffffff, #36a7ff);
+    }
+    .title-container {
+      height: 253px;
+    }
+  }
   .sam-hero {
     .title-container {
       height: 300px;
@@ -194,22 +201,6 @@
   .kiva .sam-hero {
     .hero-bg {
       background-image: radial-gradient(450px circle at 60% 41%, #b3ff87, #1a4e27);
-    }
-  }
-
-  .ubergo {
-    .sam-hero .hero-bg {
-      background-image: radial-gradient(450px circle at 60% 41%, #ffffff, #36a7ff);
-    }
-    .title-container {
-      height: 400px;
-      position: relative;
-      .title-block {
-        position: absolute;
-        top: 50%;
-        height: 152px;
-        margin-top: -76px;
-      }
     }
   }
 }
@@ -259,6 +250,12 @@
         margin-left: 0;
         margin-top: 0;
       }
+    }
+  }
+
+  .ubergo .sam-hero {
+    .title-container {
+      height: 299px;
     }
   }
 

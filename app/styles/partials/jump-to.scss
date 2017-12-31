@@ -1,8 +1,7 @@
 .jump-to {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
   a {
+    display: block;
+    text-align: center;
     text-transform: uppercase;
     font-family: Futura PT;
     font-size: 18px;
@@ -11,10 +10,24 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: left;
     color: #191919;
+    margin-top: 25px;
+    margin-bottom: 25px;
     &:hover {
       color: $orange;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    a {
+      display: inline;
+      text-align: left;
+      margin: 0;
     }
   }
 }
