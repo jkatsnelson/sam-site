@@ -166,6 +166,18 @@ footer {
     }
   }
 }
+
+
+a, a:hover, a:focus {
+  color: #191919;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover {
+  color: $orange;
+}
+
 .main-container {
   margin-bottom: 60px;
 
@@ -220,12 +232,6 @@ footer {
     &.m40 {
       margin-top: 40px;
     }
-  }
-
-  a, a:hover, a:focus {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
   }
 
   header + img, .comments, header + .img-container {
