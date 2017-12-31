@@ -7,29 +7,11 @@
     <![endif]-->
     <%- include(process.cwd() + '/app/partials/nav') %>
     <main id="panel">
-      <div class="container sam-hero" id="introduction">
-        <div class="hero-bg">
-          <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1">
-              <div class="row">
-                <div class="col-xs-12 col-md-8 hero-img">
-                  <div class="img-container">
-                    <img class="img-responsive" src='/images/mobile-hero/spore-hero-image.png'>
-                  </div>
-                </div>
-                <div class="title-container">
-                  <div class="col-xs-12 col-md-4 title-block">
-                    <div class="mobile-title">
-                      <div>Spore</div>
-                    </div>
-                    <div class="sub-title"> UI & UX Design </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%- include(process.cwd() + '/app/partials/sam-hero', {
+        heroSrc: '/images/mobile-hero/spore-hero-image.png',
+        title: 'Spore',
+        subTitle: 'UI & UX Design'
+      }) %>
       <section class="container main-container">
         <header>
           <hr>
