@@ -1,7 +1,11 @@
 <div class="portfolio-link-grid">
-<% order.forEach(function(link) { %>
+<% order.forEach(function(link, i) { %>
   <% if (link === 'capitalone') { %>
-  <a href="/capitalone" class="portfolio-link js-hoverable c1">
+  <% if (link === locals.mobileDingleBerry) { %>
+    <a href="/capitalone" class="portfolio-link js-hoverable c1 hidden-md hidden-lg">
+  <% } else { %>
+    <a href="/capitalone" class="portfolio-link js-hoverable c1">
+  <% } %>
     <div class="portfolio-link-text">
       <h1>Capital One</h1>
       <h3>Visual Design</h3>
@@ -13,7 +17,11 @@
   </a>
   <% } %>
   <% if (link === 'kiva') { %>
-  <a href="/kiva" class="portfolio-link js-hoverable kiva">
+  <% if (link === locals.mobileDingleBerry) { %>
+    <a href="/kiva" class="portfolio-link js-hoverable kiva hidden-md hidden-lg">
+  <% } else { %>
+    <a href="/kiva" class="portfolio-link js-hoverable kiva">
+  <% } %>
     <div class="portfolio-link-text">
       <h1>Kiva</h1>
       <h3>UX Design & Research</h3>
@@ -25,7 +33,11 @@
   </a>
   <% } %>
   <% if (link === 'fvwines') { %>
-  <a href="/fvwines" class="portfolio-link js-hoverable fvwines">
+  <% if (link === locals.mobileDingleBerry) { %>
+    <a href="/fvwines" class="portfolio-link js-hoverable fvwines hidden-md hidden-lg">
+  <% } else { %>
+    <a href="/fvwines" class="portfolio-link js-hoverable fvwines">
+  <% } %>
     <div class="portfolio-link-text">
       <h1>FV Wines</h1>
       <h3>UI & UX Design</h3>
@@ -37,7 +49,11 @@
   </a>
   <% } %>
   <% if (link === 'spore') { %>
-  <a href="/spore" class="portfolio-link js-hoverable spore">
+  <% if (link === locals.mobileDingleBerry) { %>
+    <a href="/spore" class="portfolio-link js-hoverable spore hidden-md hidden-lg">
+  <% } else { %>
+    <a href="/spore" class="portfolio-link js-hoverable spore">
+  <% } %>
     <div class="portfolio-link-text">
       <h1>Spore</h1>
       <h3>UI & UX Design</h3>
@@ -49,7 +65,11 @@
   </a>
   <% } %>
   <% if (link === 'ubergo') { %>
-  <a href="/ubergo" class="portfolio-link js-hoverable ubergo">
+  <% if (link === locals.mobileDingleBerry) { %>
+    <a href="/ubergo" class="portfolio-link js-hoverable ubergo hidden-md hidden-lg">
+  <% } else { %>
+    <a href="/ubergo" class="portfolio-link js-hoverable ubergo">
+  <% } %>
     <div class="portfolio-link-text">
       <h1>UberGo</h1>
       <h3>UI Design & Branding</h3>
@@ -66,5 +86,4 @@
   </a>
   <% } %>
 <% }) %>
-
 </div>

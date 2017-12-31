@@ -65,9 +65,13 @@
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Digging into the Details'}) %>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-3.jpg'
-        }) %>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <%- include(process.cwd() + '/app/partials/1-col-img', {
+              src: '/images/kiva/Kiva-image-3.jpg'
+            }) %>
+          </div>
+        </div>
         <div class="image-subtitle">
           My partner and I leading a workshop with the team
         </div>
@@ -103,8 +107,12 @@
             }
           ]
         }) %>
-        <div class="image-subtitle">
-          We created a total of four personas, though two were for goals that were futher away from our scope. The two personas above are the personas we all agreed were the most important for us to focus upon.
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+            <div class="image-subtitle">
+              We created a total of four personas, though two were for goals that were futher away from our scope. The two personas above are the personas we all agreed were the most important for us to focus upon.
+            </div>
+          </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Journey Maps', id: 'journey-maps'}) %>
         <div class="row">
@@ -205,9 +213,13 @@
             </p>
           </div>
         </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-15.jpg'
-        }) %>
+        <div class="row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <%- include(process.cwd() + '/app/partials/1-col-img', {
+              src: '/images/kiva/Kiva-image-15.jpg'
+            }) %>
+          </div>
+        </div>
         <div class="row">
           <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
             <div class="image-subtitle">
@@ -252,14 +264,18 @@
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: "Exercise 3: Crazy 8's"}) %>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-18.jpg'
-        }) %>
         <div class="row">
-          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
-            <div class="image-subtitle">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <%- include(process.cwd() + '/app/partials/1-col-img', {
+              src: '/images/kiva/Kiva-image-18.jpg'
+            }) %>
+          </div>
+        </div>
+        <div class="row p-row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <p>
               This foray into the space helped us then hone in on Crowdvet.org’s site goals and begin our visual designs.
-            </div>
+            </p>
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-header', {headline: "Final Low-Fidelity Wireframes", id: 'low-fidelity-wireframes'}) %>
@@ -435,9 +451,13 @@
             </p>
           </div>
         </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-30.jpg'
-        }) %>
+        <div class="row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <%- include(process.cwd() + '/app/partials/1-col-img', {
+              src: '/images/kiva/Kiva-image-30.jpg'
+            }) %>
+          </div>
+        </div>
         <%- include(process.cwd() + '/app/partials/section-header', {headline: "Conclusion"}) %>
         <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -452,7 +472,8 @@
         <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Check Out Others'}) %>
         <div class='big-m'>
           <%- include(process.cwd() + '/app/partials/portfolio-link-grid', {
-            order: ['capitalone', 'spore', 'fvwines']
+            order: ['capitalone', 'spore', 'fvwines', 'ubergo'],
+            mobileDingleBerry: 'ubergo'
           }) %>
         </div>
       </section>
