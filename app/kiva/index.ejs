@@ -65,13 +65,10 @@
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Digging into the Details'}) %>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-xs-12">
-            <%- include(process.cwd() + '/app/partials/1-col-img', {
-              src: '/images/kiva/Kiva-image-3.jpg'
-            }) %>
-          </div>
-        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-3.jpg',
+          col: '6'
+        }) %>
         <div class="image-subtitle">
           My partner and I leading a workshop with the team
         </div>
@@ -182,7 +179,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-md-10 col-md-offset-1">
-            <div class="row hidden-xs hidden-sm big-m">
+            <div class="row hidden-xs hidden-sm">
               <div class="col-xs-4">
                 <img class="img-responsive" src="/images/kiva/Kiva-image-12.jpg" />
               </div>
@@ -213,13 +210,10 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <%- include(process.cwd() + '/app/partials/1-col-img', {
-              src: '/images/kiva/Kiva-image-15.jpg'
-            }) %>
-          </div>
-        </div>
+        <%- include(process.cwd() + '/app/partials/1-col-img', {
+          src: '/images/kiva/Kiva-image-15.jpg',
+          col: '6'
+        }) %>
         <div class="row">
           <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
             <div class="image-subtitle">
@@ -301,143 +295,145 @@
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: "Wireframes for Crowdvet.org Redesign"}) %>
-        <div class="small-title">
-          Crowdvet.org Homepage
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-20.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              The original Crowdvet.org site didn’t have much of a homepage: it was simply an embedded YouTube video on a white background. It wasn’t clear what the purpose of the site was, nor how it fit into Kiva’s overall mission. I sought to change this and bring in more of an introduction to the Crowdvet.org and welcome users.
-            </p>
+        <div class="comps">
+          <div class="small-title">
+            Crowdvet.org Homepage
           </div>
-        </div>
-        <div class="small-title">
-          Onboarding Homepage
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-21.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              I broke onboarding into digestible tasks in order to educate new users about the purpose of Crowdvet.org as well as Kiva’s role and mission. The team spoke about how they needed there to be two tracks for users: a “fast track” for users experienced in social enterprise (mapping to the persona, “Carol”), and a fuller onboarding for less experienced users (mapping to the persona, “Sam”).
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-20.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                The original Crowdvet.org site didn’t have much of a homepage: it was simply an embedded YouTube video on a white background. It wasn’t clear what the purpose of the site was, nor how it fit into Kiva’s overall mission. I sought to change this and bring in more of an introduction to the Crowdvet.org and welcome users.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="small-title">
-          Onboarding: Example Case Study
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-22.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              For less experienced users, I created an onboarding that was based off of a past case Kiva had processed. This way, users could learn by doing without getting bogged down in abstract lessons and facts. This page would then lead to the following page, of which they would vet the enterprise and see how their responses compared to Kiva’s.
-            </p>
+          <div class="small-title">
+            Onboarding Homepage
           </div>
-        </div>
-        <div class="small-title">
-          Onboarding: “Skip to Test Vet”
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-23.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              For onboarding, I created an onboarding test where users would compare their vetting against Kiva’s. This was to empower users to learn further about vetting social enterprises, while also teaching them about Kiva’s vetting process and about Kiva’s qualifications.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-21.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                I broke onboarding into digestible tasks in order to educate new users about the purpose of Crowdvet.org as well as Kiva’s role and mission. The team spoke about how they needed there to be two tracks for users: a “fast track” for users experienced in social enterprise (mapping to the persona, “Carol”), and a fuller onboarding for less experienced users (mapping to the persona, “Sam”).
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="small-title">
-          Enterprise Vetting Dashboard
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-24.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              I created a dashboard for users to select an enterprise to vet. Users can filter through enterprises using the same filtering system that’s present on Kiva.org, designed to further bridge gaps between Crowdvet.org and Kiva.org. The icons on the top edges denote common areas, such as eco-friendly enterprises or water-saving enterprises, thus enabling users to quickly scan through their enterprises to find one they’re interested in vetting.
-            </p>
+          <div class="small-title">
+            Onboarding: Example Case Study
           </div>
-        </div>
-        <div class="small-title">
-          Individual Enterprise Vet Page
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-25.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              I redesigned the individual pages to simplify the information. At the top, users can view the enterprise’s application materials and their financial information, top things users need to take into account when vetting an enterprise. The page then summarizes the enterprise and provides high-level information about the company by information area.
-              <br>
-              <br>
-              This was designed to offload the work on the user and make it easier for them to learn about the enterprise and thus decide whether Kiva should accept them as a borrower.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-22.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                For less experienced users, I created an onboarding that was based off of a past case Kiva had processed. This way, users could learn by doing without getting bogged down in abstract lessons and facts. This page would then lead to the following page, of which they would vet the enterprise and see how their responses compared to Kiva’s.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="small-title">
-          Individual Enterprise Questions Page
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-26.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              Crowdvet.org needed a way for users to ask questions not provided in the application materials. This allowed them to post a question to the enterprise or Kiva, while also viewing questions other users asked about the same enterprise.
-            </p>
+          <div class="small-title">
+            Onboarding: “Skip to Test Vet”
           </div>
-        </div>
-        <div class="small-title">
-          Individual Enterprise Questions Page
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-27.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              I designed the actual vetting page to be simple and concise. During the user interviews, users mentioned that the existing vetting process felt ardurous. I sought to cut back on that in order to encourage users to come back and vet often.
-              <br>
-              <br>
-              The Crowdvet.org team made it clear that there are only a few crucial questions to consider when vetting an enterprise: I incorporated those questions into the vetting process, plus added a section for users to explain their choices. This was important to Kiva to consider all angles themselves.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-23.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                For onboarding, I created an onboarding test where users would compare their vetting against Kiva’s. This was to empower users to learn further about vetting social enterprises, while also teaching them about Kiva’s vetting process and about Kiva’s qualifications.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="small-title">
-          Submission Validation
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-28.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              I designed validation pages for users, in order to make it clear that their information had gone through. I also sought to create more personality for Crowdvet.org and make it clear that Kiva appreciates the time users volunteer for the mission.
-            </p>
+          <div class="small-title">
+            Enterprise Vetting Dashboard
           </div>
-        </div>
-        <div class="small-title">
-          Profile
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/kiva/Kiva-image-29.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              Crowdvet.org didn’t have user profiles, and were missing out on ways to identify their users and reach back out to them. I designed a profile page for users to submit their emails, their LinkedIns (important in the social enterprise space), as well as sectors they’re particularly interested.
-              <br>
-              <br>
-              Kiva’s marketing team was looking into ways to reach out to users and retain them, and expressed interest in being able to reach out to users via tailored email campaigns.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-24.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                I created a dashboard for users to select an enterprise to vet. Users can filter through enterprises using the same filtering system that’s present on Kiva.org, designed to further bridge gaps between Crowdvet.org and Kiva.org. The icons on the top edges denote common areas, such as eco-friendly enterprises or water-saving enterprises, thus enabling users to quickly scan through their enterprises to find one they’re interested in vetting.
+              </p>
+            </div>
+          </div>
+          <div class="small-title">
+            Individual Enterprise Vet Page
+          </div>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-25.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                I redesigned the individual pages to simplify the information. At the top, users can view the enterprise’s application materials and their financial information, top things users need to take into account when vetting an enterprise. The page then summarizes the enterprise and provides high-level information about the company by information area.
+                <br>
+                <br>
+                This was designed to offload the work on the user and make it easier for them to learn about the enterprise and thus decide whether Kiva should accept them as a borrower.
+              </p>
+            </div>
+          </div>
+          <div class="small-title">
+            Individual Enterprise Questions Page
+          </div>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-26.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                Crowdvet.org needed a way for users to ask questions not provided in the application materials. This allowed them to post a question to the enterprise or Kiva, while also viewing questions other users asked about the same enterprise.
+              </p>
+            </div>
+          </div>
+          <div class="small-title">
+            Individual Enterprise Questions Page
+          </div>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-27.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                I designed the actual vetting page to be simple and concise. During the user interviews, users mentioned that the existing vetting process felt ardurous. I sought to cut back on that in order to encourage users to come back and vet often.
+                <br>
+                <br>
+                The Crowdvet.org team made it clear that there are only a few crucial questions to consider when vetting an enterprise: I incorporated those questions into the vetting process, plus added a section for users to explain their choices. This was important to Kiva to consider all angles themselves.
+              </p>
+            </div>
+          </div>
+          <div class="small-title">
+            Submission Validation
+          </div>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-28.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                I designed validation pages for users, in order to make it clear that their information had gone through. I also sought to create more personality for Crowdvet.org and make it clear that Kiva appreciates the time users volunteer for the mission.
+              </p>
+            </div>
+          </div>
+          <div class="small-title">
+            Profile
+          </div>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/kiva/Kiva-image-29.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                Crowdvet.org didn’t have user profiles, and were missing out on ways to identify their users and reach back out to them. I designed a profile page for users to submit their emails, their LinkedIns (important in the social enterprise space), as well as sectors they’re particularly interested.
+                <br>
+                <br>
+                Kiva’s marketing team was looking into ways to reach out to users and retain them, and expressed interest in being able to reach out to users via tailored email campaigns.
+              </p>
+            </div>
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-header', {headline: "Future Steps"}) %>

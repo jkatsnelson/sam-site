@@ -8,9 +8,6 @@
   }
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
-    .shave-the-p {
-      margin-top: 23px;
-    }
     .info-dot {
       display: block;
     }
@@ -78,21 +75,21 @@
         left: 160px;
       }
     }
-    
+
     #shop-wines {
       .info-dot {
         top: 170px;
         right: 160px;
       }
     }
-    
+
     #add-to-cart {
       .info-dot {
         top: 170px;
         right: 50px;
       }
     }
-    
+
     #mobile-wine-carousel-4 {
       #style-tile-rustic #rustic-info-dot-1 {
         top: 110px;
@@ -148,7 +145,7 @@
         font-size: 16px;
         font-family: Playfair Display;
         font-weight: bold;
-        margin-top: $big-m;
+        // margin-top: $big-m;
         margin-bottom: 20px;
       }
       .col-xs-10 {
@@ -167,6 +164,7 @@
   }
   @media (min-width: $screen-lg-min) {
     .non-carousel-row {
+      margin-top: $big-m;
       img {
         max-width: 448px;
       }
@@ -235,21 +233,21 @@
         left: 160px;
       }
     }
-    
+
     #shop-wines {
       .info-dot {
         top: 170px;
         right: 160px;
       }
     }
-    
+
     #add-to-cart {
       .info-dot {
         top: 170px;
         right: 50px;
       }
     }
-    
+
     #mobile-wine-carousel-4 {
       #style-tile-rustic #rustic-info-dot-1 {
         top: 110px;
@@ -299,6 +297,6 @@
         top: 100px;
         right: 100px;
       }
-    }    
+    }
   }
 }

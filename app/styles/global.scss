@@ -4,13 +4,16 @@ $ubergo-color: #36a7ff;
 $home-color: #ff9b31;
 $capitalone-color: #019dd5;
 $kiva-color: #63a541;
-$medium-up-alt-subtitles: 20px;
+$medium-up-alt-subtitles: 24px;
 $nav-bar-height: 45px;
 $orange: #ee3a00;
 $p-size: 18px;
+// the largest margin between actual sections is x-big-m
+$x-big-m: 136px;
 // the second largest margin between sections is 'big m'
-$big-m: 80px;
-$lil-m: 48px;
+$big-m: 120px;
+$medium-m: 56px;
+$lil-m: 40px;
 $text-padding: 23px;
 $text-padding-large: 40px;
 
@@ -72,6 +75,7 @@ p a {
   }
 }
 
+
 .small-title {
   font-family: Playfair Display;
   font-size: 16px;
@@ -82,7 +86,6 @@ p a {
   letter-spacing: normal;
   text-align: center;
   margin-bottom: 16px;
-  margin-top: 56px;
 }
 
 body {
@@ -102,6 +105,30 @@ p {
   padding-right: $text-padding;
 }
 
+.p-row {
+  margin-top: $lil-m;
+  margin-bottom: $lil-m;
+}
+
+.p-row + .small-title {
+  margin-top: $big-m;
+}
+
+.p-row + .img-container {
+  margin-top: $medium-m;
+}
+
+.img-container + .p-row {
+  margin-top: $big-m;
+}
+
+.comps {
+  .p-row + .img-container {
+    margin-top: $big-m;
+  }
+}
+
+
 footer {
   font-size: 12px;
   a {
@@ -109,12 +136,8 @@ footer {
     text-decoration: underline;
   }
   margin-bottom: 20px;
-  margin-top: $big-m;
+  // margin-top: $big-m;
   text-align: center;
-}
-
-.big-m {
-  margin-top: $big-m;
 }
 
 .lil-m {
@@ -123,7 +146,6 @@ footer {
 
 
 .persona-container {
-  margin-top: 30px;
   img {
     height: 150px;
     width: auto;
@@ -191,7 +213,7 @@ footer {
       }
     }
     $margin-between-rows: 75px;
-    margin-top: $big-m - $margin-between-rows;
+    // margin-top: $big-m - $margin-between-rows;
     .row {
       margin-top: $margin-between-rows;
     }
@@ -213,11 +235,17 @@ a:hover {
   color: $orange;
 }
 
+// this should hopefully only apply to 'introduction' headers that have smaller margins above them. all other headers should be x-big-m
+.sam-hero + .main-container header:first-child {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
 .main-container {
   margin-bottom: 60px;
 
   .similar-products {
-    margin-top: 60px;
+    margin-top: $big-m;
     .row + .image-subtitle {
       margin-top: 30px;
     }
@@ -230,7 +258,8 @@ a:hover {
   }
 
   header {
-    margin-top: 90px;
+    margin-top: $x-big-m;
+    margin-bottom: 72px;
     text-align: center;
     $hr-space: 12px;
     h2 {
@@ -252,21 +281,8 @@ a:hover {
     }
   }
 
-  header + p {
+  .m40 {
     margin-top: 40px;
-  }
-
-  header + .p-row {
-    p {
-      margin-top: 40px;
-    }
-  }
-
-  p {
-    margin-top: 40px;
-    &.m40 {
-      margin-top: 40px;
-    }
   }
 
   header + img, .comments, header + .img-container {
@@ -283,7 +299,8 @@ a:hover {
 
   .sub-header {
     text-align: center;
-    margin-top: 60px;
+    margin-top: $big-m;
+    margin-bottom: $medium-m;
     h3 {
       font-size: $medium-up-alt-subtitles;
       font-family: Playfair Display;
@@ -297,16 +314,11 @@ a:hover {
     }
   }
 
-  .m30 {
-    margin-top: 30px;
-  }
-
   .m50 {
     margin-top: 50px;
   }
 
   .desktop-and-mobile-comps {
-    margin-top: 60px;
     display: flex;
     justify-content: space-between;
   }
@@ -314,11 +326,11 @@ a:hover {
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
     .sub-header + .img-row {
-      margin-top: $big-m;
+      // margin-top: $big-m;
     }
-    .sub-header + .row p {
-      margin-top: 30px;
-    }
+    // .sub-header + .row p {
+    //   margin-top: 30px;
+    // }
     .portfolio-page-links {
       position: relative;
       a:nth-child(2) .col-md-6 {
@@ -328,11 +340,11 @@ a:hover {
       }
     }
     .desktop-and-mobile-comps {
-      margin-top: $big-m;
+      // margin-top: $big-m;
     }
 
     .initial-designs {
-      margin-top: $big-m;
+      // margin-top: $big-m;
       display: flex;
       justify-content: space-around;
       padding-right: 80px;
@@ -365,8 +377,6 @@ a:hover {
       }
     }
     header {
-      padding-top: 100px;
-      margin-top: 130px - 100px;
       h2 {
         font-size: 33px;
         line-height: normal;
@@ -376,7 +386,7 @@ a:hover {
       }
     }
     .sub-header {
-      margin-top: $big-m;
+      // margin-top: $big-m;
       hr {
         margin-top: 10px;
       }

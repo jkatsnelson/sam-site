@@ -32,12 +32,6 @@
       }
     }
   }
-  .sub-header + .row p {
-    margin-top: 30px;
-  }
-  header + .row p {
-    margin-top: 30px;
-  }
   hr {
     border-color: $ubergo-color;
   }
@@ -59,7 +53,6 @@
     }
   }
   .ux-images {
-    margin-top: 75px;
     .col-xs-4 {
       padding-right: 20px;
       padding-left: 20px;
@@ -138,11 +131,8 @@
         }
       }
     }
-    .logos {
-      margin-top: 60px;
-    }
     .similar-products {
-      margin-top: $big-m;
+      // margin-top: $big-m;
       .col-md-6:first-child {
         padding-right: 45px;
 
@@ -172,9 +162,6 @@
           margin-top: 7px;
         }
       }
-    }
-    header + .row p {
-      margin-top: 40px;
     }
     .similar-products {
       .col-md-6:nth-child(2) {

@@ -6,7 +6,23 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <%- include(process.cwd() + '/app/partials/nav') %>
-    <main id="panel">
+    <div class="container password-protect">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h1>Please enter the password to see this page.</h1>
+          <h3>If you don't have it, reach out to me at hellosamking@gmail.com</h3>
+          <form id="password-protect-form">
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="c1password" placeholder="Password">
+              <p class="help-block hide">Sorry, try again.</p>
+            </div>
+            <button type="submit" class="btn btn-default">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <main id="panel" class="hide">
       <%- include(process.cwd() + '/app/partials/sam-hero', {
         heroSrc: '/images/capital-one/Cap1-hero-1.png',
         title: 'Capital One',
@@ -50,7 +66,12 @@
             }
           ]
         }) %>
-        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Homepage Hero Banner Style Guides', id: 'style-guides'}) %>
+        <header id="style-guides">
+          <hr>
+          <h2>Homepage Hero Banner <br class="hidden-md hidden-lg">Style Guides</h2>
+          <hr>
+        </header>
+
         <div class="row hidden-md hidden-lg">
           <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
             <%- include(process.cwd() + '/app/partials/carousel', {
@@ -296,7 +317,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-md-10 col-md-offset-1">
-            <div class="row hidden-xs hidden-sm big-m">
+            <div class="row hidden-xs hidden-sm">
               <div class="col-xs-4">
                 <div class="img-title">Sign In Badge: Below Fullbleed Banner</div>
                 <img class="img-responsive" src="/images/capital-one/Cap1-image-19.jpg" />
@@ -348,96 +369,102 @@
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Homepage Explorations'}) %>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/capital-one/Cap1-image-23.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              We’ve sought to create homepage designs that better reflect the goals Capital One has for its customers and users, that is, to make banking a better place by changing the way we interact with it. We’re striving to create a homepage that shows Capital One’s best qualities: how we care for people in times of need, how we can help provide financial guidance throughout stages of life, and that we’re humans, too.
-            </p>
+        <div class="comps">
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/capital-one/Cap1-image-23.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                We’ve sought to create homepage designs that better reflect the goals Capital One has for its customers and users, that is, to make banking a better place by changing the way we interact with it. We’re striving to create a homepage that shows Capital One’s best qualities: how we care for people in times of need, how we can help provide financial guidance throughout stages of life, and that we’re humans, too.
+              </p>
+            </div>
           </div>
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/capital-one/Cap1-image-24.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              In this version, we explored highlighting the award-winning technical aspects of Capital One, as well as bringing Capital One’s stories of humanity up into that top hero space. We sought to welcome users to the space, bringing to mind a similar experience of being greeted when walking through the door of a traditional brick-and-mortar bank.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/capital-one/Cap1-image-24.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                In this version, we explored highlighting the award-winning technical aspects of Capital One, as well as bringing Capital One’s stories of humanity up into that top hero space. We sought to welcome users to the space, bringing to mind a similar experience of being greeted when walking through the door of a traditional brick-and-mortar bank.
+              </p>
+            </div>
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Sub-Navigation Explorations'}) %>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/capital-one/Cap1-image-25.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              My team and I created a plethora of sub-navigation designs to explore new visual ways to lay out the navigation information. In this design, designed a lefthand column of hot links, with top actions to help propel users to their destination. On the right, I designed a featured ad that was pertinent to the navigation menu.
-              <br>
-              <br>
-              I also explored many visual styles for the header itself: all caps, focus colors versus underlining, lighter greys versus blacks, etc. For these examples I chose a more playful visual styling of the header, with a bright blue semi-circle to indicate a highlighted section.
-              <br>
-              <br>
-              All content is based upon monthly of research my team has conducted throughout a variety of methods; the “meganav” style of navigation is also based upon research findings.
-            </p>
+        <div class="comps">
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/capital-one/Cap1-image-25.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                My team and I created a plethora of sub-navigation designs to explore new visual ways to lay out the navigation information. In this design, designed a lefthand column of hot links, with top actions to help propel users to their destination. On the right, I designed a featured ad that was pertinent to the navigation menu.
+                <br>
+                <br>
+                I also explored many visual styles for the header itself: all caps, focus colors versus underlining, lighter greys versus blacks, etc. For these examples I chose a more playful visual styling of the header, with a bright blue semi-circle to indicate a highlighted section.
+                <br>
+                <br>
+                All content is based upon monthly of research my team has conducted throughout a variety of methods; the “meganav” style of navigation is also based upon research findings.
+              </p>
+            </div>
           </div>
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/capital-one/Cap1-image-26.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              I explored pulling out top rated products and placing them along the bottom of the navigation, with prominent calls to action to help users quickly navigate, with the other tasks separated into three columns.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/capital-one/Cap1-image-26.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                I explored pulling out top rated products and placing them along the bottom of the navigation, with prominent calls to action to help users quickly navigate, with the other tasks separated into three columns.
+              </p>
+            </div>
           </div>
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/capital-one/Cap1-image-27.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              I explored featuring specific products and allowing users to check off multiple and apply for more than one at once. For this variation, I forsaw testing this concept with a mix of products from across lines of business, such as credit cards, bank accounts, and investment accounts.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/capital-one/Cap1-image-27.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                I explored featuring specific products and allowing users to check off multiple and apply for more than one at once. For this variation, I forsaw testing this concept with a mix of products from across lines of business, such as credit cards, bank accounts, and investment accounts.
+              </p>
+            </div>
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Guidance Page Explorations'}) %>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/capital-one/Cap1-image-28.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              For the guidance page, I’m seeking to find a balance between content and products. From our research, we learned users expect to see products, but wish for them to be in context.
-              <br>
-              In this variation, I explored transforming the guidance page into something of a learning experience. I broke down the topic, “improving credit”, into smaller, digestible chunks. Visually, I created movement down the page to keep users invested even with a more complicated topic. I pulled in products at the end of their learning journey, tying the two together.
-              <br>
-              Towards the bottom of the page, I included customer testimonials that will lead to larger case studies of real people’s stories on how they achieved financial milestones.
-            </p>
+        <div class="comps">
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/capital-one/Cap1-image-28.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                For the guidance page, I’m seeking to find a balance between content and products. From our research, we learned users expect to see products, but wish for them to be in context.
+                <br>
+                In this variation, I explored transforming the guidance page into something of a learning experience. I broke down the topic, “improving credit”, into smaller, digestible chunks. Visually, I created movement down the page to keep users invested even with a more complicated topic. I pulled in products at the end of their learning journey, tying the two together.
+                <br>
+                Towards the bottom of the page, I included customer testimonials that will lead to larger case studies of real people’s stories on how they achieved financial milestones.
+              </p>
+            </div>
           </div>
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/capital-one/Cap1-image-29.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              In this version, I explored condensing the learning content into carousel slides that have more information within them. This was designed to help users dig into the content and learn about what they needed to do. The icons at the top are bright and friendly, and introduce the user to the topic with sound-bites on the most important aspects.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/capital-one/Cap1-image-29.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                In this version, I explored condensing the learning content into carousel slides that have more information within them. This was designed to help users dig into the content and learn about what they needed to do. The icons at the top are bright and friendly, and introduce the user to the topic with sound-bites on the most important aspects.
+              </p>
+            </div>
           </div>
-        </div>
-        <%- include(process.cwd() + '/app/partials/1-col-img', {
-          src: '/images/capital-one/Cap1-image-30.jpg'
-        }) %>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              In this version, I focused more upon products and which ones help customers with specific needs. I pulled the learn content down to the bottom of the page and bubbled more products up to the top.
-            </p>
+          <%- include(process.cwd() + '/app/partials/1-col-img', {
+            src: '/images/capital-one/Cap1-image-30.jpg'
+          }) %>
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                In this version, I focused more upon products and which ones help customers with specific needs. I pulled the learn content down to the bottom of the page and bubbled more products up to the top.
+              </p>
+            </div>
           </div>
         </div>
         <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Guidance Page: Next Steps'}) %>

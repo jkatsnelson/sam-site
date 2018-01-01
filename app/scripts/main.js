@@ -2,6 +2,7 @@
 
 
 $(document).ready(function() {
+  passwordProtect();
   $('[data-toggle="popover"]').popover({
     trigger: 'hover'
   });
@@ -16,6 +17,21 @@ $(document).ready(function() {
   openNav();
   linkHovers();
 });
+
+function passwordProtect() {
+  if ($('.capitalone').length) {
+    $('#password-protect-form').submit(function(e) {
+      e.preventDefault();
+      if ($('#c1password').val() === 'waffles') {
+        $('.capitalone .password-protect').addClass('hide');
+        $('.capitalone #panel').removeClass('hide');
+      } else {
+        $('#c1password').val('')
+        $('.help-block').removeClass('hide');
+      }
+    })
+  }
+}
 
 function designImageOverlayHovers() {
   $('.final-designs .hoverable').hover(function() {

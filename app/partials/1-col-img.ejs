@@ -1,5 +1,9 @@
-<div class="row img-container big-m">
-  <div class="col-xs-12 col-md-8 col-md-offset-2">
+<div class="row img-container">
+  <% if (locals.col) { %>
+    <div class="col-xs-12 col-md-<%= col %> col-md-offset-<%= (12 - col) / 2 %>">
+  <% } else { %>
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+  <% } %>
     <img class="img-responsive" src="<%= src %>" />
   </div>
 </div>

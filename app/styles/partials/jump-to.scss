@@ -23,7 +23,7 @@
   @media (min-width: $screen-md-min) {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: $lil-m;
     a {
       display: inline;
       text-align: left;
