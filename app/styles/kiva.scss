@@ -12,6 +12,9 @@
     .non-carousel-row {
       .col-xs-10 {
         display: flex;
+        &:nth-child(even) {
+          margin-top: 20px;
+        }
       }
       .non-slide-container {
         position: relative;

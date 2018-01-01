@@ -1,7 +1,7 @@
 .capitalone {
   .password-protect {
     h1 {
-      margin-top: 200px;
+      margin-top: 85px;
       font-family: Playfair Display;
       margin-bottom: 20px;
     }
@@ -35,6 +35,11 @@
 
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
+    .password-protect {
+      h1 {
+        margin-top: 200px;
+      }
+    }
     .non-carousel-row {
       .col-xs-10 {
         display: flex;

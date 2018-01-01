@@ -221,13 +221,13 @@
         <div class="row non-carousel-row hidden-xs hidden-sm">
           <div class="col-xs-10 col-xs-offset-1">
             <div class="non-slide-container" id="homepage-wines">
-              <div class="desktop-non-slide-title">Homepage: Wines</div>
+              <div class="desktop-non-slide-title first-row">Homepage: Wines</div>
               <img class="img-responsive" src="/images/wine/carousel/original-site-images/homepage-wines.png" />
               <div class="info-dot pulse" data-toggle="popover" data-placement="bottom" data-content="Sizing throughout the site was off. The header is too tall, he wine bottles overwhelm the page and are hard to read, and there aren’t any hover states to indicate clickability.">
               </div>
             </div>
             <div class="non-slide-container" id="homepage-information">
-              <div class="desktop-non-slide-title">Homepage: Information</div>
+              <div class="desktop-non-slide-title first-row">Homepage: Information</div>
               <img class="img-responsive" src="/images/wine/carousel/original-site-images/information.png" />
               <div class="info-dot pulse" data-toggle="popover" data-placement="bottom" data-content="The homepage felt frenetic, hierarchy needed work, and user goals weren’t clear. Our clients wanted the main goals of the site to be wines, recipes, and Fabio. On the homepage, recipes and wines seemed less important than other aspects.">
               </div>
@@ -507,17 +507,17 @@
           <h2>Final Designs</h2>
           <hr>
         </header>
-        <div class="row p-row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <p>
-              I took the feedback from the usability testing and from client meetings and created two more iterations before I came to my final responsive designs. I sought to keep the site authentic and rustic, while also appealing to people in their twenties and thirties.
-              <br>
-              <br>
-              As per the client's needs and goals, I redesigned the most important pages: the navigation and header, the homepage, the wines flow, the recipes flow, the “About Fabio” page, and the press kit page for distributors.
-            </p>
-          </div>
-        </div>
         <div class="comps">
+          <div class="row p-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+              <p>
+                I took the feedback from the usability testing and from client meetings and created two more iterations before I came to my final responsive designs. I sought to keep the site authentic and rustic, while also appealing to people in their twenties and thirties.
+                <br>
+                <br>
+                As per the client's needs and goals, I redesigned the most important pages: the navigation and header, the homepage, the wines flow, the recipes flow, the “About Fabio” page, and the press kit page for distributors.
+              </p>
+            </div>
+          </div>
           <div class="row img-container">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
               <div class="desktop-and-mobile-comps">
@@ -641,17 +641,17 @@
           <h2>Style Guide</h2>
           <hr>
         </header>
-        <div class="row">
+        <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
               For the future of Fabio Viviani Wines I created a style guide that was applicable to both future designs and development. I outlined my design treatments to create an overall design language, which included colors, photography treatment, UI elements, and design patterns.
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row img-container">
           <div class="col-xs-12 col-md-10 col-md-offset-1">
             <div class="desktop-and-mobile-comps">
-              <div class="img-container">
+              <div>
                 <img class="img-responsive" src="/images/wine/fvwines-style-guide.png" />
               </div>
             </div>
@@ -709,6 +709,9 @@
             </div>
           </div>
         </div>
+        <div class="image-subtitle">
+          FV Wines' original homepage to final redesignd homepage
+        </div>
         <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
@@ -747,14 +750,13 @@
         </header>
         <div class="big-m">
           <%- include(process.cwd() + '/app/partials/portfolio-link-grid', {
-            order: ['capitalone', 'spore', 'ubergo']
+            order: ['capitalone', 'kiva', 'spore', 'ubergo'],
+            mobileDingleBerry: 'ubergo'
           }) %>
         </div>
         </div>
       </section>
-      <footer class="container">
-        &copy; 2017 Samantha King 2017 &bull; <a href="http://www.linkedin.com/in/hellosamking">LinkedIn</a> &bull; <a href="mailto:hellosamking@gmail.com">hellosamking@gmail.com</a>
-      </footer>
+      <%- include(process.cwd() + '/app/partials/footer') %>
     </main>
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

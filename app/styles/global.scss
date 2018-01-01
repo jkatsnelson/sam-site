@@ -8,11 +8,17 @@ $medium-up-alt-subtitles: 24px;
 $nav-bar-height: 45px;
 $orange: #ee3a00;
 $p-size: 18px;
+$p-size-mobile: 16px;
 // the largest margin between actual sections is x-big-m
-$x-big-m: 136px;
+$x-big-m: 120px;
+$x-big-m-mobile: 104px;
+$below-header: 64px;
+$below-header-mobile: 40px;
 // the second largest margin between sections is 'big m'
-$big-m: 120px;
+$big-m: 104px;
+$big-m-mobile: 80px;
 $medium-m: 56px;
+$medium-m-mobile: 40px;
 $lil-m: 40px;
 $text-padding: 23px;
 $text-padding-large: 40px;
@@ -85,7 +91,7 @@ p a {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 body {
@@ -97,7 +103,7 @@ body {
 }
 
 p {
-  font-size: $p-size;
+  font-size: $p-size-mobile;
   font-family: Futura PT;
   font-weight: 400;
   margin-bottom: 0;
@@ -111,20 +117,20 @@ p {
 }
 
 .p-row + .small-title {
-  margin-top: $big-m;
+  margin-top: $big-m-mobile;
 }
 
 .p-row + .img-container {
   margin-top: $medium-m;
 }
 
-.img-container + .p-row {
-  margin-top: $big-m;
-}
+// .img-container + .p-row {
+//   margin-top: $big-m;
+// }
 
 .comps {
   .p-row + .img-container {
-    margin-top: $big-m;
+    margin-top: $big-m-mobile;
   }
 }
 
@@ -243,9 +249,13 @@ a:hover {
 
 .main-container {
   margin-bottom: 60px;
-
   .similar-products {
-    margin-top: $big-m;
+    .image-subtitle {
+      margin-top: 30px;
+    }
+    .col-md-6:nth-child(2) {
+      margin-top: 75px;
+    }
     .row + .image-subtitle {
       margin-top: 30px;
     }
@@ -258,8 +268,8 @@ a:hover {
   }
 
   header {
-    margin-top: $x-big-m;
-    margin-bottom: 72px;
+    margin-top: $x-big-m-mobile;
+    margin-bottom: $below-header-mobile;
     text-align: center;
     $hr-space: 12px;
     h2 {
@@ -285,22 +295,24 @@ a:hover {
     margin-top: 40px;
   }
 
-  header + img, .comments, header + .img-container {
+  header + img, .comments {
     margin-top: 60px;
   }
 
+  .image-subtitle, .long-image-subtitle {
+    margin-top: 16px;
+  }
+
   .image-subtitle {
-    margin-top: 15px;
     font-family:'Futura PT';
-    font-size: 12px;
-    color: #565656;
+    font-size: 13px;
     text-align: center;
   }
 
   .sub-header {
+    margin-top: $big-m-mobile;
+    margin-bottom: $medium-m-mobile;
     text-align: center;
-    margin-top: $big-m;
-    margin-bottom: $medium-m;
     h3 {
       font-size: $medium-up-alt-subtitles;
       font-family: Playfair Display;
@@ -310,8 +322,11 @@ a:hover {
       width: 150px;
       margin-bottom: 0;
       margin-top: 7px;
-      opacity: .5;
     }
+  }
+
+  header + .sub-header {
+    margin-top: $below-header;
   }
 
   .m50 {
@@ -325,12 +340,27 @@ a:hover {
 
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-    .sub-header + .img-row {
-      // margin-top: $big-m;
+    .similar-products {
+      .col-md-6:first-child {
+        padding-right: 45px;
+
+      }
+      .col-md-6:nth-child(2) {
+        padding-left: 45px;
+        margin-top: 0;
+      }
     }
-    // .sub-header + .row p {
-    //   margin-top: 30px;
-    // }
+    .p-row + .small-title {
+      margin-top: $big-m;
+    }
+    .comps {
+      .p-row + .img-container {
+        margin-top: $big-m;
+      }
+    }
+    .small-title {
+      margin-bottom: 16px;
+    }
     .portfolio-page-links {
       position: relative;
       a:nth-child(2) .col-md-6 {
@@ -339,12 +369,8 @@ a:hover {
         right: 0;
       }
     }
-    .desktop-and-mobile-comps {
-      // margin-top: $big-m;
-    }
 
     .initial-designs {
-      // margin-top: $big-m;
       display: flex;
       justify-content: space-around;
       padding-right: 80px;
@@ -377,6 +403,8 @@ a:hover {
       }
     }
     header {
+      margin-top: $x-big-m;
+      margin-bottom: $below-header;
       h2 {
         font-size: 33px;
         line-height: normal;
@@ -386,17 +414,18 @@ a:hover {
       }
     }
     .sub-header {
-      // margin-top: $big-m;
+      margin-top: $big-m;
+      margin-bottom: $medium-m;
       hr {
         margin-top: 10px;
       }
     }
-    header + img, header + .img-container {
-      margin-top: 60px;
-    }
-    p {
+    p, .long-image-subtitle {
       padding-right: $text-padding-large;
       padding-left: $text-padding-large;
+    }
+    p {
+      font-size: $p-size;
     }
   }
   /* Large devices (large desktops, 1200px and up) */

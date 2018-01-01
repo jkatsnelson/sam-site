@@ -160,7 +160,7 @@
           <h3>Design Principles</h3>
           <hr>
         </div>
-        <div class="row">
+        <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
               We got together as a group to pool the information we gained from our initial client meeting, the UX designs, and what we learned from similar products in the space. From there we crafted two design principles to guide our creative processes.
@@ -308,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
               Roman and Todd liked the screens’ layout in the “Modern” style tile because they were clear and told all of the information without feeling overwhelming. In the “Organic” style tile, they liked the temperature display’s interactivity and the simple typography.
@@ -826,6 +826,9 @@
             </div>
           </div>
         </div>
+        <div class="image-subtitle">
+          Low fidelity wireframes to final designs
+        </div>
         <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
@@ -867,14 +870,13 @@
         </header>
         <div class="big-m">
           <%- include(process.cwd() + '/app/partials/portfolio-link-grid', {
-            order: ['capitalone', 'fvwines', 'ubergo']
+            order: ['capitalone', 'kiva', 'fvwines', 'ubergo'],
+            mobileDingleBerry: 'ubergo'
           }) %>
         </div>
         </div>
       </section>
-      <footer class="container">
-        &copy; 2017 Samantha King 2017 &bull; <a href="http://www.linkedin.com/in/hellosamking">LinkedIn</a> &bull; <a href="mailto:hellosamking@gmail.com">hellosamking@gmail.com</a>
-      </footer>
+      <%- include(process.cwd() + '/app/partials/footer') %>
     </main>
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

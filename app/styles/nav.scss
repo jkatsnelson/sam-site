@@ -23,6 +23,9 @@ nav .active {
     font-size: 18px;
     color: #191919;
   }
+  #nav-title a {
+    font-size: 16px;
+  }
   .small-nav-container {
     height: $nav-bar-height;
   }
@@ -73,6 +76,12 @@ nav .active {
 
 .nav-bar-padding {
   height: $nav-bar-height;
+}
+
+#nav-title a {
+  font-family: Futura PT;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .large-nav-container {

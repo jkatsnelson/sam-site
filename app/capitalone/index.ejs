@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
           <h1>Please enter the password to see this page.</h1>
-          <h3>If you don't have it, reach out to me at hellosamking@gmail.com</h3>
+          <h3>If you don't have it,<br class="hidden-md hidden-lg"> reach out to me at hellosamking@gmail.com</h3>
           <form id="password-protect-form">
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
@@ -66,7 +66,7 @@
             }
           ]
         }) %>
-        <header id="style-guides">
+        <header>
           <hr>
           <h2>Homepage Hero Banner <br class="hidden-md hidden-lg">Style Guides</h2>
           <hr>
@@ -102,7 +102,7 @@
           </div>
         </div>
         <div class="image-subtitle">
-          Variety of Original Homepage Banners
+          Variety of original homepage banners
         </div>
         <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -120,7 +120,7 @@
             </p>
           </div>
         </div>
-        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Style Guide Version 1'}) %>
+        <%- include(process.cwd() + '/app/partials/section-sub-header', {headline: 'Style Guide Version 1', id: 'style-guides'}) %>
         <div class="small-title">
           Text Layouts & Specifications
         </div>
@@ -357,7 +357,12 @@
         <%- include(process.cwd() + '/app/partials/1-col-img', {
           src: '/images/capital-one/Cap1-image-22.png'
         }) %>
-        <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Homepage Redesign: First Variations', id: 'home-and-nav-redesign'}) %>
+        <header id="home-and-nav-redesign">
+          <hr>
+          <h2>Homepage Redesign:<br class="hidden-lg hidden-md"> First Variations</h2>
+          <hr>
+        </header>
+
         <div class="row p-row">
           <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>
@@ -440,7 +445,9 @@
               <p>
                 For the guidance page, I’m seeking to find a balance between content and products. From our research, we learned users expect to see products, but wish for them to be in context.
                 <br>
+                <br>
                 In this variation, I explored transforming the guidance page into something of a learning experience. I broke down the topic, “improving credit”, into smaller, digestible chunks. Visually, I created movement down the page to keep users invested even with a more complicated topic. I pulled in products at the end of their learning journey, tying the two together.
+                <br>
                 <br>
                 Towards the bottom of the page, I included customer testimonials that will lead to larger case studies of real people’s stories on how they achieved financial milestones.
               </p>
@@ -484,7 +491,8 @@
         <%- include(process.cwd() + '/app/partials/section-header', {headline: 'Check Out Others'}) %>
         <div class="big-m">
           <%- include(process.cwd() + '/app/partials/portfolio-link-grid', {
-            order: ['kiva', 'fvwines', 'spore']
+            order: ['kiva', 'fvwines', 'spore', 'ubergo'],
+            mobileDingleBerry: 'ubergo'
           }) %>
         </div>
       </section>
