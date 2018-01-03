@@ -37,6 +37,9 @@ p a {
 }
 
 .about {
+  footer {
+    margin-top: $medium-m - 40px;
+  }
   .about-hero {
     position: relative;
     .about-hero-content, .about-hero-mobile, img {
