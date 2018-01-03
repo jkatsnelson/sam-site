@@ -45,8 +45,8 @@
       line-height: 48px;
       text-decoration: none;
       &:hover {
-        color: $orange;
-        border: solid 2px $orange;
+        color: $hover-color;
+        border: solid 2px $hover-color;
       }
     }
     @media (min-width: $screen-sm-min) {

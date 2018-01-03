@@ -3,6 +3,7 @@
 
 $(document).ready(function() {
   passwordProtect();
+  navIconActive();
   $('[data-toggle="popover"]').popover({
     trigger: 'hover'
   });
@@ -31,6 +32,12 @@ function passwordProtect() {
       }
     })
   }
+}
+
+function navIconActive() {
+  $('.js-icon-color-change').hover(function() {
+    $(this).find('img').toggleClass('hide');
+  });
 }
 
 function designImageOverlayHovers() {

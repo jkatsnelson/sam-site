@@ -6,7 +6,7 @@ $capitalone-color: #019dd5;
 $kiva-color: #63a541;
 $medium-up-alt-subtitles: 24px;
 $nav-bar-height: 45px;
-$orange: #ee3a00;
+$hover-color: #B79C7F;
 $p-size: 18px;
 $p-size-mobile: 16px;
 // the largest margin between actual sections is x-big-m
@@ -241,7 +241,7 @@ a, a:hover, a:focus {
 }
 
 a:hover {
-  color: $orange;
+  color: $hover-color;
 }
 
 // this should hopefully only apply to 'introduction' headers that have smaller margins above them. all other headers should be x-big-m
@@ -500,7 +500,10 @@ a:hover {
       background-color: #36a7ff;
     }
     &.resume {
-      background-color: #f14729;
+      background-color: #D7B896;
+      &:hover {
+        background-color: $hover-color;
+      }
     }
   }
   @media (min-width: $screen-sm-min) {

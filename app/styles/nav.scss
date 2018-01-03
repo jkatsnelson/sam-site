@@ -6,7 +6,7 @@
 }
 
 nav .active {
-  color: $orange !important;
+  color: $hover-color !important;
 }
 
 .nav-bar {
@@ -79,9 +79,9 @@ nav .active {
 }
 
 #nav-title a {
-  font-family: Futura PT;
-  text-transform: uppercase;
+  font-family: Playfair Display;
   font-weight: 600;
+  text-transform: none;
 }
 
 .large-nav-container {
@@ -113,7 +113,7 @@ nav .active {
         border-radius: 50%;
         width: 4px;
         height: 4px;
-        background-color: $orange;
+        background-color: $hover-color;
         display: inline-block;
         margin: auto 7px;
         /* width and height can be anything, as long as they're equal */
@@ -153,7 +153,7 @@ nav .active {
   border-radius: 50%;
   width: 4px;
   height: 4px;
-  background-color: $orange;
+  background-color: $hover-color;
   display: inline-block;
   margin: auto 7px;
 }
