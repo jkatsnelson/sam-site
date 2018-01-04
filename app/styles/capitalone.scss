@@ -1,5 +1,11 @@
 .capitalone {
   .password-protect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
     h1 {
       margin-top: 85px;
       font-family: Playfair Display;
